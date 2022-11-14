@@ -5,12 +5,10 @@ import Profile from './Profile';
 
 const Navebar = () => {
   return (
-    <div className="section-padding">
-      <div className="flex w-full justify-between  gap-5 items-center">
+    <div className=" flex gap-2 md:gap-5 w-full mt-5 md:m-0 pb-7">
         <Search />
         <Notification />
         <Profile />
-      </div>
     </div>
   );
 };

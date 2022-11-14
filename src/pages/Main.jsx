@@ -1,0 +1,43 @@
+import React, { useState } from 'react';
+import { Route, Routes } from 'react-router';
+import Navebar from '../components/Navebar';
+import Analytics from './Analytics';
+import Customer from './Customer';
+import Dashbord from './Dashbord';
+import Foods from './Foods';
+import Review from './Review';
+import OrderList from './OrderList';
+import FoodDetails from './FoodDetails';
+import CustomerDetail from './CustomerDetail';
+import Calender from './Calender';
+import Chat from './Chat';
+import Wallet from './Wallet';
+
+const Main = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  return (
+    <div className="px-2 md:px-5 bg-[#E5E5E5] h-screen ">
+      <div className="">
+        <Navebar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      </div>
+      <div className="h-full">
+        <Routes>
+          <Route path="/Dashbord" element={<Dashbord />} />
+          <Route path="/OrderList" element={<OrderList />} />
+          <Route path="/Customer" element={<Customer />} />
+          <Route path="/Analytics" element={<Analytics />} />
+          <Route path="/Review" element={<Review />} />
+          <Route path="/Foods" element={<Foods />} />
+          <Route path="/FoodDetails" element={<FoodDetails />} />
+          <Route path="/CustomerDetail" element={<CustomerDetail />} />
+          <Route path="/Calender" element={<Calender />} />
+          <Route path="/Chat" element={<Chat />} />
+          <Route path="/Wallet" element={<Wallet />} />
+        </Routes>
+      </div>
+    </div>
+  );
+};
+
+export default Main;
