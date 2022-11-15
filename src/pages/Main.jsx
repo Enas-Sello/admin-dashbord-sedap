@@ -17,7 +17,7 @@ const Main = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
-    <div className="px-2 md:px-5 bg-[#E5E5E5] h-screen ">
+    <div className="px-2 md:px-5 h-screen w- ">
       <div className="">
         <Navebar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>

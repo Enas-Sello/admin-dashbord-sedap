@@ -6,7 +6,7 @@ import { FiSettings } from 'react-icons/fi';
 
 const Notification = () => {
   return (
-    <div className="hidden md:flex justify-between w-full gap-2 items-center">
+    <div className="hidden md:flex justify-between gap-2 items-center  mt-10">
       <div className=" py-2 px-3 bg-blue-200 rounded-xl relative ">
         <GrNotification className=" fill-blue-400 stroke-blue-400 notification" />
       </div>

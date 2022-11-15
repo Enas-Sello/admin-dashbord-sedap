@@ -18,3 +18,9 @@
   top: 0;
   left: 0;
 }
+.route-title{
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38.4px;
+  color: #464255;
+}

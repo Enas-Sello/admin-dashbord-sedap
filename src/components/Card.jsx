@@ -4,7 +4,7 @@ import { CgArrowUp } from 'react-icons/cg';
 const Card = () => {
   return (
     <div
-      className={` bg-white flex gap-10 px-5 py-3 w-full items-center rounded-2xl`}
+      className={` bg-white flex gap-10 px-5 py-3 w-full items-center rounded-2xl shadow-xl`}
     >
       <div
         className={`bg-green-200 rounded-full flex items-center justify-center`}
