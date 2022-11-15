@@ -37,7 +37,7 @@ const Dashbord = () => {
       </div>
       {/* charts */}
       <div className="flex flex-col md:flex-row  mt-10 gap-10  ">
-        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-2xl">
+        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Pie chart</h3>
             <p>ggg</p>
@@ -45,7 +45,7 @@ const Dashbord = () => {
 
           {/* <PieChart/> */}
         </div>
-        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-2xl">
+        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Chart Order</h3>
             <div className="flex gap-2 items-center border border-[#2D9CDB] rounded-xl py-2 px-3">
@@ -58,7 +58,7 @@ const Dashbord = () => {
         </div>
       </div>
       <div className="flex flex-col md:flex-row  mt-10 gap-10  ">
-        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-2xl">
+        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Total Revenue</h3>
             <div className="flex gap-3 items-center">
@@ -75,7 +75,7 @@ const Dashbord = () => {
 
           {/* <PieChart/> */}
         </div>
-        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-2xl">
+        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Customer Map</h3>
             <div className="flex gap-2 items-center border border-gray-500 rounded-xl py-2 px-3">
