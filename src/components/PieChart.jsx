@@ -1,56 +1,38 @@
 import React from 'react';
-import { Doughnut } from 'react-chartjs-2';
-import {
-  Chart,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
-Chart.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+const PieChart = (prop) => {
 
+  return (
+    <div>
+      <CircularProgressbar
+        value={prop.value}
+        text={`${prop.text}%`}
+        strokeWidth={18}
+        styles={{
+          path: {
+            strokeLinecap: 'butt',
 
-export const options = {
-  responsive: true,
-  Plugin: {
-    legend: {
-    //   position: 'top',
-    },
-      title: {
-          display: true,
-          text:"chart"
-    }
-  },
-};
-const labels = [
-  'january',
-  'january',
-  'january',
-  'january',
-  'january',
-  'january',
-];
+            stroke: prop.fill,
+            transition: 'stroke-dashoffset 0.5s ease 0s',
+          },
+          trail: {
+            strokeLinecap: 'butt',
 
-export const data = {
-  labels,
-  dataset: [
-    {
-      label: 'data 1',
-      data: labels.map(() =><></>),
-      backgoundColor: 'blue',
-    },
-    {
-      label: 'data 1',
-      data: labels.map(() => <></>),
-      backgoundColor: 'blue',
-    },
-  ],
-};
-const PieChart = () => {
-    return <Doughnut options={ options } data={data } />;
+            stroke: prop.stroke,
+            transform: '(0.25turn)',
+            transformOrigin: 'center center',
+          },
+          text: {
+            fill: prop.fill,
+            fontSize: '16px',
+          },
+        }}
+      />
+      <p className="text-center mt-5  font-semibold ">{prop.title}</p>
+    </div>
+  );
 };
 
 export default PieChart;

@@ -17,13 +17,13 @@ const Main = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
-    <div className="px-2 md:px-5 h-screen w- ">
+    <div className="px-2 md:px-5 h-screen w-full  ">
       <div className="">
         <Navebar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
       <div className="h-full">
         <Routes>
-          <Route path="/Dashbord" element={<Dashbord />} />
+          <Route path="/*" element={<Dashbord />} />
           <Route path="/OrderList" element={<OrderList />} />
           <Route path="/Customer" element={<Customer />} />
           <Route path="/Analytics" element={<Analytics />} />

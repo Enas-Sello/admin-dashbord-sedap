@@ -12,7 +12,7 @@ const Home = () =>
     const [toggle, setToggle] = useState(false);
   return (
     <div className="flex bg-gray-50 md:flex-row flex-col h-screen transition-height duration-100 ease-out">
-      <div className="hidden md:flex h-screen flex-initial shadow-xl">
+      <div className="hidden md:flex h-screen flex-initial shadow-xl w-1/5">
         <Sidebar />
       </div>
 
@@ -29,11 +29,10 @@ const Home = () =>
             className="flex flex-col px-5 pt-1 gap-2 my-6 w-109 items-center"
           >
             <img src={logo} alt="logo" className="w-20" />
-            
           </Link>
         </div>
         {toggle && (
-          <div className="fixed w-4/5 bg-white h-screen overflow-y-auto shadow-xl z-10 animate-slide-in">
+          <div className=" w-4/5 bg-white h-screen overflow-y-auto shadow-xl z-10 animate-slide-in">
             <div className="absolute w-full flex justify-end items-center p-2">
               <AiOutlineClose
                 fontSize={30}
@@ -47,7 +46,7 @@ const Home = () =>
       </div>
       {/* responsive */}
 
-      <div className="pb-2 flex-1 h-screen overflow-y-scroll">
+      <div className="pb-2 flex-1 h-screen overflow-y-scroll bg-[#E5E5E5]">
         <Routes>
           <Route path="/*" element={<Main />} />
         </Routes>

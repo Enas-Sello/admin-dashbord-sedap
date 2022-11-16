@@ -74,7 +74,7 @@ const Sidebar = () => {
             Analytics
           </NavLink>
           <NavLink
-            to="Reviews"
+            to="Review"
             className={({ isActive }) =>
               isActive ? isActiveStyle : isNotActiveStyle
             }
@@ -151,10 +151,14 @@ const Sidebar = () => {
             Please, organize your menus through button bellow!
           </h4>
           <button className="bg-white rounded-lg py-3 px-5 mt-5 font-medium text-[15px]">
-            +Add Menus
+            + Add Menus
           </button>
         </div>
-        <img src={chef} alt="" className="object-contain m-2" />
+        <img
+          src={chef}
+          alt=""
+          className="object-contain m-2 w-[76.59px] h-[90.83px]"
+        />
       </div>
       <div className="flex flex-col">
         <div className="my-5">

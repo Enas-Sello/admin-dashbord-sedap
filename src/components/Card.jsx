@@ -4,19 +4,23 @@ import { CgArrowUp } from 'react-icons/cg';
 const Card = () => {
   return (
     <div
-      className={` bg-white flex gap-10 px-5 py-3 w-full items-center rounded-2xl shadow-xl`}
+      className={` bg-white flex gap-10 p-10 px-4 w-full items-center rounded-2xl shadow-xl`}
     >
       <div
-        className={`bg-green-200 rounded-full flex items-center justify-center`}
+        className={`hidden md:flex bg-none lg:bg-green-100 rounded-full  items-center justify-center `}
       >
-        <img src={dash1} alt="" className="w-full h-full object-contain p-1" />
+        <img
+          src={dash1}
+          alt=""
+          className=" lg:w-20 lg:h-20 w-full h-full object-contain p-2"
+        />
       </div>
-      <div className="flex flex-col items-center ">
+      <div className="flex sm:flex-row md:flex-col  items-center justify-between md:justify-center  gap-3">
         <h3 className=" font-bold text-5xl">75</h3>
         <h6 className="font-normal text-base">Total Orders</h6>
         <div className="flex gap-5">
-          <div className="bg-red-300 fill-red-600 rounded-full px-1 flex items-center">
-            <CgArrowUp />
+          <div className="bg-none lg:bg-green-300  rounded-full px-1 flex items-center">
+            <CgArrowUp className="text-green-600" />
           </div>
           <span className="font-normal text-xs text-gray-400">
             4% (30 days)
