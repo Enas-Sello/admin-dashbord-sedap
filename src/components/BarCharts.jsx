@@ -9,7 +9,7 @@ import {
 
 const BarCharts = ({data}) => {
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer width="100%" height={250}>
       <BarChart
         width={500}
         height={300}

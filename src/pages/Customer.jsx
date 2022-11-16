@@ -1,30 +1,28 @@
-import React from 'react'
+import React from 'react';
 import Fillter from '../components/Fillter';
 import { RiSoundModuleLine } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import Table from '../components/Table';
 import TableHead from '../components/TableHead';
 
-const Customer = () =>
-{
-  
-    const data = [
-      {
-        id: 1,
-        title: 'Customer ID',
-        name: 'Join Date',
-      },
-      {
-        id: 1,
-        title: 'Customer Name',
-        name: 'Location',
-      },
-      {
-        id: 1,
-        title: 'Total Spent',
-        name: 'Last Order',
-      },
-    ];
+const Customer = () => {
+  const data = [
+    {
+      id: 1,
+      title: 'Customer ID',
+      name: 'Join Date',
+    },
+    {
+      id: 1,
+      title: 'Customer Name',
+      name: 'Location',
+    },
+    {
+      id: 1,
+      title: 'Total Spent',
+      name: 'Last Order',
+    },
+  ];
   return (
     <div className="flex flex-col gap-8">
       {' '}
@@ -48,16 +46,18 @@ const Customer = () =>
           />
         </div>
       </div>
-      <div>
-        <TableHead color={'#2D9CDB'} data={data} />
-      </div>
-      <div>
-        <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
-        <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
-        <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
+      <div className="">
+        <div>
+          <TableHead color={'#2d9cdb'} data={data} />
+        </div>
+        <div>
+          <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
+          <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
+          <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Customer
+export default Customer;

@@ -9,7 +9,7 @@ import {
 const AreaCharts = ({data}) => {
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer width="100%" height={250}>
       <AreaChart
         width={730}
         height={250}

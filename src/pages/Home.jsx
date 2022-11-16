@@ -11,13 +11,13 @@ const Home = () =>
 {
     const [toggle, setToggle] = useState(false);
   return (
-    <div className="flex bg-gray-50 md:flex-row flex-col h-screen transition-height duration-100 ease-out">
-      <div className="hidden md:flex h-screen flex-initial shadow-xl w-1/5">
+    <div className="flex bg-gray-50 lg:flex-row flex-col h-screen transition-height duration-100 ease-out">
+      <div className="hidden lg:flex h-screen flex-initial shadow-xl w-1/5">
         <Sidebar />
       </div>
 
       {/* responsive */}
-      <div className="flex md:hidden flex-row">
+      <div className="flex lg:hidden flex-col">
         <div className="p-2 w-full flex flex-row justify-between items-center shadow-xl">
           <HiMenu
             fontSize={30}
@@ -32,7 +32,7 @@ const Home = () =>
           </Link>
         </div>
         {toggle && (
-          <div className=" w-4/5 bg-white h-screen overflow-y-auto shadow-xl z-10 animate-slide-in">
+          <div className=" lg:w-4/5 bg-white h-screen overflow-y-auto shadow-xl z-10 animate-slide-in">
             <div className="absolute w-full flex justify-end items-center p-2">
               <AiOutlineClose
                 fontSize={30}

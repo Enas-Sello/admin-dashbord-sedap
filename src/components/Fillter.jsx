@@ -8,9 +8,9 @@ const Fillter = (prop) => {
       </div>
       <div className="flex flex-col ">
         <h4 className="font-medium text-lg">{prop.main}</h4>
-        <h6 className="font-normal text-base">{prop.date}</h6>
+        <h6 className="font-normal text-sm">{prop.date}</h6>
       </div>
-      <prop.arrow className="fill-gray-500 cursor-pointer" />
+      <prop.arrow className="fill-gray-500 cursor-pointer w-12 h-5" />
     </div>
   );
 };

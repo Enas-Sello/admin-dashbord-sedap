@@ -58,9 +58,9 @@ const Dashbord = () => {
     },
   ];
   return (
-    <div className="section-padding  h-screen capitalize">
-      <div className="m-4 flex flex-col lg:flex-row  justify-between items-center">
-        <div>
+    <div className="flex flex-col gap-8">
+      <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
+        <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
           <h1 className="font-semibold text-3xl">dashbord</h1>
           <p className="text-gray-500 text-lg">
             Hi, Samantha. Welcome back to Sedap Admin!
@@ -81,12 +81,13 @@ const Dashbord = () => {
         <Card />
         <Card />
         <Card />
+        <Card />
       </div>
       {/* charts1 */}
       <div className="flex flex-col md:flex-row  mt-10 gap-10  ">
         {/*start prpgresspar  */}
 
-        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-xl">
+        <div className="flex flex-col bg-white w-ful p-5 w-full lg:w-5/12 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Pie chart</h3>
             <p>ggg</p>
@@ -116,7 +117,7 @@ const Dashbord = () => {
           </div>
         </div>
         {/*end prpgresspar  */}
-        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-xl">
+        <div className="flex flex-col bg-white w-full lg:w-7/12 p-5 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Chart Order</h3>
             <div className="flex gap-2 items-center border border-[#2D9CDB] rounded-xl py-2 px-3">
@@ -131,7 +132,7 @@ const Dashbord = () => {
       {/*end charts1 */}
       {/*start charts2 */}
       <div className="flex flex-col md:flex-row  mt-10 gap-10  ">
-        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-xl">
+        <div className="flex flex-col bg-white p-5 w-full lg:w-7/12 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Total Revenue</h3>
             <div className="flex gap-3 items-center">
@@ -147,7 +148,7 @@ const Dashbord = () => {
           </div>
           <LineCharts data={data} />
         </div>
-        <div className="flex flex-col bg-white w-full py-8 px-8 rounded-xl shadow-xl">
+        <div className="flex flex-col bg-white w-full lg:w-5/12 p-5  rounded-xl shadow-xl">
           <div className="flex justify-between  items-center ">
             <h3 className=" font-bold text-2xl">Customer Map</h3>
             <div className="flex gap-2 items-center border border-gray-500 rounded-xl py-2 px-3">
@@ -157,13 +158,13 @@ const Dashbord = () => {
             <SlOptionsVertical className="fill-gray-500 w-6" />
           </div>
 
-          <BarCharts data={ data} />
+          <BarCharts data={data} />
         </div>
       </div>
       {/*end charts2 */}
 
       {/*review */}
-      <div className=" flex flex-col relative">
+      <div className="hidden lg:flex flex-col relative">
         <div className="flex items-center justify-between">
           <div className="flex flex-col gap-5 my-10">
             <h3 className=" font-semibold text-3xl ">Customer Review</h3>
@@ -180,9 +181,10 @@ const Dashbord = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-2 justify-between items-center my-5">
+        <div className="flex flex-col  md:flex-row gap-2 justify-between items-center my-5 overflow-hidden">
           <ReviewCard />
           <ReviewCard />
+          {/* <ReviewCard /> */}
         </div>
         {/* <ReviewSlide /> */}
       </div>
