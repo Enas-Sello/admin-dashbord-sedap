@@ -183,6 +183,7 @@ const Dashbord = () => {
         <div className="flex flex-col md:flex-row gap-2 justify-between items-center my-5">
           <ReviewCard />
           <ReviewCard />
+          <ReviewCard />
         </div>
         {/* <ReviewSlide /> */}
       </div>
