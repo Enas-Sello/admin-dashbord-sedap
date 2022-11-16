@@ -1,15 +1,16 @@
 import React from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import { AiOutlineCalendar } from 'react-icons/ai';
+import { AiFillStar, AiOutlineCalendar } from 'react-icons/ai';
+import { FaRegHeart } from 'react-icons/fa';
 import { CgLoadbarSound } from 'react-icons/cg';
 import Fillter from '../components/Fillter';
 import AreaCharts from '../components/AreaCharts';
-import Analytic from '../assets/Analytics.png'
+import Analytic from '../assets/Analytics.png';
 import { SlOptions } from 'react-icons/sl';
+import YearlyFiltter from '../components/YearlyFiltter';
+import BarCharts from '../components/BarCharts';
 
-const Analytics = () =>
-{
-  
+const Analytics = () => {
   const data = [
     {
       name: 'Sunday',
@@ -84,16 +85,10 @@ const Analytics = () =>
               <div>
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
                 <p className="text-sm font-normal text-gray-300">
-                  Lorem ipsum dolor sit amet, consectetur
+                  Lorem ipsum dolor
                 </p>
               </div>
-              <div className=" bg-gray-200 rounded-full">
-                <div className="flex justify-between gap-5  py-2 px-4">
-                  <p className="rounded-full bg-white py-1 px-6 ">Monthly</p>
-                  <p>Weekly</p>
-                  <p>Daily</p>
-                </div>
-              </div>
+              <YearlyFiltter />
             </div>
             <div className="flex items-center gap-10">
               <div className="flex flex-col gap-2 my-5">
@@ -125,18 +120,12 @@ const Analytics = () =>
           <div className="bg-white rounded-xl flex flex-col p-4">
             <div className="flex justify-between items-center gap-10">
               <div>
-                <h4 className=" font-medium text-xl">Chart Orders</h4>
+                <h4 className=" font-medium text-xl">Most Selling Items</h4>
                 <p className="text-sm font-normal text-gray-300">
-                  Lorem ipsum dolor sit amet, consectetur
+                  Lorem ipsum dolor
                 </p>
               </div>
-              <div className=" bg-gray-200 rounded-full">
-                <div className="flex justify-between gap-5  py-2 px-4">
-                  <p className="rounded-full bg-white py-1 px-6 ">Monthly</p>
-                  <p>Weekly</p>
-                  <p>Daily</p>
-                </div>
-              </div>
+              <YearlyFiltter />
             </div>
             <div className="flex justify-between items-center gap-2 mt-8">
               <div className="flex items-center gap-5">
@@ -211,18 +200,15 @@ const Analytics = () =>
           <div className="bg-white rounded-xl flex flex-col p-4">
             <div className="flex justify-between items-center gap-10">
               <div>
-                <h4 className=" font-medium text-xl">Chart Orders</h4>
+                <h4 className=" font-medium text-xl">🔥 Trending Items</h4>
                 <p className="text-sm font-normal text-gray-300">
-                  Lorem ipsum dolor sit amet, consectetur
+                  Lorem ipsum dolor sit amet
                 </p>
               </div>
-              <div className=" bg-gray-200 rounded-full">
-                <div className="flex justify-between gap-5  py-2 px-4">
-                  <p className="rounded-full bg-white py-1 px-6 ">Monthly</p>
-                  <p>Weekly</p>
-                  <p>Daily</p>
-                </div>
-              </div>
+              <div className=" bg-gray-50 rounded-full flex gap-2 justify-center items-center py-2 px-4">
+                <p className="text-[#5E6C93] ">Weekly</p>
+                <MdKeyboardArrowDown className="w-6 h-6" />
+              </div>{' '}
             </div>
             <div className="flex justify-between items-center gap-2 mt-8">
               <div className="flex items-center gap-5">
@@ -292,16 +278,10 @@ const Analytics = () =>
               <div>
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
                 <p className="text-sm font-normal text-gray-300">
-                  Lorem ipsum dolor sit amet, consectetur
+                  Lorem ipsum dolor sit amet
                 </p>
               </div>
-              <div className=" bg-gray-200 rounded-full">
-                <div className="flex justify-between gap-5  py-2 px-4">
-                  <p className="rounded-full bg-white py-1 px-6 ">Monthly</p>
-                  <p>Weekly</p>
-                  <p>Daily</p>
-                </div>
-              </div>
+              <YearlyFiltter />
             </div>
             <div className="flex items-center gap-10">
               <div className="flex flex-col gap-2 my-5">
@@ -324,15 +304,113 @@ const Analytics = () =>
               </div>
             </div>
 
-            <AreaCharts data={data}  />
+            <BarCharts data={data} />
           </div>
         </div>
         {/*end card */}
 
         {/*end card  */}
       </div>
-
       {/*end card div  */}
+      {/* start customer */}
+      <div className="flex flex-col w-full bg-white rounded-lg p-5">
+        <div className="flex justify-between items-center gap-10">
+          <div>
+            <h4 className=" font-medium text-xl">Most Favourite Items</h4>
+            <p className="text-sm font-normal text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur
+            </p>
+          </div>
+          <YearlyFiltter />
+        </div>
+        {/* card */}
+        <div className="flex gap-5 items-center mt-10 p-3">
+          {/* card contant */}
+          <div className="flex flex-col gap-3 bg-white rounded-lg">
+            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
+            <h2 className=" font-medium w-44">
+              Medium Spicy Pizza with Kemangi Leaf
+            </h2>
+            <div className="flex gap-2">
+              <div className="flex gap-1 items-center">
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-gray-400" />
+              </div>
+              <p className=" text-gray-400 text-xs">(454 reviews)</p>
+            </div>
+            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
+              <FaRegHeart className="text-blue-600 w-5 h-5" />
+              <button className="text-blue-600">256k Like it</button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3 bg-white rounded-lg">
+            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
+            <h2 className=" font-medium w-44">
+              Medium Spicy Pizza with Kemangi Leaf
+            </h2>
+            <div className="flex gap-2">
+              <div className="flex gap-1 items-center">
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-gray-400" />
+              </div>
+              <p className=" text-gray-400 text-xs">(454 reviews)</p>
+            </div>
+            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
+              <FaRegHeart className="text-blue-600 w-5 h-5" />
+              <button className="text-blue-600">256k Like it</button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3 bg-white rounded-lg">
+            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
+            <h2 className=" font-medium w-44">
+              Medium Spicy Pizza with Kemangi Leaf
+            </h2>
+            <div className="flex gap-2">
+              <div className="flex gap-1 items-center">
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-gray-400" />
+              </div>
+              <p className=" text-gray-400 text-xs">(454 reviews)</p>
+            </div>
+            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
+              <FaRegHeart className="text-blue-600 w-5 h-5" />
+              <button className="text-blue-600">256k Like it</button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3 bg-white rounded-lg">
+            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
+            <h2 className=" font-medium w-44">
+              Medium Spicy Pizza with Kemangi Leaf
+            </h2>
+            <div className="flex gap-2">
+              <div className="flex gap-1 items-center">
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-gray-400" />
+              </div>
+              <p className=" text-gray-400 text-xs">(454 reviews)</p>
+            </div>
+            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
+              <FaRegHeart className="text-blue-600 w-5 h-5" />
+              <button className="text-blue-600">256k Like it</button>
+            </div>
+          </div>
+          {/* end card contant */}
+        </div>
+        {/*END card */}
+      </div>
+      {/* END customer */}
     </div>
   );
 };

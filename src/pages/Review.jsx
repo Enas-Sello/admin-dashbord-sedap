@@ -1,6 +1,6 @@
 import React from 'react';
 import Fillter from '../components/Fillter';
-import {  AiOutlineCalendar } from 'react-icons/ai';
+import { AiOutlineCalendar } from 'react-icons/ai';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import placeholder from '../assets/placeholder.png';
 import ReviewsCard from '../components/ReviewsCard';
@@ -32,6 +32,7 @@ const Review = () => {
       <div className="flex flex-col gap-5 justify-center w-full mt-24">
         {/* cards */}
         <div className="flex flex-col lg:flex-row w-full gap-16 lg:gap-3 justify-between">
+          <ReviewsCard />
           <ReviewsCard />
           <ReviewsCard />
           {/* <ReviewsCard /> */}
@@ -66,9 +67,42 @@ const Review = () => {
             </div>
             {/* containt */}
             <div className="flex w-full items-center justify-between mt-12">
-              <div className='flex flex-col gap-3'>
-                <div className='flex w-full '></div>
-                <div><p></p></div>
+              <div className="flex flex-col gap-3">
+                <div className="flex w-full justify-between items-center ">
+                  <div className="flex gap-2">
+                    <div>
+                      <div className="w-10 h-10 bg-slate-500 rounded-full"></div>
+                    </div>
+                    <div className="flex flex-col gap-2 items-center">
+                      <h4 className=" font-semibold text-xl">James Kowalski</h4>
+                      <div className="flex gap-2 items-center ml-3">
+                        <p className="text-xs text-gray-400">Head Marketing</p>
+                        <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                        <p className="text-xs text-gray-400">24 June 2020</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex gap-4 items-center">
+                    <button className="bg-blue-200 text-blue-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                    <button className="bg-green-200 text-green-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                    <button className="bg-red-200 text-red-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                  </div>{' '}
+                </div>
+                <div>
+                  <p className=" font-medium text-lg">
+                    We recently had dinner with friends at David CC and we all
+                    walked away with a great experience. Good food, pleasant
+                    environment, personal attention through all the evening.
+                    Thanks to the team and we will be back! I will give a good
+                    recommendation to my friend, family and people what i look.
+                  </p>
+                </div>
               </div>
               {/* review */}
               <div className="flex flex-col gap-3 justify-center items-center">
@@ -81,8 +115,118 @@ const Review = () => {
                   <AiFillStar className="fill-gray-400" />
                 </div>
               </div>
-              {/* review */}
+              {/* review */ }
             </div>
+              <div className='mt-12  h-[.5px] w-full bg-gray-300'></div>
+            {/*end containt */}
+            {/* containt */}
+            <div className="flex w-full items-center justify-between mt-12">
+              <div className="flex flex-col gap-3">
+                <div className="flex w-full justify-between items-center ">
+                  <div className="flex gap-2">
+                    <div>
+                      <div className="w-10 h-10 bg-slate-500 rounded-full"></div>
+                    </div>
+                    <div className="flex flex-col gap-2 items-center">
+                      <h4 className=" font-semibold text-xl">James Kowalski</h4>
+                      <div className="flex gap-2 items-center ml-3">
+                        <p className="text-xs text-gray-400">Head Marketing</p>
+                        <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                        <p className="text-xs text-gray-400">24 June 2020</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex gap-4 items-center">
+                    <button className="bg-blue-200 text-blue-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                    <button className="bg-green-200 text-green-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                    <button className="bg-red-200 text-red-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                  </div>{' '}
+                </div>
+                <div>
+                  <p className=" font-medium text-lg">
+                    We recently had dinner with friends at David CC and we all
+                    walked away with a great experience. Good food, pleasant
+                    environment, personal attention through all the evening.
+                    Thanks to the team and we will be back! I will give a good
+                    recommendation to my friend, family and people what i look.
+                  </p>
+                </div>
+              </div>
+              {/* review */}
+              <div className="flex flex-col gap-3 justify-center items-center">
+                <p className=" font-extrabold text-3xl">3.5</p>
+                <div className="flex gap-1 items-center">
+                  <AiFillStar className="fill-yellow-400" />
+                  <AiFillStar className="fill-yellow-400" />
+                  <AiFillStar className="fill-yellow-400" />
+                  <AiFillStar className="fill-yellow-400" />
+                  <AiFillStar className="fill-gray-400" />
+                </div>
+              </div>
+              {/* review */ }
+            </div>
+              <div className='mt-12  h-[.5px] w-full bg-gray-300'></div>
+            {/*end containt */}
+            {/* containt */}
+            <div className="flex w-full items-center justify-between mt-12">
+              <div className="flex flex-col gap-3">
+                <div className="flex w-full justify-between items-center ">
+                  <div className="flex gap-2">
+                    <div>
+                      <div className="w-10 h-10 bg-slate-500 rounded-full"></div>
+                    </div>
+                    <div className="flex flex-col gap-2 items-center">
+                      <h4 className=" font-semibold text-xl">James Kowalski</h4>
+                      <div className="flex gap-2 items-center ml-3">
+                        <p className="text-xs text-gray-400">Head Marketing</p>
+                        <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                        <p className="text-xs text-gray-400">24 June 2020</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex gap-4 items-center">
+                    <button className="bg-blue-200 text-blue-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                    <button className="bg-green-200 text-green-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                    <button className="bg-red-200 text-red-800 rounded-full py-1 px-2 cursor-pointer">
+                      Good Services
+                    </button>
+                  </div>{' '}
+                </div>
+                <div>
+                  <p className=" font-medium text-lg">
+                    We recently had dinner with friends at David CC and we all
+                    walked away with a great experience. Good food, pleasant
+                    environment, personal attention through all the evening.
+                    Thanks to the team and we will be back! I will give a good
+                    recommendation to my friend, family and people what i look.
+                  </p>
+                </div>
+              </div>
+              {/* review */}
+              <div className="flex flex-col gap-3 justify-center items-center">
+                <p className=" font-extrabold text-3xl">3.5</p>
+                <div className="flex gap-1 items-center">
+                  <AiFillStar className="fill-yellow-400" />
+                  <AiFillStar className="fill-yellow-400" />
+                  <AiFillStar className="fill-yellow-400" />
+                  <AiFillStar className="fill-yellow-400" />
+                  <AiFillStar className="fill-gray-400" />
+                </div>
+              </div>
+              {/* review */ }
+            </div>
+              <div className='mt-12  h-[.5px] w-full bg-gray-300'></div>
+            {/*end containt */}
           </div>
         </div>
         {/* end table */}
