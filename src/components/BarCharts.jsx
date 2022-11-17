@@ -23,8 +23,8 @@ const BarCharts = ({data}) => {
       >
         <XAxis dataKey="name" />
         <YAxis  />          <Tooltip />
-        <Bar dataKey="pv" fill="#FF5B5B" />
         <Bar dataKey="uv" fill="#F7C604" />
+        <Bar dataKey="pv" fill="#FF5B5B" />
       </BarChart>
     </ResponsiveContainer>
   );
