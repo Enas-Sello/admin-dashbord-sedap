@@ -5,7 +5,7 @@ const TableHead = ( prop ) =>
 {
     return (
       <div
-        className={`flex  items-center justify-between bg-[${prop.color }] py-3 px-8 rounded-xl text-white font-semibold text-lg`}
+        className={`flex  items-center justify-between bg-${prop.color } py-3 px-8 rounded-xl text-white font-semibold text-lg`}
       >
         {prop.data.map((x) => (
           <div key={x.id} className="flex gap-5 items-center">

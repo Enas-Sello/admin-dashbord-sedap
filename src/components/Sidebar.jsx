@@ -94,7 +94,7 @@ const Sidebar = () => {
             Foods
           </NavLink>
           <NavLink
-            to="FoodDetail"
+            to="FoodDetails"
             className={({ isActive }) =>
               isActive ? isActiveStyle : isNotActiveStyle
             }
@@ -114,7 +114,7 @@ const Sidebar = () => {
             Customer Detail
           </NavLink>
           <NavLink
-            to="Calendar"
+            to="Calender"
             className={({ isActive }) =>
               isActive ? isActiveStyle : isNotActiveStyle
             }

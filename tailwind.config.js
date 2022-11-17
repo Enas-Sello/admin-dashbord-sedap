@@ -81,7 +81,7 @@ module.exports = {
         height: 'height',
       },
       dropShadow: {
-        'xl': 'box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04)',
+        'main': '0px 4px 4px rgba(0, 0, 0, 0.04)',
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
         '4xl': [
           '0 35px 35px rgba(0, 0, 0, 0.25)',

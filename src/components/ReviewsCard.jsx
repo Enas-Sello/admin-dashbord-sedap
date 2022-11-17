@@ -3,7 +3,7 @@ import { AiFillStar } from 'react-icons/ai';
 import placeholder from '../assets/placeholder.png';
 const ReviewsCard = () => {
   return (
-    <div className="w-full lg:w-4/12 flex flex-col gap-3 p-4 rounded-lg bg-white">
+    <div className="hover:scale-110 duration-500 w-full lg:w-4/12 flex flex-col gap-3 p-4 rounded-lg bg-white">
       <div></div>
       <div className="flex items-center justify-start md:justify-center lg:justify-start w-full gap-8">
         <div className="-mt-20 bg-slate-100 w-40 h-40 rounded-full shadow-xl">
