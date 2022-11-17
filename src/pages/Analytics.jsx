@@ -57,10 +57,10 @@ const Analytics = () => {
   ];
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex justify-between items-center">
-        <div className="flex flex-col gap-3 justify-center">
+      <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
+        <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
           <h1 className="route-title">Analytics</h1>
-          <p className="text-gray-500">
+          <p className="text-gray-500 text-[12px] md:text-base">
             Here is your restaurant summary with graph view
           </p>
         </div>
@@ -77,10 +77,10 @@ const Analytics = () => {
           />
         </div>
       </div>
-      {/* card */}
-      <div className="flex gap-8">
-        <div className="flex flex-col md:flex-row">
-          <div className="bg-white rounded-xl flex flex-col p-4">
+      {/*div card */}
+      <div className="flex gap-8 flex-col lg:flex-row">
+        <div className="flex flex-col md:flex-row w-full md:w-7/12 h-[450px]">
+          <div className="bg-white rounded-xl flex flex-col p-4 w-full ">
             <div className="flex justify-between items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
@@ -116,7 +116,7 @@ const Analytics = () => {
         </div>
         {/*end card */}
         {/* card  */}
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row w-full md:w-6/12 h-[500px]">
           <div className="bg-white rounded-xl flex flex-col p-4">
             <div className="flex justify-between items-center gap-10">
               <div>
@@ -130,7 +130,7 @@ const Analytics = () => {
             <div className="flex justify-between items-center gap-2 mt-8">
               <div className="flex items-center gap-5">
                 <div>
-                  <img src={Analytic} alt="" className="rounded-full" />
+                  <img src={Analytic} alt="" className="rounded-xl" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
@@ -150,7 +150,7 @@ const Analytics = () => {
             <div className="flex justify-between items-center gap-2 mt-8">
               <div className="flex items-center gap-5">
                 <div>
-                  <img src={Analytic} alt="" className="rounded-full" />
+                  <img src={Analytic} alt="" className="rounded-xl" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
@@ -170,7 +170,90 @@ const Analytics = () => {
             <div className="flex justify-between items-center gap-2 mt-8">
               <div className="flex items-center gap-5">
                 <div>
-                  <img src={Analytic} alt="" className="rounded-full" />
+                  <img src={Analytic} alt="" className="rounded-xl" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
+                  <span className="font-semibold text-xs text-[#2D9CDB] ">
+                    SPAGETHI
+                  </span>
+                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
+                </div>
+              </div>
+              {/* $ */}
+              <div className="flex items-center gap-4 ">
+                <p className=" font-medium text-2xl">$12.56</p>
+                <SlOptions />
+              </div>
+              {/* $ */}
+            </div>
+          </div>
+        </div>
+        {/*end div card  */}
+      </div>
+      {/*start div card  */}
+
+      {/* card */}
+      <div className="flex gap-8 flex-col lg:flex-row -mt-5">
+        {/* card  */}
+        <div className="flex flex-col md:flex-row w-full md:w-6/12 h-[500px] -mt-12">
+          <div className="bg-white rounded-xl flex w-full flex-col p-4">
+            <div className="flex justify-between items-center gap-10">
+              <div>
+                <h4 className=" font-medium text-xl">🔥 Trending Items</h4>
+                <p className="text-sm font-normal text-gray-300">
+                  Lorem ipsum dolor sit amet
+                </p>
+              </div>
+              <div className=" bg-gray-50 rounded-full flex gap-2 justify-center items-center py-2 px-4">
+                <p className="text-[#5E6C93] ">Weekly</p>
+                <MdKeyboardArrowDown className="w-6 h-6" />
+              </div>{' '}
+            </div>
+            <div className="flex justify-between items-center gap-2 mt-8">
+              <div className="flex items-center gap-5">
+                <div>
+                  <img src={Analytic} alt="" className="rounded-xl" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
+                  <span className="font-semibold text-xs text-[#2D9CDB] ">
+                    SPAGETHI
+                  </span>
+                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
+                </div>
+              </div>
+              {/* $ */}
+              <div className="flex items-center gap-4 ">
+                <p className=" font-medium text-2xl">$12.56</p>
+                <SlOptions />
+              </div>
+              {/* $ */}
+            </div>
+            <div className="flex justify-between items-center gap-2 mt-8">
+              <div className="flex items-center gap-5">
+                <div>
+                  <img src={Analytic} alt="" className="rounded-xl" />
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
+                  <span className="font-semibold text-xs text-[#2D9CDB] ">
+                    SPAGETHI
+                  </span>
+                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
+                </div>
+              </div>
+              {/* $ */}
+              <div className="flex items-center gap-4 ">
+                <p className=" font-medium text-2xl">$12.56</p>
+                <SlOptions />
+              </div>
+              {/* $ */}
+            </div>
+            <div className="flex justify-between items-center gap-2 mt-8">
+              <div className="flex items-center gap-5">
+                <div>
+                  <img src={Analytic} alt="" className="rounded-xl" />
                 </div>
                 <div className="flex flex-col gap-2">
                   <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
@@ -190,90 +273,10 @@ const Analytics = () => {
           </div>
         </div>
         {/*end card  */}
-      </div>
-      {/*start div card  */}
 
-      {/* card */}
-      <div className="flex gap-8">
         {/* card  */}
-        <div className="flex flex-col md:flex-row">
-          <div className="bg-white rounded-xl flex flex-col p-4">
-            <div className="flex justify-between items-center gap-10">
-              <div>
-                <h4 className=" font-medium text-xl">🔥 Trending Items</h4>
-                <p className="text-sm font-normal text-gray-300">
-                  Lorem ipsum dolor sit amet
-                </p>
-              </div>
-              <div className=" bg-gray-50 rounded-full flex gap-2 justify-center items-center py-2 px-4">
-                <p className="text-[#5E6C93] ">Weekly</p>
-                <MdKeyboardArrowDown className="w-6 h-6" />
-              </div>{' '}
-            </div>
-            <div className="flex justify-between items-center gap-2 mt-8">
-              <div className="flex items-center gap-5">
-                <div>
-                  <img src={Analytic} alt="" className="rounded-full" />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
-                  <span className="font-semibold text-xs text-[#2D9CDB] ">
-                    SPAGETHI
-                  </span>
-                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
-                </div>
-              </div>
-              {/* $ */}
-              <div className="flex items-center gap-4 ">
-                <p className=" font-medium text-2xl">$12.56</p>
-                <SlOptions />
-              </div>
-              {/* $ */}
-            </div>
-            <div className="flex justify-between items-center gap-2 mt-8">
-              <div className="flex items-center gap-5">
-                <div>
-                  <img src={Analytic} alt="" className="rounded-full" />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
-                  <span className="font-semibold text-xs text-[#2D9CDB] ">
-                    SPAGETHI
-                  </span>
-                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
-                </div>
-              </div>
-              {/* $ */}
-              <div className="flex items-center gap-4 ">
-                <p className=" font-medium text-2xl">$12.56</p>
-                <SlOptions />
-              </div>
-              {/* $ */}
-            </div>
-            <div className="flex justify-between items-center gap-2 mt-8">
-              <div className="flex items-center gap-5">
-                <div>
-                  <img src={Analytic} alt="" className="rounded-full" />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <h4 className="font-bold">Meidum Spicy Spagethi Italiano</h4>
-                  <span className="font-semibold text-xs text-[#2D9CDB] ">
-                    SPAGETHI
-                  </span>
-                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
-                </div>
-              </div>
-              {/* $ */}
-              <div className="flex items-center gap-4 ">
-                <p className=" font-medium text-2xl">$12.56</p>
-                <SlOptions />
-              </div>
-              {/* $ */}
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col md:flex-row">
-          <div className="bg-white rounded-xl flex flex-col p-4">
+        <div className="flex flex-col md:flex-row w-full md:w-7/12 h-[450px] ">
+          <div className="bg-white rounded-xl flex w-full flex-col p-4">
             <div className="flex justify-between items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
@@ -326,7 +329,7 @@ const Analytics = () => {
         {/* card */}
         <div className="flex gap-5 items-center mt-10 p-3">
           {/* card contant */}
-          <div className="flex flex-col gap-3 bg-white rounded-lg">
+          <div className="flex flex-col gap-3 bg-white rounded-lg mr-5 w-2/12">
             <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
             <h2 className=" font-medium w-44">
               Medium Spicy Pizza with Kemangi Leaf
@@ -346,7 +349,7 @@ const Analytics = () => {
               <button className="text-blue-600">256k Like it</button>
             </div>
           </div>
-          <div className="flex flex-col gap-3 bg-white rounded-lg">
+          <div className="flex flex-col gap-3 bg-white rounded-lg mr-5 w-2/12">
             <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
             <h2 className=" font-medium w-44">
               Medium Spicy Pizza with Kemangi Leaf
@@ -366,7 +369,7 @@ const Analytics = () => {
               <button className="text-blue-600">256k Like it</button>
             </div>
           </div>
-          <div className="flex flex-col gap-3 bg-white rounded-lg">
+          <div className="flex flex-col gap-3 bg-white rounded-lg mr-5 w-2/12">
             <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
             <h2 className=" font-medium w-44">
               Medium Spicy Pizza with Kemangi Leaf
@@ -386,7 +389,27 @@ const Analytics = () => {
               <button className="text-blue-600">256k Like it</button>
             </div>
           </div>
-          <div className="flex flex-col gap-3 bg-white rounded-lg">
+          <div className="flex flex-col gap-3 bg-white rounded-lg mr-5 w-2/12">
+            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
+            <h2 className=" font-medium w-44">
+              Medium Spicy Pizza with Kemangi Leaf
+            </h2>
+            <div className="flex gap-2">
+              <div className="flex gap-1 items-center">
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-yellow-400" />
+                <AiFillStar className="fill-gray-400" />
+              </div>
+              <p className=" text-gray-400 text-xs">(454 reviews)</p>
+            </div>
+            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
+              <FaRegHeart className="text-blue-600 w-5 h-5" />
+              <button className="text-blue-600">256k Like it</button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-3 bg-white rounded-lg mr-6 w-2/12">
             <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
             <h2 className=" font-medium w-44">
               Medium Spicy Pizza with Kemangi Leaf

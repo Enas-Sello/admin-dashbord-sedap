@@ -5,7 +5,7 @@ import Profile from './Profile';
 
 const Navebar = () => {
   return (
-    <div className=" flex items-center justify-center md:gap-3 w-full mt-5 md:m-8  ">
+    <div className=" flex flex-col md:flex-row items-center justify-center md:gap-3  lg:w-11/12 lg:mt-5 md:m-8  ">
       <Search />
       <Notification />
       <Profile />

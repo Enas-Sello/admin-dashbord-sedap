@@ -2,11 +2,10 @@ import React from 'react';
 import Fillter from '../components/Fillter';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import placeholder from '../assets/placeholder.png';
 import ReviewsCard from '../components/ReviewsCard';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import { AiFillStar } from 'react-icons/ai';
-
+import placeholder from '../assets/placeholder.png';
 const Review = () => {
   return (
     <div className="section-padding  h-screen capitalize">
@@ -31,7 +30,7 @@ const Review = () => {
       {/* main */}
       <div className="flex flex-col gap-5 justify-center w-full mt-24">
         {/* cards */}
-        <div className="flex flex-col lg:flex-row w-full gap-16 lg:gap-3 justify-between">
+        <div className="flex flex-col lg:flex-row w-full gap-16 lg:gap-1 justify-between">
           <ReviewsCard />
           <ReviewsCard />
           <ReviewsCard />
@@ -39,7 +38,7 @@ const Review = () => {
         </div>
         {/*end cards */}
         {/* table */}
-        <div className="section-padding ">
+        <div className="section-padding flex flex-col">
           <div className="flex justify-end items-end  ">
             {/* slide */}
             <div className="bg-white w-16 h-10 rounded-lg flex items-center justify-center gap-2">
@@ -66,16 +65,22 @@ const Review = () => {
               </div>
             </div>
             {/* containt */}
-            <div className="flex w-full items-center justify-between mt-12">
+            <div className="flex flex-col md:flex-row gap-1 w-full items-center justify-between mt-12">
               <div className="flex flex-col gap-3">
-                <div className="flex w-full justify-between items-center ">
+                <div className="flex flex-col md:flex-row gap-2 w-full justify-between items-center ">
                   <div className="flex gap-2">
                     <div>
-                      <div className="w-10 h-10 bg-slate-500 rounded-full"></div>
+                      <div className="w-10 h-10 bg-slate-100 rounded-full -mr-5">
+                        <img
+                          className="w-10 h-10 bg-slate-100 rounded-full object-contain"
+                          src={placeholder}
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div className="flex flex-col gap-2 items-center">
                       <h4 className=" font-semibold text-xl">James Kowalski</h4>
-                      <div className="flex gap-2 items-center ml-3">
+                      <div className="flex gap-2 items-center ml-5">
                         <p className="text-xs text-gray-400">Head Marketing</p>
                         <div className="w-2 h-2 rounded-full bg-gray-400"></div>
                         <p className="text-xs text-gray-400">24 June 2020</p>
@@ -115,21 +120,26 @@ const Review = () => {
                   <AiFillStar className="fill-gray-400" />
                 </div>
               </div>
-              {/* review */ }
+              {/*end review */}
             </div>
-              <div className='mt-12  h-[.5px] w-full bg-gray-300'></div>
             {/*end containt */}
-            {/* containt */}
-            <div className="flex w-full items-center justify-between mt-12">
+            <div className="mt-12  h-[.5px] w-full bg-gray-300"></div>
+            <div className="flex flex-col md:flex-row gap-1 w-full items-center justify-between mt-12">
               <div className="flex flex-col gap-3">
-                <div className="flex w-full justify-between items-center ">
+                <div className="flex flex-col md:flex-row gap-2 w-full justify-between items-center ">
                   <div className="flex gap-2">
                     <div>
-                      <div className="w-10 h-10 bg-slate-500 rounded-full"></div>
+                      <div className="w-10 h-10 bg-slate-100 rounded-full -mr-5">
+                        <img
+                          className="w-10 h-10 bg-slate-100 rounded-full object-contain"
+                          src={placeholder}
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div className="flex flex-col gap-2 items-center">
                       <h4 className=" font-semibold text-xl">James Kowalski</h4>
-                      <div className="flex gap-2 items-center ml-3">
+                      <div className="flex gap-2 items-center ml-5">
                         <p className="text-xs text-gray-400">Head Marketing</p>
                         <div className="w-2 h-2 rounded-full bg-gray-400"></div>
                         <p className="text-xs text-gray-400">24 June 2020</p>
@@ -169,21 +179,24 @@ const Review = () => {
                   <AiFillStar className="fill-gray-400" />
                 </div>
               </div>
-              {/* review */ }
-            </div>
-              <div className='mt-12  h-[.5px] w-full bg-gray-300'></div>
-            {/*end containt */}
-            {/* containt */}
-            <div className="flex w-full items-center justify-between mt-12">
+              {/*end review */}
+            </div>{' '}
+            <div className="flex flex-col md:flex-row gap-1 w-full items-center justify-between mt-12">
               <div className="flex flex-col gap-3">
-                <div className="flex w-full justify-between items-center ">
+                <div className="flex flex-col md:flex-row gap-2 w-full justify-between items-center ">
                   <div className="flex gap-2">
                     <div>
-                      <div className="w-10 h-10 bg-slate-500 rounded-full"></div>
+                      <div className="w-10 h-10 bg-slate-100 rounded-full -mr-5">
+                        <img
+                          className="w-10 h-10 bg-slate-100 rounded-full object-contain"
+                          src={placeholder}
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div className="flex flex-col gap-2 items-center">
                       <h4 className=" font-semibold text-xl">James Kowalski</h4>
-                      <div className="flex gap-2 items-center ml-3">
+                      <div className="flex gap-2 items-center ml-5">
                         <p className="text-xs text-gray-400">Head Marketing</p>
                         <div className="w-2 h-2 rounded-full bg-gray-400"></div>
                         <p className="text-xs text-gray-400">24 June 2020</p>
@@ -223,10 +236,8 @@ const Review = () => {
                   <AiFillStar className="fill-gray-400" />
                 </div>
               </div>
-              {/* review */ }
+              {/*end review */}
             </div>
-              <div className='mt-12  h-[.5px] w-full bg-gray-300'></div>
-            {/*end containt */}
           </div>
         </div>
         {/* end table */}
