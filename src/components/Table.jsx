@@ -23,7 +23,7 @@ const Table = ( prop ) =>
         <div className="flex gap-20 justify-between items-center">
           <h4 className='-mr-10'>$184.52</h4>
           <h4
-            className={`text-[${prop.textColor}] bg-[${prop.bgcolor}] py-2 px-3 rounded-xl`}
+            className={`text-${prop.textColor} bg-${prop.bgcolor} py-2 px-3 rounded-xl`}
           >
             {prop.title}
           </h4>

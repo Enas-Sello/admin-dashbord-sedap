@@ -19,11 +19,11 @@ const ReviewCard = () => {
         </p>
         <div className="flex ml-10 mt-5 items-center">
           <div className="flex">
-            <AiFillStar className="fill-amber-400" />
-            <AiFillStar className="fill-amber-400" />
-            <AiFillStar className="fill-amber-400" />
-            <AiFillStar className="fill-amber-400" />
-            <AiFillStar className="fill-gray-400" />
+            <AiFillStar className="fill-mainYellow" />
+            <AiFillStar className="fill-mainYellow" />
+            <AiFillStar className="fill-mainYellow" />
+            <AiFillStar className="fill-mainYellow" />
+            <AiFillStar className="fill-lightGray" />
           </div>
           <p className="font-medium text-lg ml-3">4.5</p>
         </div>

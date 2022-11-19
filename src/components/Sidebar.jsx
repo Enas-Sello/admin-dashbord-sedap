@@ -30,7 +30,9 @@ const Sidebar = () => {
           onClick={handelcloseToggle}
         >
           <img src={logo} alt="logo" className="w-32" />
-          <span className=" text-xs text-gray-500">Modern Admin Dashboard</span>
+          <span className=" text-xs text-lightGray">
+            Modern Admin Dashboard
+          </span>
         </Link>
         <div className="flex flex-col gap-3">
           <NavLink
@@ -145,7 +147,7 @@ const Sidebar = () => {
           </NavLink>
         </div>
       </div>
-      <div className="flex justify-between items-center w-64 bg-[#00B074] p-4 rounded-lg shadow-2xl my-5 mx-6">
+      <div className="  flex justify-between items-center w-64 bg-mainGreen p-4 rounded-lg shadow-2xl my-5 mx-6">
         <div className="flex flex-col">
           <h4 className="text-white font-medium text-xs">
             Please, organize your menus through button bellow!
@@ -162,14 +164,14 @@ const Sidebar = () => {
       </div>
       <div className="flex flex-col">
         <div className="my-5">
-          <p className="font-bold text-sm text-gray-400">
+          <p className="font-bold text-sm text-lightGray">
             Sedap Restaurant Admin Dashboard
           </p>
-          <p className=" text-[13px] text-gray-400">
+          <p className=" text-[13px] text-lightGray">
             © 2020 All Rights Reserved
           </p>
         </div>
-        <p className="mb-5 font-normal text-sm text-gray-400">
+        <p className="mb-5 font-normal text-sm text-lightGray">
           Made with ♥ by Peterdraw
         </p>
       </div>

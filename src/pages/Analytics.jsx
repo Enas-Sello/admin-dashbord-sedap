@@ -9,6 +9,7 @@ import Analytic from '../assets/Analytics.png';
 import { SlOptions } from 'react-icons/sl';
 import YearlyFiltter from '../components/YearlyFiltter';
 import BarCharts from '../components/BarCharts';
+import AnalyticsCArd from '../components/AnalyticsCArd';
 
 const Analytics = () => {
   const data = [
@@ -66,14 +67,13 @@ const Analytics = () => {
         </div>
         <div className="flex items-center justify-center gap-3">
           <Fillter
-            class={
-              'bg-white flex gap-3 items-center text-gray-600 rounded-lg px-4 py-2'
-            }
+            class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
             icon={AiOutlineCalendar}
             arrow={MdKeyboardArrowDown}
             main={'Filter Periode'}
             date={'17 April 2020 - 21 May 2020'}
-            color={'blue'}
+            color={'lightBlue'}
+            fill={'mainBlue'}
           />
         </div>
       </div>
@@ -93,8 +93,8 @@ const Analytics = () => {
             <div className="flex items-center gap-10">
               <div className="flex flex-col gap-2 my-5">
                 <div className="flex items-center gap-2">
-                  <CgLoadbarSound className="fill-[#D0D6DE] w-6 h-6 text-2xl text-[#D0D6DE]" />
-                  <p className="text-[#00B074] text-2xl font-bold">257k</p>
+                  <CgLoadbarSound className="fill-lightGray w-6 h-6 text-2xl text-[#D0D6DE]" />
+                  <p className="text-mainGreen text-2xl font-bold">257k</p>
                 </div>
                 <p className=" text-xs font-semibold text-gray-400">
                   Total Sales
@@ -102,10 +102,10 @@ const Analytics = () => {
               </div>
               <div className="flex flex-col gap-2 my-5">
                 <div className="flex items-center gap-2">
-                  <CgLoadbarSound className="fill-[#D0D6DE] w-6 h-6 text-2xl text-[#D0D6DE]" />
-                  <p className="text-[#00B074] text-2xl font-bold">257k</p>
+                  <CgLoadbarSound className="fill-lightGray w-6 h-6 text-2xl text-[#D0D6DE]" />
+                  <p className="text-mainGreen text-2xl font-bold">257k</p>
                 </div>
-                <p className=" text-xs font-semibold text-gray-400">
+                <p className=" text-xs font-semibold text-lightGray">
                   Total Sales
                 </p>
               </div>
@@ -121,7 +121,7 @@ const Analytics = () => {
             <div className="flex justify-between items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl">Most Selling Items</h4>
-                <p className="text-sm font-normal text-gray-300">
+                <p className="text-sm font-normal text-lightGray">
                   Lorem ipsum dolor
                 </p>
               </div>
@@ -137,7 +137,7 @@ const Analytics = () => {
                   <span className="font-semibold text-xs text-[#2D9CDB] ">
                     SPAGETHI
                   </span>
-                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
+                  <p className="text-lightGray text-xs">Serves for 4 Person</p>
                 </div>
               </div>
               {/* $ */}
@@ -157,7 +157,7 @@ const Analytics = () => {
                   <span className="font-semibold text-xs text-[#2D9CDB] ">
                     SPAGETHI
                   </span>
-                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
+                  <p className="text-lightGray text-xs">Serves for 4 Person</p>
                 </div>
               </div>
               {/* $ */}
@@ -177,7 +177,7 @@ const Analytics = () => {
                   <span className="font-semibold text-xs text-[#2D9CDB] ">
                     SPAGETHI
                   </span>
-                  <p className="text-gray-400 text-xs">Serves for 4 Person</p>
+                  <p className="text-lightGray text-xs">Serves for 4 Person</p>
                 </div>
               </div>
               {/* $ */}
@@ -206,7 +206,7 @@ const Analytics = () => {
                 </p>
               </div>
               <div className=" bg-gray-50 rounded-full flex gap-2 justify-center items-center py-2 px-4">
-                <p className="text-[#5E6C93] ">Weekly</p>
+                <p className="text-mainGray ">Weekly</p>
                 <MdKeyboardArrowDown className="w-6 h-6" />
               </div>{' '}
             </div>
@@ -327,108 +327,16 @@ const Analytics = () => {
           <YearlyFiltter />
         </div>
         {/* card */}
-        <div className="flex gap-5 items-center mt-10 p-3">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3   xl:grid-cols-5 gap-4 text-center py-8 ">
           {/* card contant */}
-          <div className="flex flex-col gap-3 bg-white rounded-lg mr-5 w-2/12">
-            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
-            <h2 className=" font-medium w-44">
-              Medium Spicy Pizza with Kemangi Leaf
-            </h2>
-            <div className="flex gap-2">
-              <div className="flex gap-1 items-center">
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-gray-400" />
-              </div>
-              <p className=" text-gray-400 text-xs">(454 reviews)</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
-              <FaRegHeart className="text-blue-600 w-5 h-5" />
-              <button className="text-blue-600">256k Like it</button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3 bg-white rounded-lg mr-5 w-2/12">
-            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
-            <h2 className=" font-medium w-44">
-              Medium Spicy Pizza with Kemangi Leaf
-            </h2>
-            <div className="flex gap-2">
-              <div className="flex gap-1 items-center">
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-gray-400" />
-              </div>
-              <p className=" text-gray-400 text-xs">(454 reviews)</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
-              <FaRegHeart className="text-blue-600 w-5 h-5" />
-              <button className="text-blue-600">256k Like it</button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3 bg-white rounded-lg mr-5 w-2/12">
-            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
-            <h2 className=" font-medium w-44">
-              Medium Spicy Pizza with Kemangi Leaf
-            </h2>
-            <div className="flex gap-2">
-              <div className="flex gap-1 items-center">
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-gray-400" />
-              </div>
-              <p className=" text-gray-400 text-xs">(454 reviews)</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
-              <FaRegHeart className="text-blue-600 w-5 h-5" />
-              <button className="text-blue-600">256k Like it</button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3 bg-white rounded-lg mr-5 w-2/12">
-            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
-            <h2 className=" font-medium w-44">
-              Medium Spicy Pizza with Kemangi Leaf
-            </h2>
-            <div className="flex gap-2">
-              <div className="flex gap-1 items-center">
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-gray-400" />
-              </div>
-              <p className=" text-gray-400 text-xs">(454 reviews)</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
-              <FaRegHeart className="text-blue-600 w-5 h-5" />
-              <button className="text-blue-600">256k Like it</button>
-            </div>
-          </div>
-          <div className="flex flex-col gap-3 bg-white rounded-lg mr-6 w-2/12">
-            <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
-            <h2 className=" font-medium w-44">
-              Medium Spicy Pizza with Kemangi Leaf
-            </h2>
-            <div className="flex gap-2">
-              <div className="flex gap-1 items-center">
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-yellow-400" />
-                <AiFillStar className="fill-gray-400" />
-              </div>
-              <p className=" text-gray-400 text-xs">(454 reviews)</p>
-            </div>
-            <div className="flex gap-2 items-center justify-center bg-blue-200 rounded-full py-2 px-4 ">
-              <FaRegHeart className="text-blue-600 w-5 h-5" />
-              <button className="text-blue-600">256k Like it</button>
-            </div>
-          </div>
+
+          <AnalyticsCArd />
+          <AnalyticsCArd />
+          <AnalyticsCArd />
+          <AnalyticsCArd />
+          <AnalyticsCArd />
+          <AnalyticsCArd />
+
           {/* end card contant */}
         </div>
         {/*END card */}

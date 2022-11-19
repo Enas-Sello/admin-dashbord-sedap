@@ -39,15 +39,42 @@ module.exports = {
         620: '620px',
       },
       textColor: {
-        lightGray: '#F1EFEE',
-        primary: '#FAFAFA',
-        secColor: '#efefef',
-        navColor: '#BEBEBE',
+        lightGreen: 'rgba(0, 176, 116, 0.15)',
+        lightRed: 'rgba(255, 91, 91, 0.15)',
+        lightBlue: 'rgba(45, 156, 219, 0.15)',
+        lightGray: '#5E6C93',
+        lightYellow: 'rgba(247, 198, 4, 0.15)',
+        mainGreen: '#00B074',
+        mainRed: '#FF5B5B',
+        mainBlue: '#2D9CDB',
+        mainGray: 'rgba(94, 108, 147, 0.15)',
+        mainYellow: '#F7C604',
       },
       backgroundColor: {
-        mainColor: '#FBF8F9',
-        secondaryColor: '#F0F0F0',
-        blackOverlay: 'rgba(0, 0 ,0 ,0.7)',
+        lightGreen: 'rgba(0, 176, 116, 0.15)',
+        lightRed: 'rgba(255, 91, 91, 0.15)',
+        lightBlue: 'rgba(45, 156, 219, 0.15)',
+        lightGray: '#5E6C93',
+        lightYellow: 'rgba(247, 198, 4, 0.15)',
+
+        mainGreen: '#00B074',
+        mainRed: '#FF5B5B',
+        mainBlue: '#2D9CDB',
+        mainGray: 'rgba(94, 108, 147, 0.15)',
+        mainYellow: '#F7C604',
+      },
+      colors: {
+        lightGreen: 'rgba(0, 176, 116, 0.15)',
+        lightRed: 'rgba(255, 91, 91, 0.15)',
+        lightBlue: 'rgba(45, 156, 219, 0.15)',
+        lightGray: '#5E6C93',
+        lightYellow: 'rgba(247, 198, 4, 0.15)',
+
+        mainGreen: '#00B074',
+        mainRed: '#FF5B5B',
+        mainBlue: '#2D9CDB',
+        mainGray: 'rgba(94, 108, 147, 0.15)',
+        mainYellow: '#F7C604',
       },
       keyframes: {
         'slide-in': {
@@ -60,43 +87,21 @@ module.exports = {
             transform: 'translateX(0px)',
           },
         },
-
-        'slide-fwd': {
-          '0%': {
-            '-webkit-transform': 'translateZ(0px)',
-            transform: 'translateZ(0px)',
-          },
-          '100%': {
-            '-webkit-transform': 'translateZ(160px)',
-            transform: 'translateZ(160px)',
-          },
-        },
       },
       animation: {
         'slide-in': 'slide-in 0.5s ease-out',
-        'slide-fwd':
-          ' slide-fwd 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
       },
       transitionProperty: {
         height: 'height',
       },
       dropShadow: {
-        'main': '0px 4px 4px rgba(0, 0, 0, 0.04)',
-        '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
-        '4xl': [
-          '0 35px 35px rgba(0, 0, 0, 0.25)',
-          '0 45px 65px rgba(0, 0, 0, 0.15)',
-        ],
+        main: '0px 4px 4px rgba(0, 0, 0, 0.04)',
       },
     },
     cursor: {
       'zoom-in': 'zoom-in',
       pointer: 'pointer',
     },
-  },
-  variants: {
-    backgroundColor: ['active'],
-    extend: {},
   },
   plugins: [],
 };

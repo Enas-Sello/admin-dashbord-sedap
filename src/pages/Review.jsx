@@ -12,19 +12,20 @@ const Review = () => {
       <div className="m-4 flex flex-col lg:flex-row  justify-between items-center">
         <div>
           <h1 className="font-semibold text-3xl">Reviews</h1>
-          <p className="text-gray-500 text-lg">
-            <span className="text-green-600">Dashboard</span> / Customer Reviews{' '}
+          <p className="text-lightGray text-lg">
+            <span className="text-mainGreen">Dashboard</span> / Customer Reviews{' '}
           </p>
         </div>
         <Fillter
           class={
-            'bg-white flex gap-3 items-center text-gray-600 rounded-lg px-4 py-2'
+            'bg-white flex gap-3 items-center rounded-lg px-4 py-2'
           }
           icon={AiOutlineCalendar}
           arrow={MdKeyboardArrowDown}
           main={'Filter Periode'}
           date={'17 April 2020 - 21 May 2020'}
-          color={'blue'}
+          fill={'mainBlue'}
+          color={'lightBlue'}
         />
       </div>
       {/* main */}
@@ -42,11 +43,11 @@ const Review = () => {
           <div className="flex justify-end items-end  ">
             {/* slide */}
             <div className="bg-white w-16 h-10 rounded-lg flex items-center justify-center gap-2">
-              <div className="bg-green-300 py-2 px-1 rounded-xl">
-                <IoIosArrowBack className=" fill-green-500" />{' '}
+              <div className="bg-lightGreen py-2 px-1 rounded-xl">
+                <IoIosArrowBack className=" fill-mainGreen" />{' '}
               </div>
-              <div className="bg-green-300 py-2 px-1 rounded-xl">
-                <IoIosArrowForward className=" fill-green-500" />{' '}
+              <div className="bg-lightGreen py-2 px-1 rounded-xl">
+                <IoIosArrowForward className=" fill-mainGreen" />{' '}
               </div>
             </div>
           </div>
@@ -59,9 +60,9 @@ const Review = () => {
                   Here is customer review about your restaurant{' '}
                 </p>
               </div>
-              <div className="flex gap-4 bg-blue-200 py-2 px-4 rounded-lg cursor-pointer">
+              <div className="flex gap-4 bg-lightBlue py-2 px-4 rounded-lg cursor-pointer">
                 <button className="">Latest</button>
-                <MdKeyboardArrowDown className="fill-blue-500 w-6 h-6" />
+                <MdKeyboardArrowDown className="fill-mainBlue w-6 h-6" />
               </div>
             </div>
             {/* containt */}
@@ -81,20 +82,20 @@ const Review = () => {
                     <div className="flex flex-col gap-2 items-center">
                       <h4 className=" font-semibold text-xl">James Kowalski</h4>
                       <div className="flex gap-2 items-center ml-5">
-                        <p className="text-xs text-gray-400">Head Marketing</p>
-                        <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                        <p className="text-xs text-gray-400">24 June 2020</p>
+                        <p className="text-xs text-lightGray">Head Marketing</p>
+                        <div className="w-2 h-2 rounded-full bg-lightGray"></div>
+                        <p className="text-xs text-lightGray">24 June 2020</p>
                       </div>
                     </div>
                   </div>
                   <div className="flex gap-4 items-center">
-                    <button className="bg-blue-200 text-blue-800 rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightGreen text-mainBlue rounded-full py-1 px-2 cursor-pointer">
                       Good Services
                     </button>
-                    <button className="bg-green-200 text-green-800 rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightRed text-mainGreen rounded-full py-1 px-2 cursor-pointer">
                       Good Services
                     </button>
-                    <button className="bg-red-200 text-red-800 rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightRed text-mainRed rounded-full py-1 px-2 cursor-pointer">
                       Good Services
                     </button>
                   </div>{' '}
@@ -113,11 +114,11 @@ const Review = () => {
               <div className="flex flex-col gap-3 justify-center items-center">
                 <p className=" font-extrabold text-3xl">3.5</p>
                 <div className="flex gap-1 items-center">
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-gray-400" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainGray" />
                 </div>
               </div>
               {/*end review */}
@@ -140,20 +141,23 @@ const Review = () => {
                     <div className="flex flex-col gap-2 items-center">
                       <h4 className=" font-semibold text-xl">James Kowalski</h4>
                       <div className="flex gap-2 items-center ml-5">
-                        <p className="text-xs text-gray-400">Head Marketing</p>
-                        <div className="w-2 h-2 rounded-full bg-gray-400"></div>
-                        <p className="text-xs text-gray-400">24 June 2020</p>
+                        <p className="text-xs text-lightGray">Head Marketing</p>
+                        <div className="w-2 h-2 rounded-full bg-lightGray"></div>
+                        <p className="text-xs text-lightGray">24 June 2020</p>
                       </div>
                     </div>
                   </div>
-                  <div className="flex gap-4 items-center">
-                    <button className="bg-blue-200 text-blue-800 rounded-full py-1 px-2 cursor-pointer">
+                  <div className="flex gmainYellow-center">
+                    <button className="bg-lightGreen text-mainBlue rounded-full py-1 px-2 cursor-pointer">
+                      {' '}
                       Good Services
                     </button>
-                    <button className="bg-green-200 text-green-800 rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightRed text-mainGreen rounded-full py-1 px-2 cursor-pointer">
+                      {' '}
                       Good Services
                     </button>
-                    <button className="bg-red-200 text-red-800 rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightRed text-mainRed rounded-full py-1 px-2 cursor-pointer">
+                      {' '}
                       Good Services
                     </button>
                   </div>{' '}
@@ -172,11 +176,11 @@ const Review = () => {
               <div className="flex flex-col gap-3 justify-center items-center">
                 <p className=" font-extrabold text-3xl">3.5</p>
                 <div className="flex gap-1 items-center">
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-gray-400" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainGray" />
                 </div>
               </div>
               {/*end review */}
@@ -204,13 +208,16 @@ const Review = () => {
                     </div>
                   </div>
                   <div className="flex gap-4 items-center">
-                    <button className="bg-blue-200 text-blue-800 rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightGreen text-mainBlue rounded-full py-1 px-2 cursor-pointer">
+                      {' '}
                       Good Services
                     </button>
-                    <button className="bg-green-200 text-green-800 rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightRed text-mainGreen rounded-full py-1 px-2 cursor-pointer">
+                      {' '}
                       Good Services
                     </button>
-                    <button className="bg-red-200 text-red-800 rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightRed text-mainRed rounded-full py-1 px-2 cursor-pointer">
+                      {' '}
                       Good Services
                     </button>
                   </div>{' '}
@@ -229,11 +236,11 @@ const Review = () => {
               <div className="flex flex-col gap-3 justify-center items-center">
                 <p className=" font-extrabold text-3xl">3.5</p>
                 <div className="flex gap-1 items-center">
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-yellow-400" />
-                  <AiFillStar className="fill-gray-400" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainYellow" />
+                  <AiFillStar className="fill-mainGray" />
                 </div>
               </div>
               {/*end review */}

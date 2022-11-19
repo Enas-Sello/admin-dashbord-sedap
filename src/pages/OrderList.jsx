@@ -33,44 +33,34 @@ const OrderList = () => {
         </div>
         <div className="flex items-center justify-center gap-3">
           <Fillter
-            class={
-              'bg-white flex gap-3 items-center text-gray-600 rounded-lg px-4 py-2'
-            }
+            class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
             icon={SlNote}
             arrow={MdKeyboardArrowDown}
             main={'All Status'}
             date={''}
-            color={'green'}
+            fill={'mainGreen'}
+            color={'lightGreen'}
           />
           <Fillter
-            class={
-              'bg-white flex gap-3 items-center text-gray-600 rounded-lg px-4 py-2'
-            }
+            class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
             icon={AiOutlineCalendar}
             arrow={MdKeyboardArrowDown}
             main={'Today'}
             date={''}
-            color={'green'}
+            fill={'mainGreen'}
+            color={'lightGreen'}
           />
         </div>
       </div>
       <div>
-        <TableHead color={'#00B074'} data={data} />
+        <TableHead color={'mainGreen'} data={data} />
       </div>
       <div>
+        <Table textColor={'mainRed'} bgcolor={'lightRed'} title={'New Order'} />
+        <Table textColor={'mainBlue'} bgcolor={'lightBlue'} title={'On Delivery'} />
         <Table
-          textColor={'#FF6D4D'}
-          bgcolor={'#FF6D4D1A'}
-          title={'New Order'}
-        />
-        <Table
-          textColor={'#2D9CDB'}
-          bgcolor={'#2d9cdb2b'}
-          title={'On Delivery'}
-        />
-        <Table
-          textColor={'#00B074'}
-          bgcolor={'#00b07438'}
+          textColor={'mainGreen'}
+          bgcolor={'lightGreen'}
           title={'Delivered'}
         />
       </div>

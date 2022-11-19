@@ -18,11 +18,11 @@ const ReviewsCard = () => {
             <h3 className=" font-bold text-base w-[180px]">
               Chicken Curry Special withCucumber
             </h3>
-            <h6 className="text-green-600 font-normal text-xs w-[180px]">
+            <h6 className="text-mainGreen font-normal text-xs w-[180px]">
               MAIN COURSE
             </h6>
           </div>
-          <div className="bg-gray-500 w-full h-[.5px]"></div>{' '}
+          <div className="bg-mainGray w-full h-[.5px]"></div>{' '}
         </div>
       </div>
       <div>
@@ -32,7 +32,7 @@ const ReviewsCard = () => {
         </p>
       </div>
 
-      <div className="mt-5 bg-[#5E6C93] p-3 rounded-xl">
+      <div className="mt-5 bg-lightGray p-3 rounded-xl">
         <div className="flex w-full justify-evenly items-center">
           <div className="w-12 h-12 bg-slate-300 rounded-full"></div>
           <div className="flex flex-col ">
@@ -40,7 +40,7 @@ const ReviewsCard = () => {
             <p className=" text-white text-sm">Graphic Design</p>
           </div>
           <div className="flex items-center gap-2">
-            <AiFillStar className="fill-yellow-400 w-8 h-8" />
+            <AiFillStar className="fill-mainYellow w-8 h-8" />
             <p className="text-white text-xl font-bold">4.5</p>
           </div>
         </div>

@@ -62,19 +62,20 @@ const Dashbord = () => {
       <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
         <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
           <h1 className="font-semibold text-3xl">dashbord</h1>
-          <p className="text-gray-500 text-lg">
+          <p className="text-lightGray text-lg">
             Hi, Samantha. Welcome back to Sedap Admin!
           </p>
         </div>
         <Fillter
           class={
-            'bg-white flex gap-3 items-center text-gray-600 rounded-lg px-4 py-2'
+            'bg-white flex gap-3 items-center  rounded-lg px-4 py-2'
           }
           icon={AiOutlineCalendar}
           arrow={MdKeyboardArrowDown}
           main={'Filter Periode'}
           date={'17 April 2020 - 21 May 2020'}
-          color={'blue'}
+          fill={'mainBlue'}
+          color={'lightBlue'}
         />
       </div>
       <div className="flex flex-col lg:flex-row gap-10 w-full items-center section-padding">
@@ -120,9 +121,9 @@ const Dashbord = () => {
         <div className="flex flex-col bg-white w-full lg:w-7/12 p-5 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Chart Order</h3>
-            <div className="flex gap-2 items-center border border-[#2D9CDB] rounded-xl py-2 px-3">
-              <AiOutlineArrowDown className="fill-[#2D9CDB]" />
-              <button className="text-[#2D9CDB]">Save Report</button>
+            <div className="flex gap-2 items-center border border-mainBlue rounded-xl py-2 px-3">
+              <AiOutlineArrowDown className="fill-mainBlue" />
+              <button className="text-mainBlue">Save Report</button>
             </div>
           </div>
 
@@ -137,12 +138,12 @@ const Dashbord = () => {
             <h3 className=" font-bold text-2xl">Total Revenue</h3>
             <div className="flex gap-3 items-center">
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
-                <p className="text-gray-400 ">2020</p>
+                <div className="w-4 h-4 bg-mainBlue rounded-full"></div>
+                <p className="text-lightGray ">2020</p>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-red-500 rounded-full"></div>
-                <p className="text-gray-400 ">2020</p>
+                <div className="w-4 h-4 bg-mainRed rounded-full"></div>
+                <p className="text-lightGray ">2020</p>
               </div>
             </div>
           </div>
@@ -153,9 +154,9 @@ const Dashbord = () => {
             <h3 className=" font-bold text-2xl">Customer Map</h3>
             <div className="flex gap-2 items-center border border-gray-500 rounded-xl py-2 px-3">
               <button className="">Weekly</button>
-              <IoMdArrowDropdown className="fill-red-500 w-6" />
+              <IoMdArrowDropdown className="fill-mainRed w-6" />
             </div>
-            <SlOptionsVertical className="fill-gray-500 w-6" />
+            <SlOptionsVertical className="fill-mainGray w-6" />
           </div>
 
           <BarCharts data={data} />
@@ -174,10 +175,10 @@ const Dashbord = () => {
           </div>
           <div className="flex items-center gap-3">
             <div className="bg-white py-3 px-2 rounded-xl">
-              <IoIosArrowBack className=" fill-green-500" />{' '}
+              <IoIosArrowBack className=" fill-mainGreen" />{' '}
             </div>
             <div className="bg-white py-3 px-2 rounded-xl">
-              <IoIosArrowForward className=" fill-green-500" />{' '}
+              <IoIosArrowForward className=" fill-mainGreen" />{' '}
             </div>
           </div>
         </div>

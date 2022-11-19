@@ -29,31 +29,30 @@ const Customer = () => {
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-3 justify-center">
           <h1 className="route-title">General Customer</h1>
-          <p className="text-gray-500">
+          <p className="text-lightGray">
             Here is your general customers list data
           </p>
         </div>
         <div className="flex items-center justify-center gap-3">
           <Fillter
-            class={
-              'bg-white flex gap-3 items-center text-gray-600 rounded-lg px-4 py-2'
-            }
+            class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
             icon={RiSoundModuleLine}
             arrow={MdKeyboardArrowDown}
             main={'Filter'}
             date={''}
-            color={'green'}
+            fill={'mainGreen'}
+            color={'lightGreen'}
           />
         </div>
       </div>
       <div className="">
         <div>
-          <TableHead color={'#2d9cdb'} data={data} />
+          <TableHead color={'mainBlue'} data={data} />
         </div>
         <div>
-          <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
-          <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
-          <Table textColor={''} bgcolor={'#4642551A'} title={'$35.35'} />
+          <Table textColor={''} bgcolor={'mainGray'} title={'$35.35'} />
+          <Table textColor={''} bgcolor={'mainGray'} title={'$35.35'} />
+          <Table textColor={''} bgcolor={'mainGray'} title={'$35.35'} />
         </div>
       </div>
     </div>

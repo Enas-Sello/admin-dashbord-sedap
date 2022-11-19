@@ -19,10 +19,10 @@ const Card = () => {
         <h3 className=" font-bold text-5xl">75</h3>
         <h6 className="font-normal text-base">Total Orders</h6>
         <div className="flex gap-5">
-          <div className="bg-none lg:bg-green-300  rounded-full px-1 flex items-center">
-            <CgArrowUp className="text-green-600" />
+          <div className="bg-none lg:bg-lightGreen  rounded-full px-1 flex items-center">
+            <CgArrowUp className="text-mainGreen" />
           </div>
-          <span className="font-normal text-xs text-gray-400">
+          <span className="font-normal text-xs text-lightGray">
             4% (30 days)
           </span>
         </div>

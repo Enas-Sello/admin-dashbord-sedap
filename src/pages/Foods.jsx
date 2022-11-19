@@ -14,7 +14,7 @@ const Foods = () => {
       <div className="flex flex-col md:flex-row justify-between  items-center">
         <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
           <h1 className="font-semibold text-3xl">Foods</h1>
-          <p className="text-gray-500 text-lg">
+          <p className="text-lightGray text-lg">
             Here is your menus summary with graph view
           </p>
         </div>
@@ -27,16 +27,16 @@ const Foods = () => {
               value={searchTerm}
               className="p-2 w-80 rounded-lg  bg-white outline-none "
             />
-            <CiSearch className="fill-green-700 w-10 h-6" />
+            <CiSearch className="fill-mainGreen w-10 h-6" />
           </div>
           <div className="flex items-center justify-center flex-col md:flex-row gap-3">
             <div className="bg-white py-2 px-3 rounded-lg shadow-lg">
-              <TiThMenu className="w-5 h-5" />
+              <TiThMenu className="text-mainGreen w-5 h-5" />
             </div>
             <div className="bg-white py-2 px-3 rounded-lg shadow-lg">
-              <CgMenuGridR className="w-5 h-5 text-green-700" />
+              <CgMenuGridR className="w-5 h-5 text-mainGreen" />
             </div>
-            <div className="hover:scale-110 duration-500  flex items-center gap-1 bg-green-700 py-2 px-2  rounded-lg font-bold text-[15px] shadow-lg">
+            <div className="hover:scale-110 duration-500  flex items-center gap-1 bg-mainGreen py-2 px-2  rounded-lg font-bold text-[15px] shadow-lg">
               <BsPersonPlusFill color="white" />
               <button className="w-20 text-white">New Menu</button>
             </div>
