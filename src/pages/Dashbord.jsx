@@ -59,6 +59,7 @@ const Dashbord = () => {
   ];
   return (
     <div className="flex flex-col gap-8">
+      {/* nav */}
       <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
         <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
           <h1 className="font-semibold text-3xl">dashbord</h1>
@@ -74,8 +75,9 @@ const Dashbord = () => {
           date={'17 April 2020 - 21 May 2020'}
           fill={'mainBlue'}
           color={'lightBlue'}
-        />
+          />
       </div>
+          {/* nav */}
       <div className="flex flex-col lg:flex-row gap-10 w-full items-center section-padding">
         <Card />
         <Card />

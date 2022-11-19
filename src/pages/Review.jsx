@@ -9,7 +9,7 @@ import placeholder from '../assets/placeholder.png';
 const Review = () => {
   return (
     <div className="section-padding  h-screen capitalize">
-      <div className="m-4 flex flex-col lg:flex-row  justify-between items-center">
+      <div className=" flex flex-col lg:flex-row  justify-between items-center">
         <div>
           <h1 className="font-semibold text-3xl">Reviews</h1>
           <p className="text-lightGray text-lg">
