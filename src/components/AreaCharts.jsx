@@ -12,7 +12,7 @@ const AreaCharts = ({data}) => {
     <ResponsiveContainer width="100%" height={250}>
       <AreaChart
         width={730}
-        height={250}
+        height={350}
         data={data}
         margin={{ top: 10, right: 10, left: 0, bottom: 0 }}
       >

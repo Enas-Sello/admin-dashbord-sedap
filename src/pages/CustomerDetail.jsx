@@ -76,7 +76,7 @@ const CustomerDetail = () => {
           <div>
             <img
               src={placeholder}
-              className="hidden lg:block w-52 h-48 object-contain rounded-lg bg-slate-300"
+              className="hidden lg:block w-52 h-48 object-contain rounded-lg bg-slate-200"
               alt=""
             />
           </div>

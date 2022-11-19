@@ -18,7 +18,7 @@
   top: 0;
   left: 0;
 }
-.route-title{
+.route-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 38.4px;
@@ -27,6 +27,15 @@
 
 .xAxis .yAxis line {
   display: none;
-  background:transparent;
-  stroke:transparent
+  background: transparent;
+  stroke: transparent;
+}
+
+.foode-details-defore::before {
+  content: ' ';
+  contain: ' ';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: yellow;
 }
