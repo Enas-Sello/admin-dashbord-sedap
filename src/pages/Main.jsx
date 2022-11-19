@@ -12,6 +12,7 @@ import CustomerDetail from './CustomerDetail';
 import Calender from './Calender';
 import Chat from './Chat';
 import Wallet from './Wallet';
+import OrderDetail from './OrderDetail';
 
 const Main = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,6 +26,7 @@ const Main = () => {
         <Routes>
           <Route path="/*" element={<Dashbord />} />
           <Route path="/OrderList" element={<OrderList />} />
+          <Route path="/OrderDetail" element={<OrderDetail />} />
           <Route path="/Customer" element={<Customer />} />
           <Route path="/Analytics" element={<Analytics />} />
           <Route path="/Review" element={<Review />} />

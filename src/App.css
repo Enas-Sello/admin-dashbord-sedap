@@ -37,5 +37,9 @@
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
 }

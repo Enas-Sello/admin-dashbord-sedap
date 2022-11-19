@@ -67,9 +67,7 @@ const Dashbord = () => {
           </p>
         </div>
         <Fillter
-          class={
-            'bg-white flex gap-3 items-center  rounded-lg px-4 py-2'
-          }
+          class={'bg-white flex gap-3 items-center  rounded-lg px-4 py-2'}
           icon={AiOutlineCalendar}
           arrow={MdKeyboardArrowDown}
           main={'Filter Periode'}
@@ -91,7 +89,34 @@ const Dashbord = () => {
         <div className="flex flex-col bg-white w-ful p-5 w-full lg:w-5/12 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Pie chart</h3>
-            <p>ggg</p>
+            <fieldset className="flex gap-2">
+              <input
+                id="Chart"
+                class="peer/Chart"
+                type="checkbox"
+                name="status"
+                checked
+              />
+              <label
+                for="Chart"
+                class="peer-checked/Chart:text-mainRed text-lg font-semibold"
+              >
+                Chart
+              </label>
+
+              <input
+                id="Value"
+                class="peer/Value border-none"
+                type="checkbox"
+                name="status"
+              />
+              <label
+                for="Value"
+                class="peer-checked/Value:text-mainRed text-lg font-semibold"
+              >
+                Show Value
+              </label>
+            </fieldset>
           </div>
           <div className="flex items-center justify-center gap-3 mt-8">
             <PieChart

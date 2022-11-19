@@ -7,6 +7,7 @@ import { CiSearch } from 'react-icons/ci';
 import { TiThMenu } from 'react-icons/ti';
 import YearlyFiltter from '../components/YearlyFiltter';
 import AreaCharts from '../components/AreaCharts';
+import { AiFillStar } from 'react-icons/ai';
 const FoodDetails = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const data = [
@@ -74,7 +75,7 @@ const FoodDetails = () => {
             />
             <CiSearch className="fill-mainGreen w-10 h-6" />
           </div>
-          <div className="flex items-center justify-center flex-col md:flex-row gap-3">
+          <div className="flex items-center justify-center mt-1 md:mt-0 flex-row gap-3">
             <div className="bg-white py-2 px-3 rounded-lg shadow-lg">
               <TiThMenu className="text-mainGreen w-5 h-5" />
             </div>
@@ -88,27 +89,31 @@ const FoodDetails = () => {
           </div>
         </div>
       </div>
+      {/* end nav */}
+
       {/* start main */}
-      <div className="flex flex-col md:flex-row justify-between gap-3 w-full">
-        <div className="bg-white rounded-lg flex flex-1 flex-col p-5 drop-shadow-main">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="bg-white rounded-lg flex flex-1 flex-col p-5  drop-shadow-main">
           <div className="flex w-full gap-5 justify-between lg:gap-10 items-center">
             <h4 className=" font-semibold text-[28px]">Detail Menus</h4>
             <h6 className="text-lightGray text-lg">
               Category: Food / <span className="text-mainGreen">Burger</span>
             </h6>
           </div>
-          <div className="flex">
-            <div className="flex-1">
+          <div className="flex flex-col md:flex-row">
+            <div className="lg:flex-1">
               <img
                 src={placeholder2}
-                className="hidden lg:block w-48 h-48 object-contain rounded-lg bg-slate-200"
+                className="lock w-48 h-48 object-contain rounded-lg bg-slate-200"
                 alt=""
               />
             </div>
-            <div className="flex flex-1 flex-col  gap-2 items-start">
-              <p className=" font-bold text-xs text-mainGreen foode-details-defore">
-                Stock Available
-              </p>
+            <div className="flex lg:flex-1 flex-col  gap-2 items-start">
+              <div className=' relative'>
+                <p className=" font-bold text-xs text-mainGreen foode-details-defore">
+                  Stock Available
+                </p>
+              </div>
               <h4 className=" font-semibold text-[28px]">
                 Burger Jumbo Special with Spicy
               </h4>
@@ -116,21 +121,21 @@ const FoodDetails = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore.
               </p>
-              <div className="flex gap-4 flex-col md:flex-row">
+              <div className="flex gap-2 md:gap-4">
                 <div className="hover:scale-110 duration-500 flex gap-2 items-center justify-center rounded-lg py-3 px-5 mt-5 font-medium bg-mainGreen text-white">
                   <BiMessageSquareAdd color="white" size={' 16px'} />
                   Add Menu
                 </div>
-                <button className="bg-mainGray rounded-lg py-3 px-5 mt-5 font-medium">
+                <button className="bg-mainGray rounded-lg py-3 px-5 mt-5 font-medium ">
                   Edit Menu
                 </button>
               </div>
             </div>
           </div>
-          <div className="flex flex-col h-full w-full justify-between ">
-            <hr className=" my-4 border border-dashed" />
+          <div className="flex flex-col md:flex-row lg:flex-col  h-full w-full justify-between ">
+            <hr className="block md:hidden lg:block my-4 border border-dashed" />
             <div className="flex flex-col gap-2">
-              <h5 className=" text-2xl">Ingredients</h5>
+              <h5 className=" text-2xl">Nutrition Info</h5>
               <p className="text-lightGray text-sm">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -138,7 +143,7 @@ const FoodDetails = () => {
                 nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
-            <hr className=" my-4 border border-dashed" />
+            <hr className=" my-4 md:mx-4 xl:mx-0 h-full border-1 border-dashed	" />
             <div className="flex flex-col gap-2">
               <h5 className=" text-2xl">Ingredients</h5>
               <p className="text-lightGray text-sm">
@@ -168,6 +173,91 @@ const FoodDetails = () => {
       {/* end main */}
 
       {/* start Customer Reviews */}
+      <div className="flex flex-col w-full justify-between">
+        <p className=" text-3xl font-semibold">Customer Reviews</p>
+        <div className="w-full grid grid-cols-1  md:grid-cols-3  2xl:grid-cols-8 gap-4 text-center p-8">
+          <div className=" flex bg-white p-2 rounded-xl flex-col">
+            <div className="flex items-center gap-5 mb-4">
+              <img
+                src={placeholder2}
+                alt=""
+                className=" object-contain w-14 h-14 border rounded-full"
+              />
+              <div>
+                <p className="font-bold text-base">full name</p>
+                <span className=" text-lightGrey text-sm">2 days ago</span>
+              </div>
+            </div>
+            <p className="text-center font-medium text-sm w-full">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text{' '}
+            </p>
+            <div className="flex ml-10 mt-5 items-center">
+              <div className="flex">
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-mainYellow w-8 h-8 " />
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-lightGray w-8 h-8" />
+              </div>
+            </div>
+          </div>
+          {/* end card */}
+          <div className=" flex bg-white p-2 rounded-xl flex-col">
+            <div className="flex items-center gap-5 mb-4">
+              <img
+                src={placeholder2}
+                alt=""
+                className=" object-contain w-14 h-14 border rounded-full"
+              />
+              <div>
+                <p className="font-bold text-base">full name</p>
+                <span className=" text-lightGrey text-sm">2 days ago</span>
+              </div>
+            </div>
+            <p className="text-center font-medium text-sm w-full">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text{' '}
+            </p>
+            <div className="flex ml-10 mt-5 items-center">
+              <div className="flex">
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-mainYellow w-8 h-8 " />
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-lightGray w-8 h-8" />
+              </div>
+            </div>
+          </div>
+          {/* end card */}
+          <div className=" flex bg-white p-2 rounded-xl flex-col">
+            <div className="flex items-center gap-5 mb-4">
+              <img
+                src={placeholder2}
+                alt=""
+                className=" object-contain w-14 h-14 border rounded-full"
+              />
+              <div>
+                <p className="font-bold text-base">full name</p>
+                <span className=" text-lightGrey text-sm">2 days ago</span>
+              </div>
+            </div>
+            <p className="text-center font-medium text-sm w-full">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text{' '}
+            </p>
+            <div className="flex ml-10 mt-5 items-center">
+              <div className="flex">
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-mainYellow w-8 h-8 " />
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-mainYellow w-8 h-8" />
+                <AiFillStar className="fill-lightGray w-8 h-8" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* end Customer Reviews */}
     </div>
   );

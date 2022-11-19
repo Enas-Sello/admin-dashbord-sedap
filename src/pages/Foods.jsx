@@ -66,7 +66,34 @@ const Foods = () => {
       <div className="flex flex-col bg-white w-ful p-5 w-full rounded-xl shadow-xl">
         <div className="flex justify-between items-center ">
           <h3 className=" font-bold text-2xl">Pie chart</h3>
-          <p>ggg</p>
+          <fieldset className="flex gap-2">
+            <input
+              id="Chart"
+              class="peer/Chart"
+              type="checkbox"
+              name="status"
+              checked
+            />
+            <label
+              for="Chart"
+              class="peer-checked/Chart:text-mainGreen text-lg font-semibold"
+            >
+              Chart
+            </label>
+
+            <input
+              id="Value"
+              class="peer/Value border-none"
+              type="checkbox"
+              name="status"
+            />
+            <label
+              for="Value"
+              class="peer-checked/Value:text-mainGreen text-lg font-semibold"
+            >
+              Show Value
+            </label>
+          </fieldset>{' '}
         </div>
         <div className="hover:scale-110 duration-500 flex items-center justify-center gap-3 mt-8">
           <PieChart

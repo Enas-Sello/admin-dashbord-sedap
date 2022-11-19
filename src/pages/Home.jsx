@@ -12,7 +12,7 @@ const Home = () =>
     const [toggle, setToggle] = useState(false);
   return (
     <div className="flex bg-gray-50 lg:flex-row flex-col h-screen transition-height duration-100 ease-out">
-      <div className="hidden lg:flex h-screen flex-initial shadow-xl w-1/5">
+      <div className="hidden lg:flex h-screen flex-initial shadow-xl w-1/5 2xl:w-auto">
         <Sidebar />
       </div>
 

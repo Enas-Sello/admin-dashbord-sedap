@@ -8,18 +8,19 @@ import {
 } from 'react-icons/ai';
 import { BiGroup, BiHomeAlt } from 'react-icons/bi';
 import { SlNote } from 'react-icons/sl';
-import { BsPen, BsCup, BsPerson, BsChatLeftDots } from 'react-icons/bs';
+import { BsPen, BsCup, BsPerson, BsChatLeftDots, BsListNested } from 'react-icons/bs';
 import { Link, NavLink } from 'react-router-dom';
+import { CiFileOn } from 'react-icons/ci';
 const Sidebar = () => {
   const handelcloseToggle = () => {
     if (handelcloseToggle) handelcloseToggle(false);
   };
 
   const isNotActiveStyle =
-    'flex items-center px-5 py-2 gap-3 text-gray-600 hover:text-black transition-all duration-200 ease-in-out capitalize';
+    'flex items-center px-5 py-2 gap-3 text-lightGray hover:font-bold text-lg transition-all w-52 duration-200 ease-in-out capitalize';
 
   const isActiveStyle =
-    'flex items-center px-5 py-2 gap-3 font-bold border-l-2 rounded-r-[8px] border-emerald-400 bg-emerald-50 text-emerald-400 transition-all duration-200 ease-in-out capitalize';
+    'flex items-center px-5 py-2 gap-3 font-bold border-l-2 rounded-r-[8px] border-mainGreen text-lg w-52 bg-lightGreen text-mainGreen transition-all duration-200 ease-in-out capitalize';
 
   return (
     <div className=" flex flex-col justify-between items-center bg-white h-screen overflow-y-scroll min-w-280 hide-scrollbar ">
@@ -34,7 +35,7 @@ const Sidebar = () => {
             Modern Admin Dashboard
           </span>
         </Link>
-        <div className="flex flex-col gap-3">
+        <div className="flex  flex-col gap-3">
           <NavLink
             to="Dashbord"
             className={({ isActive }) =>
@@ -52,8 +53,18 @@ const Sidebar = () => {
             }
             onClick={handelcloseToggle}
           >
-            <AiOutlineBarChart />
+            <BsListNested />
             Order List
+          </NavLink>
+          <NavLink
+            to="OrderDetail"
+            className={({ isActive }) =>
+              isActive ? isActiveStyle : isNotActiveStyle
+            }
+            onClick={handelcloseToggle}
+          >
+            <CiFileOn />
+            Order Detail{' '}
           </NavLink>
           <NavLink
             to="Customer"
