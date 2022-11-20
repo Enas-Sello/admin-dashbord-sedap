@@ -1,7 +1,6 @@
 import React from 'react';
-import { AiFillStar } from 'react-icons/ai';
 import placeholder from '../assets/placeholder.png';
-import image4 from '../assets/image4.png';
+import Starts from './Starts';
 const ReviewCard = () => {
   return (
     <div className="mx-4 flex items-center justify-center w-6/12 ">
@@ -18,13 +17,7 @@ const ReviewCard = () => {
           industry. Lorem Ipsum has been the industry's standard dummy text{' '}
         </p>
         <div className="flex ml-10 mt-5 items-center">
-          <div className="flex">
-            <AiFillStar className="fill-mainYellow" />
-            <AiFillStar className="fill-mainYellow" />
-            <AiFillStar className="fill-mainYellow" />
-            <AiFillStar className="fill-mainYellow" />
-            <AiFillStar className="fill-lightGray" />
-          </div>
+          <Starts/>
           <p className="font-medium text-lg ml-3">4.5</p>
         </div>
       </div>

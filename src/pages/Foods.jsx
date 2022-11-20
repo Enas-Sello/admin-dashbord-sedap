@@ -46,7 +46,7 @@ const Foods = () => {
       {/*end nav */}
       {/*start food  */}
       <div className=" p-4 flex  justify-center w-full h-full">
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 2xl:grid-cols-8 gap-4 text-center py-8 ">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4   2xl:grid-cols-8 gap-4 text-center py-8 ">
           <FoodCard />
           <FoodCard />
           <FoodCard />

@@ -41,5 +41,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  
+}
+
+.barCompleted {
+  background: linear-gradient(90deg, #00b074 50%, rgba(0, 176, 116, 0) 100%);
+  width: 60%;
 }

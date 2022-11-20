@@ -4,6 +4,7 @@ import { CiDeliveryTruck } from 'react-icons/ci';
 import { TbTruckDelivery } from 'react-icons/tb';
 import Fillter from '../components/Fillter';
 import placeholder from '../assets/placeholder.png';
+import DataTables from '../components/DataTables';
 const OrderDetail = () => {
   return (
     <div className="flex flex-col gap-8 p-4">
@@ -41,7 +42,7 @@ const OrderDetail = () => {
         </div>
       </div>
       {/* nav */}
-      <div class="grid lg:grid-cols-3 grid-cols-2 gap-4 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-3  gap-4 w-full">
         <div className=" flex flex-col gap-2 p-4 bg-white rounded-xl item-center justify-center">
           <img
             src={placeholder}
@@ -55,10 +56,10 @@ const OrderDetail = () => {
             Customer
           </button>
         </div>
-        <div class="col-span-2 row-span-2 rounded-lg mt-10 bg-mainGray">
-          table
+        <div class="col-span-2 row-span-2 rounded-lg bg-mainGray">
+          <DataTables />
         </div>
-        <div className="flex flex-col lg:-mt-8 ">
+        <div className=" col-span-1 row-span-1 flex flex-col  lg:-mt-8 ">
           <div className=" bg-lightGray  rounded-t-xl flex gap-2 flex-col p-6 lg:p-4">
             <h4 className=" font-bold text-2xl text-white">Note Order</h4>
             <p className=" text-sm text-white w-[170px]">
@@ -66,12 +67,12 @@ const OrderDetail = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
             </p>
           </div>
-          <div className="flex gap-2 p-6 lg:p-4 bg-mainBlue rounded-b-lg">
-            <TbTruckDelivery className=" stroke-white w-7 h-7" />
+          <div className="flex items-center justify-start gap-4 p-6 lg:p-4 bg-mainBlue rounded-b-lg">
+            <TbTruckDelivery className=" bg-white w-8 h-8 stroke-mainBlue rounded-full p-1 drop-shadow-main" />
             <p className=" w-[150px]">6 The Avenue, London EC50 4GN</p>
           </div>
         </div>{' '}
-        <div class="col-span-1 row-span-2  flex flex-col gap-4 p-4 bg-white rounded-lg lg:mt-10">
+        <div class="col-span-2 row-span-2 md:col-span-1 md:row-span-2  flex flex-col gap-4 p-4 bg-white rounded-lg lg:mt-10">
           <p className=" font-medium text-xl text-center">History</p>
           <div className="flex gap-3">
             <div className="flex flex-col items-center gap-[3.8rem] h-100 w-1 bg-mainRed rounded">
