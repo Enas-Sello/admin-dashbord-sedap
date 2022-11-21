@@ -4,15 +4,15 @@ import { CgArrowUp } from 'react-icons/cg';
 const Card = () => {
   return (
     <div
-      className={`hover:scale-110 duration-500 flex-wrap bg-white flex gap-10 p-10 px-4 w-full lg:w-3/12 items-center justify-center rounded-2xl shadow-xl`}
+      className={`hover:hoverAnimat flex-wrap 2xl:flex-nowrap bg-white flex gap-5 p-5  w-full lg:w-3/12 items-center justify-center rounded-2xl shadow-xl`}
     >
       <div
-        className={`hidden md:flex bg-none lg:bg-lightGreen rounded-full  items-center justify-center `}
+        className={`hidden sm:flex bg-none lg:bg-lightGreen rounded-full  items-center justify-center `}
       >
         <img
           src={dash1}
           alt=""
-          className=" lg:w-20 lg:h-20 w-full h-full object-contain p-2"
+          className="w-16 md:w-20 lg:h-20  object-contain p-2"
         />
       </div>
       <div className="flex sm:flex-row lg:flex-col  items-center justify-between md:justify-center  gap-3">

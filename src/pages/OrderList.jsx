@@ -96,7 +96,7 @@ const OrderList = () => {
   ];
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex justify-between items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col gap-3 justify-center">
           <h1 className="route-title">Your Orders</h1>
           <p className="text-gray-500">This is your order list data</p>

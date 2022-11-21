@@ -3,10 +3,14 @@ import placeholder from '../assets/placeholder.png';
 import Starts from './Starts';
 const ReviewCard = () => {
   return (
-    <div className="mx-4 flex items-center justify-center w-6/12 ">
-      <div className=" flex bg-white px-4 py-6 rounded-xl flex-col w-full shadow-lg">
+    <div className="mx-4 flex items-center justify-center  ">
+      <div className=" flex bg-white px-4 py-6 rounded-xl flex-col w-full shadow-lg ">
         <div className="flex items-center gap-5 mb-4">
-          <img src={placeholder} alt="" className=" object-contain w-14 h-14" />
+          <img
+            src={placeholder}
+            alt=""
+            className=" object-contain w-14 h-14"
+          />
           <div>
             <p className="font-medium">full name</p>
             <span className=" text-[15px] text-gray-300 -mt-2">2 days ago</span>
@@ -17,7 +21,7 @@ const ReviewCard = () => {
           industry. Lorem Ipsum has been the industry's standard dummy text{' '}
         </p>
         <div className="flex ml-10 mt-5 items-center">
-          <Starts/>
+          <Starts />
           <p className="font-medium text-lg ml-3">4.5</p>
         </div>
       </div>
@@ -25,7 +29,7 @@ const ReviewCard = () => {
         <img
           src={placeholder}
           alt=""
-          className=" object-contain rounded-full bg-slate-100 shadow-lg  w-full h-[250px]"
+          className=" object-contain rounded-full bg-slate-100 shadow-lg w-64 h-60"
         />
       </div>
     </div>

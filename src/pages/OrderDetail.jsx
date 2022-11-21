@@ -105,10 +105,10 @@ const OrderDetail = () => {
       </div>
       {/* nav */}
       <div class="grid grid-cols-1 lg:grid-cols-3  gap-4 w-full">
-        <div className=" flex flex-col gap-2 p-4 bg-white rounded-xl item-center justify-center">
+        <div className=" flex flex-col gap-2 p-4 bg-white rounded-xl item-center justify-center ">
           <img
             src={placeholder}
-            className="w-40 h-40 drop-shadow-main object-contain rounded-full"
+            className="hidden md:block w-40 h-40 drop-shadow-main object-contain rounded-full bg-slate-300 ml-12"
             alt=""
           />
           <p className=" font-semibold text-lg m-2 text-center">
@@ -121,7 +121,7 @@ const OrderDetail = () => {
         <div class="col-span-2 row-span-2 rounded-lg bg-mainGray">
           <DataTables rows={rows} head={head} headColor="bg-mainGreen" />
         </div>
-        <div className=" col-span-1 row-span-1 flex flex-col  lg:-mt-8 ">
+        <div className="flex flex-col  lg:-mt-8 ">
           <div className=" bg-lightGray  rounded-t-xl flex gap-2 flex-col p-6 lg:p-4">
             <h4 className=" font-bold text-2xl text-white">Note Order</h4>
             <p className=" text-sm text-white w-[170px]">

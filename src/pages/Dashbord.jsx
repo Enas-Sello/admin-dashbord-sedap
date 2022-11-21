@@ -5,14 +5,14 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import Card from '../components/Card';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { SlOptionsVertical } from 'react-icons/sl';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import ReviewCard from '../components/ReviewCard';
 // import ReviewSlide from '../components/ReviewSlide';
 import PieChart from '../components/PieChart';
 import AreaCharts from '../components/AreaCharts';
 import LineCharts from '../components/LineCharts';
 import BarCharts from '../components/BarCharts';
+import ReviewSlide from '../components/ReviewSlide';
 const Dashbord = () => {
+ 
   const data = [
     {
       name: 'Sunday',
@@ -75,9 +75,9 @@ const Dashbord = () => {
           date={'17 April 2020 - 21 May 2020'}
           fill={'mainBlue'}
           color={'lightBlue'}
-          />
+        />
       </div>
-          {/* nav */}
+      {/* nav */}
       <div className="flex flex-col lg:flex-row gap-10 w-full items-center section-padding">
         <Card />
         <Card />
@@ -200,21 +200,11 @@ const Dashbord = () => {
               Eum fuga consequuntur utadsjn et.
             </p>
           </div>
-          <div className="flex items-center gap-3">
-            <div className="bg-white py-3 px-2 rounded-xl">
-              <IoIosArrowBack className=" fill-mainGreen" />{' '}
-            </div>
-            <div className="bg-white py-3 px-2 rounded-xl">
-              <IoIosArrowForward className=" fill-mainGreen" />{' '}
-            </div>
-          </div>
+   
         </div>
-        <div className="flex flex-col  md:flex-row gap-2 justify-between items-center my-5 overflow-hidden">
-          <ReviewCard />
-          <ReviewCard />
-          {/* <ReviewCard /> */}
+        <div className=' relative'>
+          <ReviewSlide />
         </div>
-        {/* <ReviewSlide /> */}
       </div>
     </div>
   );

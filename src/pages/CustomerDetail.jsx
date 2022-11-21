@@ -5,11 +5,9 @@ import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { BsFillLightningFill, BsPen } from 'react-icons/bs';
 import { RiMailLine } from 'react-icons/ri';
 import { IoCallOutline } from 'react-icons/io5';
-import { SlOptions, SlOptionsVertical } from 'react-icons/sl';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { SlOptions } from 'react-icons/sl';
 import Analytic from '../assets/Analytics.png';
 import YearlyFiltter from '../components/YearlyFiltter';
-import { IoMdArrowDropdown } from 'react-icons/io';
 import BarCharts from '../components/BarCharts';
 
 const CustomerDetail = () => {

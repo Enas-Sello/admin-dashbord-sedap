@@ -17,17 +17,17 @@ const Sidebar = () => {
   };
 
   const isNotActiveStyle =
-    'flex items-center px-5 py-2 gap-3 text-lightGray hover:font-bold text-lg transition-all w-52 duration-200 ease-in-out capitalize';
+    'flex items-center p-1 gap-3 text-lightGray hover:font-bold text-lg transition-all w-52 duration-200 ease-in-out capitalize';
 
   const isActiveStyle =
     'flex items-center px-5 py-2 gap-3 font-bold border-l-2 rounded-r-[8px] border-mainGreen text-lg w-52 bg-lightGreen text-mainGreen transition-all duration-200 ease-in-out capitalize';
 
   return (
     <div className=" flex flex-col justify-between items-center bg-white h-screen overflow-y-scroll min-w-280 hide-scrollbar ">
-      <div className="flex flex-col mt-5">
+      <div className="flex flex-col mt-2">
         <Link
           to="/Dashbord"
-          className="hidden md:flex flex-col px-5 pt-1 gap-2 my-6 w-109 items-center"
+          className="hidden md:flex flex-col  gap-2 my-6 w-109 items-center"
           onClick={handelcloseToggle}
         >
           <img src={logo} alt="logo" className="w-32" />
@@ -35,7 +35,7 @@ const Sidebar = () => {
             Modern Admin Dashboard
           </span>
         </Link>
-        <div className="flex  flex-col gap-3">
+        <div className="flex  flex-col gap-2">
           <NavLink
             to="Dashbord"
             className={({ isActive }) =>
@@ -158,7 +158,7 @@ const Sidebar = () => {
           </NavLink>
         </div>
       </div>
-      <div className="  flex justify-between items-center w-64 bg-mainGreen p-4 rounded-lg shadow-2xl my-5 mx-6">
+      <div className="  flex justify-between items-center w-64 bg-mainGreen p-4 rounded-lg shadow-2xl mt-2">
         <div className="flex flex-col">
           <h4 className="text-white font-medium text-xs">
             Please, organize your menus through button bellow!

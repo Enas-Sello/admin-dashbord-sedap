@@ -17,11 +17,11 @@ export default function Tables({ rows, head, headColor }) {
           <TableRow>
             {head.map((header) => (
               <TableCell key={header.id} className={`${headColor} `}>
-                <div className="flex gap-2 items-center text-white  font-semibold text-base">
+                <div className="flex gap-2 items-center text-white  md:font-semibold font-normal text-xs md:text-base">
                   <h4>{header.title}</h4>
                   <div className="">
-                    <IoMdArrowDropup />
-                    <IoMdArrowDropdown className="-mt-2" />
+                    <IoMdArrowDropup className="hidden md:block" />
+                    <IoMdArrowDropdown className="hidden md:block -mt-2" />
                   </div>
                 </div>
               </TableCell>
@@ -30,7 +30,10 @@ export default function Tables({ rows, head, headColor }) {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow key={row.id} className=" text-mainGray hover:bg-mainGray">
+            <TableRow
+              key={row.id}
+              className=" text-mainGray hover:bg-mainGray text-xs md:text-base"
+            >
               <TableCell component="th" scope="row">
                 <h4>{row.Order}</h4>
               </TableCell>

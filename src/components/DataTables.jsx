@@ -38,7 +38,7 @@ const DataTables = ({ head, rows ,headColor }) => {
                     <p className=" text-xs font-semibold text-mainBlue">
                       {row.course}
                     </p>
-                    <p className=" text-lg font-bold text-lightGray">
+                    <p className="text-xs sm:text-lg font-bold text-lightGray">
                       {row.product}
                     </p>
                     <div className="flex gap-3 items-center">

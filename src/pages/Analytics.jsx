@@ -1,7 +1,6 @@
 import React from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import { AiFillStar, AiOutlineCalendar } from 'react-icons/ai';
-import { FaRegHeart } from 'react-icons/fa';
+import {  AiOutlineCalendar } from 'react-icons/ai';
 import { CgLoadbarSound } from 'react-icons/cg';
 import Fillter from '../components/Fillter';
 import AreaCharts from '../components/AreaCharts';

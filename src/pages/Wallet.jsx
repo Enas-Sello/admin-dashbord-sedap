@@ -4,7 +4,6 @@ import { RiFileList3Line } from 'react-icons/ri';
 import { IoMdArrowDropright, IoMdArrowDropup } from 'react-icons/io';
 import { CgSoftwareUpload } from 'react-icons/cg';
 import LineCharts from '../components/LineCharts';
-import LineProgressBar from '../components/LineProgressBar';
 import visa from '../assets/visa.png';
 import placeholder2 from '../assets/placeholder2.png';
 const Wallet = () => {
@@ -289,7 +288,7 @@ const Wallet = () => {
       {/*end history */}
 
       {/*Invoices*/}
-      <div class="col-span-2 sm:col-span-1 bg-white p-5 rounded-lg ">
+      <div  class="col-span-2 sm:col-span-1 bg-white p-5 rounded-lg ">
         <div className="flex flex-col w-full justify-between">
           <div className="flex flex-col gap-2 mb-5">
             <p className=" font-bold text-xl">Invoices Sent</p>

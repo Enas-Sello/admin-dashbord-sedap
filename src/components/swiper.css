@@ -1,0 +1,27 @@
+.swiper-button-prev {
+  top: -29%;
+  left: 93%;
+  color: #00b074;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  padding-top: 1.5rem /* 12px */;
+  padding-bottom: 1.5rem /* 12px */;
+  padding-left: 1.5rem /* 8px */;
+  padding-right: 1.5rem /* 8px */;
+  margin-left: -1rem;
+}
+.swiper-button-next {
+  top: -29%;
+  left: 97%;
+  background-color: white;
+  color: #00b074;
+  padding-top: 1.5rem /* 12px */;
+  padding-bottom: 1.5rem /* 12px */;
+  padding-left: 1.5rem /* 8px */;
+  padding-right: 1.5rem /* 8px */;
+  border-radius: 0.75rem;
+}
+.swiper {
+  position: static;
+}

@@ -1,12 +1,18 @@
 import './App.css';
-import Navebar from './components/Navebar';
-import Sidebar from './components/Sidebar';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { Route, Routes } from 'react-router-dom';
 
-import Dashbord from './pages/Dashbord';
 import Home from './pages/Home';
+import { useEffect } from 'react';
 
-function App() {
+function App ()
+{
+  
+useEffect(() => {
+  Aos.init();
+  Aos.refresh();
+}, []);
   return (
     <div className="flex flex-col ">
       <Routes>
