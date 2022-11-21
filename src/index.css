@@ -15,3 +15,10 @@ body {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+@layer base{
+
+  .hoverAnimat {
+    @apply scale-110;
+    @apply duration-500;
+  }
+}

@@ -6,81 +6,22 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import placeholder2 from '../assets/placeholder2.png';
 import Starts from './Starts';
 
-const rows = [
-  {
-    id: 1143155,
-    product: 'Watermelon juice with ice',
-    img: `${placeholder2}`,
-    course: 'MAIN COURSE',
-    reviews: '(454 reviews)',
-    Qty: '5x',
-    Total: '$10.8',
-    Price: '$50.8',
-  },
-  {
-    id: 2235235,
-    product: 'Italiano pizza with garlic',
-    img: `${placeholder2}`,
-    course: 'MAIN COURSE',
-    reviews: '(454 reviews)',
-    Qty: '5x',
-    Total: '$10.8',
-    Price: '$50.8',
-  },
-  {
-    id: 2342353,
-    product: 'Watermelon juice with ice',
-    img: `${placeholder2}`,
-    course: 'MAIN COURSE',
-    reviews: '(454 reviews)',
-    Qty: '5x',
-    Total: '$10.8',
-    Price: '$50.8',
-  },
-  {
-    id: 2357741,
-    product: 'Italiano pizza with garlic',
-    img: `${placeholder2}`,
-    course: 'MAIN COURSE',
-    reviews: '(454 reviews)',
-    Qty: '5x',
-    Total: '$10.8',
-    Price: '$50.8',
-  },
-  {
-    id: 2342355,
-    product: 'Watermelon juice',
-    img: `${placeholder2}`,
-    course: 'MAIN COURSE',
-    reviews: '(454 reviews)',
-    Qty: '5x',
-    Total: '$10.8',
-    Price: '$50.8',
-  },
-];
 
-const DataTables = () => {
+const DataTables = ({ head, rows ,headColor }) => {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ maxWidth: '100%' }} aria-label="simple table">
         <TableHead>
-          <TableRow className="bg-mainGreen ">
-            <TableCell>
-              <p className="text-white font-medium text-xl ml-2">Items</p>{' '}
-            </TableCell>
-            <TableCell align="">
-              {' '}
-              <p className="text-white font-medium text-xl">Qty</p>{' '}
-            </TableCell>
-            <TableCell align="">
-              <p className="text-white font-medium text-xl">Total</p>
-            </TableCell>
-            <TableCell align="">
-              <p className="text-white font-medium text-xl">Price</p>
-            </TableCell>
+          <TableRow className={`${headColor}`} >
+            {head.map((header) => (
+              <TableCell key={header.id}>
+                <p className="text-white font-medium text-xl ml-2">
+                  {header.title}
+                </p>{' '}
+              </TableCell>
+            ))}
           </TableRow>
         </TableHead>
         <TableBody>

@@ -5,7 +5,69 @@ import { TbTruckDelivery } from 'react-icons/tb';
 import Fillter from '../components/Fillter';
 import placeholder from '../assets/placeholder.png';
 import DataTables from '../components/DataTables';
+import placeholder2 from '../assets/placeholder2.png';
+
 const OrderDetail = () => {
+  const rows = [
+    {
+      id: 1143155,
+      product: 'Watermelon juice with ice',
+      img: `${placeholder2}`,
+      course: 'MAIN COURSE',
+      reviews: '(454 reviews)',
+      Qty: '5x',
+      Total: '$10.8',
+      Price: '$50.8',
+    },
+    {
+      id: 2235235,
+      product: 'Italiano pizza with garlic',
+      img: `${placeholder2}`,
+      course: 'MAIN COURSE',
+      reviews: '(454 reviews)',
+      Qty: '5x',
+      Total: '$10.8',
+      Price: '$50.8',
+    },
+    {
+      id: 2342353,
+      product: 'Watermelon juice with ice',
+      img: `${placeholder2}`,
+      course: 'MAIN COURSE',
+      reviews: '(454 reviews)',
+      Qty: '5x',
+      Total: '$10.8',
+      Price: '$50.8',
+    },
+    {
+      id: 2357741,
+      product: 'Italiano pizza with garlic',
+      img: `${placeholder2}`,
+      course: 'MAIN COURSE',
+      reviews: '(454 reviews)',
+      Qty: '5x',
+      Total: '$10.8',
+      Price: '$50.8',
+    },
+    {
+      id: 2342355,
+      product: 'Watermelon juice',
+      img: `${placeholder2}`,
+      course: 'MAIN COURSE',
+      reviews: '(454 reviews)',
+      Qty: '5x',
+      Total: '$10.8',
+      Price: '$50.8',
+    },
+  ];
+
+  const head = [
+    { id: 222, title: 'Items' },
+    { id: 444, title: 'Qty' },
+    { id: 555, title: 'Total' },
+    { id: 666, title: 'Price' },
+  ];
+
   return (
     <div className="flex flex-col gap-8 p-4">
       {/* nav */}
@@ -57,7 +119,7 @@ const OrderDetail = () => {
           </button>
         </div>
         <div class="col-span-2 row-span-2 rounded-lg bg-mainGray">
-          <DataTables />
+          <DataTables rows={rows} head={head} headColor="bg-mainGreen" />
         </div>
         <div className=" col-span-1 row-span-1 flex flex-col  lg:-mt-8 ">
           <div className=" bg-lightGray  rounded-t-xl flex gap-2 flex-col p-6 lg:p-4">

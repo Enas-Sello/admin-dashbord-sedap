@@ -2,25 +2,89 @@ import React from 'react';
 import Fillter from '../components/Fillter';
 import { RiSoundModuleLine } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
-import Table from '../components/Table';
-import TableHead from '../components/TableHead';
+import Tables from '../components/Tables';
 
 const Customer = () => {
-  const data = [
+  const head = [
     {
       id: 1,
       title: 'Customer ID',
-      name: 'Join Date',
     },
     {
-      id: 1,
+      id: 2,
+      title: 'Join Date',
+    },
+    {
+      id: 3,
       title: 'Customer Name',
-      name: 'Location',
     },
     {
-      id: 1,
+      id: 4,
+      title: 'Location',
+    },
+    {
+      id: 5,
       title: 'Total Spent',
-      name: 'Last Order',
+    },
+    {
+      id: 6,
+      title: 'Last Order',
+    },
+  ];
+  const rows = [
+    {
+      id: 1,
+      Order: '#C-004560',
+      Date: '27 March 2020, 12:42 AM',
+      Name: 'Veronica',
+      Location: 'Corner Street 5th, London',
+      Amount: '$78.92',
+      Status: '$35.35',
+    },
+    {
+      id: 2,
+      Order: '#555231',
+      Date: '26 March 2020, 12:42 AM',
+      Name: 'Mikasa Ackerman',
+      Location: 'Corner Street 5th London',
+      Amount: '$164.52',
+      Status: '$35.35',
+    },
+    {
+      id: 3,
+      Order: '#555231',
+      Date: '26 March 2020, 12:42 AM',
+      Name: 'Mikasa Ackerman',
+      Location: 'Corner Street 5th London',
+      Amount: '$164.52',
+      Status: '$35.35',
+    },
+    {
+      id: 4,
+      Order: '#555231',
+      Date: '26 March 2020, 12:42 AM',
+      Name: 'Mikasa Ackerman',
+      Location: 'Corner Street 5th London',
+      Amount: '$164.52',
+      Status: '$35.35',
+    },
+    {
+      id: 5,
+      Order: '#555231',
+      Date: '26 March 2020, 12:42 AM',
+      Name: 'Mikasa Ackerman',
+      Location: 'Corner Street 5th London',
+      Amount: '$164.52',
+      Status: '$35.35',
+    },
+    {
+      id: 6,
+      Order: '#555231',
+      Date: '26 March 2020, 12:42 AM',
+      Name: 'Mikasa Ackerman',
+      Location: 'Corner Street 5th London',
+      Amount: '$164.52',
+      Status: '$35.35',
     },
   ];
   return (
@@ -45,16 +109,7 @@ const Customer = () => {
           />
         </div>
       </div>
-      <div className="">
-        <div>
-          <TableHead color={'mainBlue'} data={data} />
-        </div>
-        <div>
-          <Table textColor={''} bgcolor={'mainGray'} title={'$35.35'} />
-          <Table textColor={''} bgcolor={'mainGray'} title={'$35.35'} />
-          <Table textColor={''} bgcolor={'mainGray'} title={'$35.35'} />
-        </div>
-      </div>
+      <Tables head={head} rows={rows} headColor={'bg-mainBlue'} />
     </div>
   );
 };
