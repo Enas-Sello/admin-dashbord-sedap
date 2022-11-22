@@ -26,7 +26,7 @@ const Sidebar = () => {
     <div className=" flex flex-col justify-between items-center bg-white h-screen overflow-y-scroll min-w-280 hide-scrollbar ">
       <div className="flex flex-col mt-2">
         <Link
-          to="/Dashbord"
+          to="/"
           className="hidden md:flex flex-col  gap-2 my-6 w-109 items-center"
           onClick={handelcloseToggle}
         >
@@ -37,7 +37,7 @@ const Sidebar = () => {
         </Link>
         <div className="flex  flex-col gap-2">
           <NavLink
-            to="Dashbord"
+            to="/"
             className={({ isActive }) =>
               isActive ? isActiveStyle : isNotActiveStyle
             }

@@ -24,7 +24,7 @@ const Main = () => {
       </div>
       <div className="h-full bg-[#F3F2F7] mt-5 md:mt-10">
         <Routes>
-          <Route path="/*" element={<Dashbord />} />
+          <Route path="/" element={<Dashbord />} />
           <Route path="/OrderList" element={<OrderList />} />
           <Route path="/OrderDetail" element={<OrderDetail />} />
           <Route path="/Customer" element={<Customer />} />
