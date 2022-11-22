@@ -49,8 +49,8 @@ const Wallet = () => {
     },
   ];
   return (
-    <div class="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-rows-2  gap-4 mt-10">
-      <div class="col-span-2  bg-white p-5 rounded-lg max-h-[450px]">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-4 mt-10 p-4">
+      <div class="col-span-2  bg-white p-2 rounded-lg ">
         <div className="flex-col gap-3 items-center justify-center">
           <div className="flex flex-col md:flex-row items-center justify-between w-full ">
             <div className="flex flex-col gap-2">
@@ -85,7 +85,7 @@ const Wallet = () => {
         </div>
       </div>
       {/* palance */}
-      <div class=" bg-[#464255] p-5 rounded-lg flex flex-col justify-between w-full max-h-[450px]">
+      <div class=" bg-[#464255] p-2 rounded-lg flex flex-col justify-between w-full ">
         <div className="flex flex-col gap-3 items-center">
           <img
             src={visa}
@@ -119,7 +119,7 @@ const Wallet = () => {
       </div>
       {/*end palance */}
       {/* history */}
-      <div class="col-span-2 bg-white p-5 rounded-lg max-h-[450px] mb-5">
+      <div class="col-span-2 bg-white p-5 rounded-lg  mb-5">
         {/* nav */}
         <div className="flex  justify-between w-full">
           <div className="flex flex-col gap-3">
@@ -164,7 +164,7 @@ const Wallet = () => {
               <h4 className="text-[#464255] font-normal md:font-semibold text-xs md:text-base ">
                 +$5,553
               </h4>
-              <h4 className=" text-xs md:text-base md:w-40">MasterCard</h4>
+              <h4 className=" text-xs md:text-base lg:w-40">MasterCard</h4>
             </div>
             <button className=" text-xs md:text-base bg-lightRed text-mainRed py-2 px-3 rounded-xl">
               Pending
@@ -195,7 +195,7 @@ const Wallet = () => {
                 <h4 className=" font-normal md:font-semibold text-xs md:text-base ">
                   +$5,553
                 </h4>
-                <h4 className=" text-xs md:text-base md:w-40 ">MasterCard</h4>
+                <h4 className=" text-xs md:text-base lg:w-40 ">MasterCard</h4>
               </div>
               <button
                 className={
@@ -275,7 +275,7 @@ const Wallet = () => {
               <h4 className="text-[#464255] font-normal md:font-semibold text-xs md:text-base ">
                 +$5,553
               </h4>
-              <h4 className=" text-xs md:text-base md:w-40">MasterCard</h4>
+              <h4 className=" text-xs md:text-base lg:w-40">MasterCard</h4>
             </div>
             <button className=" text-xs md:text-base text-lightGray bg-mainGray py-2 px-3 rounded-xl">
               Canceled
@@ -288,7 +288,7 @@ const Wallet = () => {
       {/*end history */}
 
       {/*Invoices*/}
-      <div class="col-span-2 sm:col-span-1 bg-white p-5 rounded-lg max-h-[450px] mb-5 ">
+      <div class=" bg-white p-5 rounded-lg  mb-5 ">
         <div className="flex flex-col w-full justify-between">
           <div className="flex flex-col gap-2 mb-5">
             <p className=" font-bold text-xl">Invoices Sent</p>

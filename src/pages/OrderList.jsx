@@ -95,15 +95,19 @@ const OrderList = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 p-4">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col gap-3 justify-center">
-          <h1 className="route-title">Your Orders</h1>
-          <p className="text-gray-500">This is your order list data</p>
+          <h1 className="font-semibold text-3xl">Your Orders</h1>
+          <p className="text-lightGray text-base md:text-lg">
+            This is your order list data
+          </p>
         </div>
         <div className="flex items-center justify-center gap-3">
           <Fillter
-            class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
+            class={
+              'bg-white flex gap-3 items-center rounded-lg px-2 py-1 md:px-4 md:py-2'
+            }
             icon={SlNote}
             arrow={MdKeyboardArrowDown}
             main={'All Status'}
@@ -112,7 +116,9 @@ const OrderList = () => {
             color={'lightGreen'}
           />
           <Fillter
-            class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
+            class={
+              'bg-white flex gap-3 items-center rounded-lg px-2 py-1 md:px-4 md:py-2'
+            }
             icon={AiOutlineCalendar}
             arrow={MdKeyboardArrowDown}
             main={'Today'}
@@ -123,19 +129,6 @@ const OrderList = () => {
         </div>
       </div>
       <Tables head={head} rows={rows} headColor={'bg-mainGreen'} />
-
-      {/* <div>
-        <TableHead color={'mainGreen'} data={data} />
-      </div>
-      <div>
-        <Table textColor={'mainRed'} bgcolor={'lightRed'} title={'New Order'} />
-        <Table textColor={'mainBlue'} bgcolor={'lightBlue'} title={'On Delivery'} />
-        <Table
-          textColor={'mainGreen'}
-          bgcolor={'lightGreen'}
-          title={'Delivered'}
-        />
-      </div> */}
     </div>
   );
 };

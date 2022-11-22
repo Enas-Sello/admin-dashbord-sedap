@@ -73,9 +73,9 @@ const OrderDetail = () => {
     <div className="flex flex-col gap-8 p-4">
       {/* nav */}
       <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
-        <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-3 justify-center">
           <h1 className="font-semibold text-3xl">Order ID #5552351</h1>
-          <p className="text-lightGray text-lg">
+          <p className="text-lightGray text-base md:text-lg">
             <span className="text-mainGreen">Orders /</span> Order Detaills{' '}
           </p>
         </div>
@@ -93,7 +93,7 @@ const OrderDetail = () => {
           />
           <Fillter
             class={
-              'bg-mainGreen flex gap-2 items-center text-white  rounded-lg px-2 py-1'
+              'bg-mainGreen flex gap-2 items-center text-white  rounded-lg px-2 py-1  cursor-pointer'
             }
             icon={CiDeliveryTruck}
             arrow={MdKeyboardArrowDown}
@@ -106,7 +106,7 @@ const OrderDetail = () => {
       </div>
       {/* nav */}
       <div class="grid grid-cols-1 lg:grid-cols-3 grid-flow-row-dense  gap-4 w-full">
-        <div className=" flex flex-col gap-2 p-4 bg-white rounded-xl item-center justify-center ">
+        <div className=" flex flex-col gap-2 p-4 bg-white rounded-xl item-center justify-center shadow-xl ">
           <img
             src={placeholder}
             className="hidden md:block w-40 h-40 drop-shadow-main object-contain rounded-full bg-slate-300 ml-12"
@@ -119,10 +119,10 @@ const OrderDetail = () => {
             Customer
           </button>
         </div>
-        <div class="col-span-2 row-span-2 rounded-lg bg-mainGray">
+        <div class="col-span-2 row-span-2 rounded-lg bg-mainGray ">
           <DataTables rows={rows} head={head} headColor="bg-mainGreen" />
         </div>
-        <div className="flex flex-col  lg:-mt-8 ">
+        <div className="flex flex-col  lg:-mt-8 shadow-xl">
           <div className=" bg-lightGray  rounded-t-xl flex gap-2 flex-col p-6 lg:p-4">
             <h4 className=" font-bold text-2xl text-white">Note Order</h4>
             <p className=" text-sm text-white w-[170px]">
@@ -135,7 +135,7 @@ const OrderDetail = () => {
             <p className=" w-[150px]">6 The Avenue, London EC50 4GN</p>
           </div>
         </div>{' '}
-        <div class="col-span-2 row-span-2 md:col-span-1 md:row-span-2  flex flex-col gap-4 p-4 bg-white rounded-lg lg:mt-10">
+        <div class="col-span-2 row-span-2 md:col-span-1 md:row-span-2  flex flex-col gap-4 p-4 bg-white rounded-lg lg:mt-10 shadow-xl">
           <p className=" font-medium text-xl text-center">History</p>
           <div className="flex gap-3">
             <div className="flex flex-col items-center gap-[3.8rem] h-100 w-1 bg-mainRed rounded">
@@ -170,7 +170,7 @@ const OrderDetail = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-2 p-4 row-span-2  rounded-lg mt-10 bg-mainGray">
+        <div className="col-span-2 p-4 row-span-2  rounded-lg mt-10 bg-mainGray shadow-xl">
           <Maps />
         </div>{' '}
       </div>

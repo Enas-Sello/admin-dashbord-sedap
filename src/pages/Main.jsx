@@ -22,7 +22,7 @@ const Main = () => {
       <div className="">
         <Navebar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
-      <div className="h-full bg-[#F3F2F7]">
+      <div className="h-full bg-[#F3F2F7] mt-5 md:mt-10">
         <Routes>
           <Route path="/*" element={<Dashbord />} />
           <Route path="/OrderList" element={<OrderList />} />

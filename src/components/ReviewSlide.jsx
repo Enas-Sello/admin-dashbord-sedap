@@ -17,15 +17,25 @@ const ReviewSlide = () => {
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={3}
         spaceBetween={10}
+        // breakpoints={{
+        //   // 320: { slidesPerView: 1, spaceBetween: 5 },
+        //   480: { slidesPerView: 1, spaceBetween: 5 },
+        //   768: { slidesPerView: 2, spaceBetween: 50 },
+        //   1024: { slidesPerView: 3, spaceBetween: 50},
+        // }}
+      
         slidesPerGroup={3}
         loop={true}
         loopFillGroupWithBlank={true}
         navigation={true}
-        modules={[ Navigation]}
-        className="flex flex-col  md:flex-row justify-between items-center my-5 overflow-hidden w-full h-full"
+        modules={[Navigation]}
+        className="grid grid-cols-3 my-5 overflow-hidden w-full h-full"
       >
+        <SwiperSlide>
+          <ReviewCard />
+        </SwiperSlide>
         <SwiperSlide>
           <ReviewCard />
         </SwiperSlide>

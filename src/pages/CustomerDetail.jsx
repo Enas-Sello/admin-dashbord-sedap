@@ -56,10 +56,10 @@ const CustomerDetail = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-8 h-full w-full">
+    <div className="flex flex-col gap-8 h-full w-full p-4">
       {/*nav start */}
-      <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
-        <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
+      <div className="flex flex-col md:flex-row justify-between gap- items-center">
+        <div className="flex items-center md:items-start flex-col gap-3 justify-center">
           <h1 className="font-semibold text-3xl">Customer Detail</h1>
           <p className="text-lightGray text-lg">
             Here your Customer Detail Profile
@@ -69,8 +69,8 @@ const CustomerDetail = () => {
       {/*nav end */}
 
       {/*details start */}
-      <div className="flex  flex-col md:flex-row justify-between gap-3 items-center w-full">
-        <div className="w-full h-[275px] bg-slate-50 flex section-padding gap-5 rounded-lg items-center justify-">
+      <div className="grid grid-cols-1 md:grid-cols-3  w-full">
+        <div className="w-full col-span-2  bg-slate-50 flex section-padding gap-4 rounded-lg items-center p-2">
           <div>
             <img
               src={placeholder}
@@ -120,7 +120,7 @@ const CustomerDetail = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full lg:w-5/12 h-[293px]  flex flex-col justify-between items-center p-3 rounded-lg ">
+        <div className=" w-full  flex flex-col justify-between items-center p-2 rounded-lg ">
           <div className=" flex flex-col justify-around bg-mainGreen w-full h-2/3 rounded-t-lg p-5 ">
             <div className="flex w-full justify-between items-center">
               <p className="text-white">Your Balance</p>
@@ -137,9 +137,9 @@ const CustomerDetail = () => {
           <div className="bg-green-700 w-full h-1/3  rounded-b-lg p-5 flex justify-between items-center">
             <div className="flex flex-col md:flex-row lg:flex-col md:items-center lg:items-start gap-2 w-full ">
               <p className="text-white text-sm">Name:</p>
-              <p className="text-white text-xl font-medium">Eren Yeager</p>
+              <p className="text-white text-xl font-medium">Eren Yearly</p>
             </div>
-            <div>
+            <div className=''>
               <img
                 src={visa}
                 className="w-16 block md:hidden lg:block"
@@ -152,15 +152,15 @@ const CustomerDetail = () => {
       {/*details end */}
 
       {/*info start */}
-      <div className="flex flex-col md:flex-row items-center justify-between w-full p-3 gap-8">
-        <div className="flex flex-col md:flex-row w-full md:w-6/12 h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+        <div className="flex flex-col md:flex-row w-full ">
           <div className="bg-white rounded-xl flex w-full flex-col p-4">
             <div className="flex justify-between flex-col md:flex-row items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl w-[185px]">
                   Most Ordered Food
                 </h4>
-                <p className="text-sm font-normal text-gray-300">
+                <p className="text-sm font-normal text-lightGray">
                   Lorem ipsum dolor
                 </p>
               </div>
@@ -228,7 +228,7 @@ const CustomerDetail = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col h-full bg-white w-full lg:w-6/12 p-5 gap-10 rounded-xl mt-3 md:mt-0 drop-shadow-main">
+        <div className="flex flex-col h-full bg-white w-full p-5 gap-10 rounded-xl mt-3 md:mt-0 drop-shadow-main">
           <div className="flex flex-col md:flex-row justify-between  items-center ">
             <h3 className=" font-bold text-2xl">Most Liked Food</h3>
             <YearlyFiltter />

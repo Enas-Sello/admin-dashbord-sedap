@@ -17,7 +17,7 @@ export default function Tables({ rows, head, headColor }) {
           <TableRow>
             {head.map((header) => (
               <TableCell key={header.id} className={`${headColor} `}>
-                <div className="flex gap-2 items-center text-white  md:font-semibold font-normal text-xs md:text-base">
+                <div className="flex gap- 2 items-center text-white  md:font-semibold font-normal text-xs md:text-base">
                   <h4>{header.title}</h4>
                   <div className="">
                     <IoMdArrowDropup className="hidden md:block" />
@@ -32,34 +32,40 @@ export default function Tables({ rows, head, headColor }) {
           {rows.map((row) => (
             <TableRow
               key={row.id}
-              className=" text-mainGray hover:bg-mainGray text-xs md:text-base"
+              className=" text-mainGray hover:bg-mainGray "
             >
               <TableCell component="th" scope="row">
-                <h4>{row.Order}</h4>
+                <h4 className="text-xs  md:text-base -mr-5 sm:m-auto ">
+                  {row.Order}
+                </h4>
               </TableCell>
               <TableCell component="th" scope="row">
-                <h4>{row.Date}</h4>
+                <h4 className="text-xs ">{row.Date}</h4>
               </TableCell>
               <TableCell component="th" scope="row">
-                <h4>{row.Name}</h4>
+                <h4 className="text-xs  md:text-base ">{row.Name}</h4>
               </TableCell>
               <TableCell component="th" scope="row">
-                <h4>{row.Location}</h4>
+                <h4 className="text-xs  md:text-base -mr-5 sm:m-auto ">
+                  {row.Location}
+                </h4>
               </TableCell>
               <TableCell component="th" scope="row">
-                <h4>{row.Amount}</h4>
+                <h4 className="text-xs  md:text-base -mr-5 sm:m-auto">
+                  {row.Amount}
+                </h4>
               </TableCell>
               <TableCell component="th" scope="row">
                 <div className="flex w-full justify-between items-center">
                   <h4
                     className={
                       row.Status === 'New Order'
-                        ? 'py-2 px-3 rounded-xl text-mainRed bg-lightRed'
+                        ? 'w-[80px] sm:w-fit md:px-4 md:py-2 py-2 px-2 rounded-xl text-mainRed bg-lightRed text-xs md:text-base'
                         : row.Status === 'On Delivery'
-                        ? 'py-2 px-3 rounded-xl text-mainBlue bg-lightBlue'
+                        ? 'w-[85px] sm:w-fit md:px-4 md:py-2 py-2 px-2 rounded-xl text-mainBlue bg-lightBlue text-xs md:text-base'
                         : row.Status === 'Delivered'
-                        ? 'py-2 px-3 rounded-xl text-mainGreen bg-lightGreen'
-                        : 'py-2 px-3 rounded-xl bg-mainGray'
+                        ? 'w-[80px] sm:w-fit md:px-4 md:py-2 py-2 px-2 rounded-xl text-mainGreen bg-lightGreen text-xs md:text-base'
+                        : '  md:px-4 md:py-2 py-2 px-2 rounded-xl bg-mainGray text-xs md:text-base'
                     }
                   >
                     {row.Status}

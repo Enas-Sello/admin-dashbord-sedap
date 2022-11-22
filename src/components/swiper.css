@@ -25,3 +25,14 @@
 .swiper {
   position: static;
 }
+
+@media (max-width: 640px) { 
+.swiper-button-next  {
+  top: -20%;
+  left: 88%;
+}
+.swiper-button-prev{
+  top: -20%;
+  left: 80%;
+}
+ }

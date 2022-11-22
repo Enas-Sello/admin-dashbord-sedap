@@ -7,7 +7,7 @@ import { CiSearch } from 'react-icons/ci';
 import { TiThMenu } from 'react-icons/ti';
 import YearlyFiltter from '../components/YearlyFiltter';
 import AreaCharts from '../components/AreaCharts';
-import { AiFillStar } from 'react-icons/ai';
+import FoodDetailsRewiew from '../components/FoodDetailsRewiew';
 const FoodDetails = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const data = [
@@ -55,23 +55,23 @@ const FoodDetails = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 p-4">
       {/* start nav */}
       <div className="flex flex-col md:flex-row justify-between  items-center">
-        <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
+        <div className="flex items-center md:items-start flex-col gap- justify-center">
           <h1 className="font-semibold text-3xl">Foods</h1>
           <p className="text-lightGray text-lg">
             Here is your menus summary with graph view
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center mt-8 items-center md:gap-3">
+        <div className="flex flex-row justify-center items-center gap-1 md:gap-3">
           <div className="flex justify-start items-center  px-2 rounded-lg bg-white border-none outline-none focus-within:shadow-lg">
             <input
               type="text"
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search here"
               value={searchTerm}
-              className="p-2 w-80 rounded-lg  bg-white outline-none "
+              className="p-2 lg:w-80 rounded-lg  bg-white outline-none "
             />
             <CiSearch className="fill-mainGreen w-10 h-6" />
           </div>
@@ -92,9 +92,9 @@ const FoodDetails = () => {
       {/* end nav */}
 
       {/* start main */}
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="bg-white rounded-lg flex flex-1 flex-col p-5  drop-shadow-main">
-          <div className="flex w-full gap-5 justify-between lg:gap-10 items-center">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="bg-white rounded-lg flex flex-col p-5 shadow-lg">
+          <div className="flex w-full  justify-between lg:gap-10 items-center">
             <h4 className=" font-semibold text-[28px]">Detail Menus</h4>
             <h6 className="text-lightGray text-lg">
               Category: Food / <span className="text-mainGreen">Burger</span>
@@ -108,8 +108,8 @@ const FoodDetails = () => {
                 alt=""
               />
             </div>
-            <div className="flex lg:flex-1 flex-col  gap-2 items-start">
-              <div className=' relative'>
+            <div className="flex lg:flex-1 flex-col  items-start">
+              <div className=" relative">
                 <p className=" font-bold text-xs text-mainGreen foode-details-defore">
                   Stock Available
                 </p>
@@ -121,7 +121,7 @@ const FoodDetails = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore.
               </p>
-              <div className="flex gap-2 md:gap-4">
+              <div className="flex gap-2">
                 <div className="hover:scale-110 duration-500 flex gap-2 items-center justify-center rounded-lg py-3 px-5 mt-5 font-medium bg-mainGreen text-white">
                   <BiMessageSquareAdd color="white" size={' 16px'} />
                   Add Menu
@@ -155,7 +155,7 @@ const FoodDetails = () => {
             </div>{' '}
           </div>
         </div>
-        <div className="flex flex-1 flex-col justify-between p-5 bg-white rounded-xl drop-shadow-main">
+        <div className="flex  flex-col justify-between p-5 bg-white rounded-xl drop-shadow-main">
           <div className="flex flex-col md:flex-row justify-between items-center ">
             <div className="flex flex-col gap-2">
               <h4 className=" text-xl font-medium">Revenue</h4>
@@ -175,87 +175,13 @@ const FoodDetails = () => {
       {/* start Customer Reviews */}
       <div className="flex flex-col w-full justify-between">
         <p className=" text-3xl font-semibold">Customer Reviews</p>
-        <div className="w-full grid grid-cols-1  md:grid-cols-3  2xl:grid-cols-8 gap-4 text-center p-8">
-          <div className=" flex bg-white p-2 rounded-xl flex-col">
-            <div className="flex items-center gap-5 mb-4">
-              <img
-                src={placeholder2}
-                alt=""
-                className=" object-contain w-14 h-14 border rounded-full"
-              />
-              <div>
-                <p className="font-bold text-base">full name</p>
-                <span className=" text-lightGrey text-sm">2 days ago</span>
-              </div>
-            </div>
-            <p className="text-center font-medium text-sm w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text{' '}
-            </p>
-            <div className="flex ml-10 mt-5 items-center">
-              <div className="flex">
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-mainYellow w-8 h-8 " />
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-lightGray w-8 h-8" />
-              </div>
-            </div>
-          </div>
+        <div className="w-full grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-8 gap-4 text-center p-8">
+          {/* start card */}
+          <FoodDetailsRewiew />
+          <FoodDetailsRewiew />
+          <FoodDetailsRewiew />
+          <FoodDetailsRewiew />
           {/* end card */}
-          <div className=" flex bg-white p-2 rounded-xl flex-col">
-            <div className="flex items-center gap-5 mb-4">
-              <img
-                src={placeholder2}
-                alt=""
-                className=" object-contain w-14 h-14 border rounded-full"
-              />
-              <div>
-                <p className="font-bold text-base">full name</p>
-                <span className=" text-lightGrey text-sm">2 days ago</span>
-              </div>
-            </div>
-            <p className="text-center font-medium text-sm w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text{' '}
-            </p>
-            <div className="flex ml-10 mt-5 items-center">
-              <div className="flex">
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-mainYellow w-8 h-8 " />
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-lightGray w-8 h-8" />
-              </div>
-            </div>
-          </div>
-          {/* end card */}
-          <div className=" flex bg-white p-2 rounded-xl flex-col">
-            <div className="flex items-center gap-5 mb-4">
-              <img
-                src={placeholder2}
-                alt=""
-                className=" object-contain w-14 h-14 border rounded-full"
-              />
-              <div>
-                <p className="font-bold text-base">full name</p>
-                <span className=" text-lightGrey text-sm">2 days ago</span>
-              </div>
-            </div>
-            <p className="text-center font-medium text-sm w-full">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text{' '}
-            </p>
-            <div className="flex ml-10 mt-5 items-center">
-              <div className="flex">
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-mainYellow w-8 h-8 " />
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-mainYellow w-8 h-8" />
-                <AiFillStar className="fill-lightGray w-8 h-8" />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       {/* end Customer Reviews */}

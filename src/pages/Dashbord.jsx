@@ -57,17 +57,19 @@ const Dashbord = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 p-4">
       {/* nav */}
       <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
-        <div className="flex flex-row items-center md:items-start md:flex-col gap-3 justify-center">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-3 justify-center">
           <h1 className="font-semibold text-3xl">dashbord</h1>
-          <p className="text-lightGray text-lg">
+          <p className="text-lightGray text-base md:text-lg">
             Hi, Samantha. Welcome back to Sedap Admin!
           </p>
         </div>
         <Fillter
-          class={'bg-white flex gap-3 items-center  rounded-lg px-4 py-2'}
+          class={
+            'bg-white flex gap-3 items-center rounded-lg px-2 py-1 md:px-4 md:py-2'
+          }
           icon={AiOutlineCalendar}
           arrow={MdKeyboardArrowDown}
           main={'Filter Periode'}
@@ -77,19 +79,19 @@ const Dashbord = () => {
         />
       </div>
       {/* nav */}
-      <div className="flex flex-col lg:flex-row gap-10 w-full items-center section-padding">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5  ">
         <Card />
         <Card />
         <Card />
         <Card />
       </div>
       {/* charts1 */}
-      <div className="flex flex-col md:flex-row  mt-10 gap-10  ">
+      <div className="flex flex-col lg:flex-row  mt-10 gap-10  ">
         {/*start prpgresspar  */}
 
         <div className="flex flex-col bg-white w-ful p-5 w-full lg:w-5/12 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
-            <h3 className=" font-bold text-2xl">Pie chart</h3>
+            <h3 className=" font-bold text-base md:text-2xl">Pie chart</h3>
             <fieldset className="flex gap-2">
               <input
                 id="Chart"
@@ -100,7 +102,7 @@ const Dashbord = () => {
               />
               <label
                 for="Chart"
-                class="peer-checked/Chart:text-mainRed text-lg font-semibold"
+                class="peer-checked/Chart:text-mainRed text-base md:text-lg font-semibold"
               >
                 Chart
               </label>
@@ -113,7 +115,7 @@ const Dashbord = () => {
               />
               <label
                 for="Value"
-                class="peer-checked/Value:text-mainRed text-lg font-semibold"
+                class="peer-checked/Value:text-mainRed text-base md:text-lg font-semibold"
               >
                 Show Value
               </label>
@@ -146,10 +148,10 @@ const Dashbord = () => {
         {/*end prpgresspar  */}
         <div className="flex flex-col bg-white w-full lg:w-7/12 p-5 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
-            <h3 className=" font-bold text-2xl">Chart Order</h3>
-            <div className="flex gap-2 items-center border border-mainBlue rounded-xl py-2 px-3">
+            <h3 className=" font-bold text-lg md:text-2xl">Chart Order</h3>
+            <div className="flex gap-2 items-center border border-mainBlue hover:bg-lightBlue rounded-xl py-2 px-3">
               <AiOutlineArrowDown className="fill-mainBlue" />
-              <button className="text-mainBlue">Save Report</button>
+              <button className="text-mainBlue ">Save Report</button>
             </div>
           </div>
 
@@ -158,7 +160,7 @@ const Dashbord = () => {
       </div>
       {/*end charts1 */}
       {/*start charts2 */}
-      <div className="flex flex-col md:flex-row  mt-10 gap-10  ">
+      <div className="flex flex-col lg:flex-row  mt-10 gap-10  ">
         <div className="flex flex-col bg-white p-5 w-full lg:w-7/12 rounded-xl shadow-xl">
           <div className="flex justify-between items-center ">
             <h3 className=" font-bold text-2xl">Total Revenue</h3>
@@ -176,13 +178,13 @@ const Dashbord = () => {
           <LineCharts data={data} />
         </div>
         <div className="flex flex-col bg-white w-full lg:w-5/12 p-5  rounded-xl shadow-xl">
-          <div className="flex justify-between  items-center ">
-            <h3 className=" font-bold text-2xl">Customer Map</h3>
-            <div className="flex gap-2 items-center border border-gray-500 rounded-xl py-2 px-3">
+          <div className="flex justify-between items-center ">
+            <h3 className=" font-bold text-base md:text-2xl">Customer Map</h3>
+            <div className="flex gap-1 md:gap-2 items-center border border-gray-500 rounded-xl py-1 px-2">
               <button className="">Weekly</button>
               <IoMdArrowDropdown className="fill-mainRed w-6" />
             </div>
-            <SlOptionsVertical className="fill-mainGray w-6" />
+            <SlOptionsVertical className="fill-lightGray w-6" />
           </div>
 
           <BarCharts data={data} />
@@ -191,17 +193,18 @@ const Dashbord = () => {
       {/*end charts2 */}
 
       {/*review */}
-      <div className="hidden lg:flex flex-col relative">
+      <div className="flex flex-col relative">
         <div className="flex items-center justify-between">
-          <div className="flex flex-col gap-5 my-10">
-            <h3 className=" font-semibold text-3xl ">Customer Review</h3>
+          <div className="flex flex-col gap-3 my-5">
+            <h3 className=" font-semibold text-xl md:text-3xl ">
+              Customer Review
+            </h3>
             <p className=" font-medium text-lg">
               Eum fuga consequuntur utadsjn et.
             </p>
           </div>
-   
         </div>
-        <div className=' relative'>
+        <div className=" relative">
           <ReviewSlide />
         </div>
       </div>

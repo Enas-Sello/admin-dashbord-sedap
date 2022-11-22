@@ -1,11 +1,14 @@
 import React from 'react'
 import { AiFillStar } from 'react-icons/ai';
 import { FaRegHeart } from 'react-icons/fa';
+import placeholder from '../assets/placeholder.png';
 
 const AnalyticsCArd = () => {
   return (
     <div className="hover:scale-110 duration-500 flex flex-col gap-10 bg-white rounded-lg mr-5 ">
-      <div className="w-52 h-52 bg-slate-300 rounded-lg"></div>
+      <div className="w-52 h-52 bg-rose-200 rounded-lg">
+        <img src={placeholder} alt="" />
+      </div>
       <h2 className=" font-medium w-44">
         Medium Spicy Pizza with Kemangi Leaf
       </h2>

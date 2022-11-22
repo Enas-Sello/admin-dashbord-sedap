@@ -7,7 +7,7 @@ import NotifivationBadge from './NotifivationBadge';
 
 const Notification = () => {
   return (
-    <div className="hidden md:flex justify-between gap-2 items-center md:mt-3 lg:mt-10">
+    <div className="flex justify-between gap-2 items-center ">
       <div className=" py-2 px-3 bg-lightGreen rounded-xl relative ">
         <RiNotification2Line className=" fill-mainGreen stroke-mainGreen text-mainGreen" />
         <NotifivationBadge number={'180'} bg={'mainGreen'} />

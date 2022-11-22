@@ -8,7 +8,7 @@ import { AiFillStar } from 'react-icons/ai';
 import placeholder from '../assets/placeholder.png';
 const Review = () => {
   return (
-    <div className="section-padding  h-screen capitalize">
+    <div className="section-padding  h-screen capitalize p-4">
       <div className=" flex flex-col lg:flex-row  justify-between items-center">
         <div>
           <h1 className="font-semibold text-3xl">Reviews</h1>
@@ -27,9 +27,9 @@ const Review = () => {
         />
       </div>
       {/* main */}
-      <div className="flex flex-col gap-5 justify-center w-full mt-24">
+      <div className="flex flex-col  justify-center w-full mt-24 sm:mt-10 md:mt-24">
         {/* cards */}
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  w-full gap-16 lg:gap-1 justify-between">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  w-full gap-5 lg:gap-2 justify-between">
           <ReviewsCard />
           <ReviewsCard />
           <ReviewsCard />
@@ -53,8 +53,8 @@ const Review = () => {
           <div className="flex flex-col bg-white p-4 rounded-lg mt-10">
             <div className="flex w-full justify-between items-center">
               <div className="flex flex-col gap-3">
-                <h3 className=" font-semibold text-2xl">Others review</h3>
-                <p className=" text-lg font-normal text-gray-500">
+                <h3 className=" font-semibold text-xl md:text-2xl">Others review</h3>
+                <p className="text-base md:text-lg font-normal text-gray-500">
                   Here is customer review about your restaurant{' '}
                 </p>
               </div>
@@ -87,7 +87,7 @@ const Review = () => {
                     </div>
                   </div>
                   <div className="flex gap-4 items-center">
-                    <button className="bg-lightGreen text-mainBlue rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightBlue text-mainBlue rounded-full py-1 px-2 cursor-pointer">
                       Good Services
                     </button>
                     <button className="bg-lightGreen text-mainGreen rounded-full py-1 px-2 cursor-pointer">
