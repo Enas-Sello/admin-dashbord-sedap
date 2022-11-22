@@ -6,6 +6,7 @@ import Fillter from '../components/Fillter';
 import placeholder from '../assets/placeholder.png';
 import DataTables from '../components/DataTables';
 import placeholder2 from '../assets/placeholder2.png';
+import Maps from '../components/Maps';
 
 const OrderDetail = () => {
   const rows = [
@@ -104,7 +105,7 @@ const OrderDetail = () => {
         </div>
       </div>
       {/* nav */}
-      <div class="grid grid-cols-1 lg:grid-cols-3  gap-4 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-3 grid-flow-row-dense  gap-4 w-full">
         <div className=" flex flex-col gap-2 p-4 bg-white rounded-xl item-center justify-center ">
           <img
             src={placeholder}
@@ -150,21 +151,27 @@ const OrderDetail = () => {
               </div>
               <div className="flex flex-col gap-1">
                 <p className=" font-medium text-lg">Order Delivered</p>
-                <p className="font-medium text-sm text-lightGray">-</p>
+                <p className="font-medium text-sm text-lightGray">
+                  Fri, 22 Jul 2020, 10:44 AM
+                </p>
               </div>
               <div className="flex flex-col gap-1">
                 <p className=" font-medium text-lg">Order Delivered</p>
-                <p className="font-medium text-sm text-lightGray">-</p>
+                <p className="font-medium text-sm text-lightGray">
+                  Fri, 22 Jul 2020, 10:44 AM
+                </p>
               </div>
               <div className="flex flex-col gap-1">
                 <p className=" font-medium text-lg">Order Delivered</p>
-                <p className="font-medium text-sm text-lightGray">-</p>
+                <p className="font-medium text-sm text-lightGray">
+                  Thu, 21 Jul 2020, 11:49 AM
+                </p>
               </div>
             </div>
           </div>
         </div>
         <div className="col-span-2 p-4 row-span-2  rounded-lg mt-10 bg-mainGray">
-          map
+          <Maps />
         </div>{' '}
       </div>
     </div>

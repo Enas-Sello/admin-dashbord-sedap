@@ -11,7 +11,7 @@ const Home = () =>
 {
     const [toggle, setToggle] = useState(false);
   return (
-    <div className="flex bg-gray-50 lg:flex-row flex-col h-screen transition-height duration-100 ease-out">
+    <div className="flex lg:flex-row flex-col h-screen transition-height duration-100 ease-out">
       <div className="hidden lg:flex h-screen flex-initial shadow-xl w-1/5 2xl:w-auto">
         <Sidebar />
       </div>
@@ -46,7 +46,7 @@ const Home = () =>
       </div>
       {/* responsive */}
 
-      <div className="pb-2 flex-1 h-screen overflow-y-scroll bg-[#E5E5E5]">
+      <div className="pb-2 flex-1 h-screen overflow-y-scroll bg-[#F3F2F7]">
         <Routes>
           <Route path="/*" element={<Main />} />
         </Routes>

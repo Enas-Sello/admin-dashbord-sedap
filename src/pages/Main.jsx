@@ -18,11 +18,11 @@ const Main = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
-    <div className="px-2 md:px-5 h-screen w-full  ">
+    <div className="px-2 md:px-5 h-screen w-full bg-[#F3F2F7] ">
       <div className="">
         <Navebar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       </div>
-      <div className="h-full">
+      <div className="h-full bg-[#F3F2F7]">
         <Routes>
           <Route path="/*" element={<Dashbord />} />
           <Route path="/OrderList" element={<OrderList />} />

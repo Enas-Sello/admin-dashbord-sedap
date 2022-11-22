@@ -4,15 +4,7 @@
   padding: 2rem;
 }
 
-.notification::after {
-  contain: '*';
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  background-color: black;
-  top: 0;
-  left: 0;
-}
+
 .route-title {
   font-weight: 600;
   font-size: 32px;
@@ -24,18 +16,6 @@
   display: none;
   background: transparent;
   stroke: transparent;
-}
-
-.foode-details-defore::before {
-  content: ' ';
-  contain: ' ';
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  background-color: green;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .barCompleted {

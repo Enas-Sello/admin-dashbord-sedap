@@ -17,9 +17,7 @@ const Review = () => {
           </p>
         </div>
         <Fillter
-          class={
-            'bg-white flex gap-3 items-center rounded-lg px-4 py-2'
-          }
+          class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
           icon={AiOutlineCalendar}
           arrow={MdKeyboardArrowDown}
           main={'Filter Periode'}
@@ -31,7 +29,7 @@ const Review = () => {
       {/* main */}
       <div className="flex flex-col gap-5 justify-center w-full mt-24">
         {/* cards */}
-        <div className="flex flex-col lg:flex-row w-full gap-16 lg:gap-1 justify-between">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  w-full gap-16 lg:gap-1 justify-between">
           <ReviewsCard />
           <ReviewsCard />
           <ReviewsCard />
@@ -42,14 +40,14 @@ const Review = () => {
         <div className="section-padding flex flex-col">
           <div className="flex justify-end items-end  ">
             {/* slide */}
-            <div className="bg-white w-16 h-10 rounded-lg flex items-center justify-center gap-2">
+            {/* <div className="bg-white w-16 h-10 rounded-lg flex items-center justify-center gap-2">
               <div className="bg-lightGreen py-2 px-1 rounded-xl">
                 <IoIosArrowBack className=" fill-mainGreen" />{' '}
               </div>
               <div className="bg-lightGreen py-2 px-1 rounded-xl">
                 <IoIosArrowForward className=" fill-mainGreen" />{' '}
               </div>
-            </div>
+            </div> */}
           </div>
           {/*end slide */}
           <div className="flex flex-col bg-white p-4 rounded-lg mt-10">
@@ -92,7 +90,7 @@ const Review = () => {
                     <button className="bg-lightGreen text-mainBlue rounded-full py-1 px-2 cursor-pointer">
                       Good Services
                     </button>
-                    <button className="bg-lightRed text-mainGreen rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightGreen text-mainGreen rounded-full py-1 px-2 cursor-pointer">
                       Good Services
                     </button>
                     <button className="bg-lightRed text-mainRed rounded-full py-1 px-2 cursor-pointer">
@@ -148,11 +146,11 @@ const Review = () => {
                     </div>
                   </div>
                   <div className="flex gmainYellow-center">
-                    <button className="bg-lightGreen text-mainBlue rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightBlue text-mainBlue rounded-full py-1 px-2 cursor-pointer">
                       {' '}
                       Good Services
                     </button>
-                    <button className="bg-lightRed text-mainGreen rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightGreen text-mainGreen rounded-full py-1 px-2 cursor-pointer">
                       {' '}
                       Good Services
                     </button>
@@ -208,11 +206,11 @@ const Review = () => {
                     </div>
                   </div>
                   <div className="flex gap-4 items-center">
-                    <button className="bg-lightGreen text-mainBlue rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightBlue text-mainBlue rounded-full py-1 px-2 cursor-pointer">
                       {' '}
                       Good Services
                     </button>
-                    <button className="bg-lightRed text-mainGreen rounded-full py-1 px-2 cursor-pointer">
+                    <button className="bg-lightGreen text-mainGreen rounded-full py-1 px-2 cursor-pointer">
                       {' '}
                       Good Services
                     </button>
