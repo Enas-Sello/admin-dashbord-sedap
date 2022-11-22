@@ -5,7 +5,6 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import Card from '../components/Card';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { SlOptionsVertical } from 'react-icons/sl';
-// import ReviewSlide from '../components/ReviewSlide';
 import PieChart from '../components/PieChart';
 import AreaCharts from '../components/AreaCharts';
 import LineCharts from '../components/LineCharts';

@@ -1,0 +1,90 @@
+/* .MuiTypography-body2 {
+  color: black;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.MuiInputLabel-outlined {
+  border-color: red;
+  color: greenyellow;
+}
+
+.MuiPickersCalendarHeader-switchHeader,
+.MuiTypography-caption {
+  color: #f59120;
+}
+
+.MuiTypography-body1 {
+  font-family: 'Montserrat', sans-serif;
+}
+.MuiAvatar-root {
+  background-color: #f59120;
+  color: #f59120;
+}
+.MuiPickersClock-clock {
+  background-color: #f59120;
+}
+.MuiTypography-h6 {
+  color: #5e6c93;
+}
+.MuiPickersDay-daySelected,
+.MuiPickersClockPointer-pointer,
+.MuiPickersClock-pin,
+.MuiPickersClockPointer-thumb,
+.MuiPickersClockNumber-clockNumberSelected {
+  background-color: rgba(255, 91, 91, 0.15);
+  font-family: 'Montserrat', sans-serif;
+}
+.MuiPickersCalendarHeader-iconButton {
+  background-color: rgba(255, 91, 91, 0.15);
+}
+
+._2vU-KUtz5-k29OlV5m7df1 {
+  background-color: #f7c604;
+}
+.MuiTypography-noWrap,
+._2mqV6nb5wT63-eyCtNsXhI {
+  background-color: rgba(45, 156, 219, 0.15);
+  border: #2D9CDB;
+}
+
+.MuiTypography-noWrap {
+  color: #5E6C93;
+
+} */
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root,
+.css-1y942vo-MuiButtonBase-root-MuiButton-root {
+  color: #464255 !important ;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 43px !important;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover,
+.css-1y942vo-MuiButtonBase-root-MuiButton-root:hover{
+  color: #2D9CDB !important ;
+
+}
+.css-sp60bg .rs__cell {
+  border: none !important;
+}
+
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+  width: 56px !important;
+}
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root:hover {
+  background-color: transparent !important;
+}
+.css-i4bv87-MuiSvgIcon-root:hover {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  fill: #2D9CDB !important;
+}
+.css-3f54eu .rs__cell.rs__header>:first-of-type {
+    font-size: 18px;
+}
+
+
+.css-fpqwey .rs__cell.rs__header>:first-of-type ,.css-1mdftu-MuiTypography-root  {
+    font-size: 18px;
+}
