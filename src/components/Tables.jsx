@@ -32,26 +32,30 @@ export default function Tables({ rows, head, headColor }) {
           {rows.map((row) => (
             <TableRow
               key={row.id}
-              className=" text-mainGray hover:bg-mainGray "
+              className="dark:bg-lightDark  hover:bg-mainGray "
             >
               <TableCell component="th" scope="row">
-                <h4 className="text-xs  md:text-base -mr-5 sm:m-auto ">
+                <h4 className="text-xs  dark:text-white  md:text-base -mr-5 sm:m-auto ">
                   {row.Order}
                 </h4>
               </TableCell>
               <TableCell component="th" scope="row">
-                <h4 className="text-xs ">{row.Date}</h4>
+                <h4 className="text-xs  dark:text-white">
+                  {row.Date}
+                </h4>
               </TableCell>
               <TableCell component="th" scope="row">
-                <h4 className="text-xs  md:text-base ">{row.Name}</h4>
+                <h4 className="text-xs  dark:text-white  md:text-base ">
+                  {row.Name}
+                </h4>
               </TableCell>
               <TableCell component="th" scope="row">
-                <h4 className="text-xs  md:text-base -mr-5 sm:m-auto ">
+                <h4 className="text-xs  dark:text-white md:text-base -mr-5 sm:m-auto ">
                   {row.Location}
                 </h4>
               </TableCell>
               <TableCell component="th" scope="row">
-                <h4 className="text-xs  md:text-base -mr-5 sm:m-auto">
+                <h4 className="text-xs  dark:text-white md:text-base -mr-5 sm:m-auto">
                   {row.Amount}
                 </h4>
               </TableCell>
@@ -60,17 +64,20 @@ export default function Tables({ rows, head, headColor }) {
                   <h4
                     className={
                       row.Status === 'New Order'
-                        ? 'w-[80px] sm:w-fit md:px-4 md:py-2 py-2 px-2 rounded-xl text-mainRed bg-lightRed text-xs md:text-base'
+                        ? 'w-[80px] sm:w-fit md:px-4 md:py-2 py-2  px-2 rounded-xl text-mainRed bg-lightRed text-xs md:text-base'
                         : row.Status === 'On Delivery'
-                        ? 'w-[85px] sm:w-fit md:px-4 md:py-2 py-2 px-2 rounded-xl text-mainBlue bg-lightBlue text-xs md:text-base'
+                        ? 'w-[85px] sm:w-fit md:px-4 md:py-2 py-2  px-2 rounded-xl text-mainBlue bg-lightBlue text-xs md:text-base'
                         : row.Status === 'Delivered'
-                        ? 'w-[80px] sm:w-fit md:px-4 md:py-2 py-2 px-2 rounded-xl text-mainGreen bg-lightGreen text-xs md:text-base'
-                        : '  md:px-4 md:py-2 py-2 px-2 rounded-xl bg-mainGray text-xs md:text-base'
+                        ? 'w-[80px] sm:w-fit md:px-4 md:py-2 py-2  px-2 rounded-xl text-mainGreen bg-lightGreen text-xs md:text-base'
+                        : '  md:px-4 md:py-2 py-2 px-2 rounded-xl dark:bg-lightGray bg-mainGray text-xs md:text-base'
                     }
                   >
                     {row.Status}
                   </h4>
-                  <SlOptions onClick={menutogle} />
+                  <SlOptions
+                    className="text-lightGray dark:text-white"
+                    onClick={menutogle}
+                  />
                 </div>
               </TableCell>
             </TableRow>

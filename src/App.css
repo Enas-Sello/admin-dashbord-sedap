@@ -21,3 +21,10 @@
 
 
 
+.flexgrow{
+  flex: 1;
+}
+
+.flexgrow2{
+  flex: 4;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BiAlignLeft,
   BiAlignMiddle,
@@ -18,9 +18,17 @@ import placeholder from '../assets/placeholder.png';
 import placeholder2 from '../assets/placeholder2.png';
 import { RiSendPlaneLine } from 'react-icons/ri';
 const Chat = () => {
+  const [message, setMessage] = useState('');
+  const [decoration, setDecoration] = useState('');
+
+  const textdecoration = (value) => {
+    setDecoration( value );
+    
+    console.log(decoration);
+  };
   return (
     <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 grid-flow-dense gap-4 p-5">
-      <div className=" col-span-1 p-2 bg-white rounded-lg shadow-md max-h-[450px]">
+      <div className="dark:bg-lightDark col-span-1 p-2 bg-white rounded-lg shadow-md max-h-[450px]">
         <div className="w-full h-full p-2 flex flex-col gap-3 items-center  justify-center">
           {/* nav */}
           <div className="flex gap-2 items-center">
@@ -49,7 +57,7 @@ const Chat = () => {
               <div className="flex gap-2">
                 <img
                   src={placeholder}
-                  className="bg-mainGray rounded-full w-12 h-12 object-contain"
+                  className="bg-rose-200 rounded-full w-12 h-12 object-contain"
                   alt=""
                 />
                 <div className="flex flex-col">
@@ -147,7 +155,7 @@ const Chat = () => {
         </div>
       </div>
       {/* start chat */}
-      <div className="sm:span-1 col-span-2 bg-white rounded-lg shadow-md max-h-[600px">
+      <div className="dark:bg-lightDark sm:span-1 col-span-2 bg-white rounded-lg shadow-md max-h-[600px">
         {' '}
         <div className=" w-full h-full p-2 flex flex-col justify-between">
           <div className="flex grow-0 w-full justify-between items-center p-2 border-b-[1px]">
@@ -199,29 +207,82 @@ const Chat = () => {
             <div className="mb-3">
               {' '}
               <input
+                onChange={(e) => setMessage(e.target.value)}
+                value={message}
                 type="text"
-                className=" border-[1px] border-lightGray w-full py-3 px-4 rounded-lg text-sm font-normal outline-none focus-within:shadow-lg"
+                className={`${decoration}  dark:bg-darkMode border-[1px] border-lightGray w-full py-3 px-4 rounded-lg text-sm  outline-none focus-within:shadow-lg`}
                 placeholder="Write your message here..."
               />
             </div>
             <div className="flex w-full justify-between items-center p-2">
               <div className="flex gap-4 items-center">
                 <div className="flex gap-2 items-center">
-                  <GrBold className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
-                  <GrItalic className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
-                  <BiUnderline className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
-                  <AiOutlineFontSize className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
+                  <GrBold
+                    onClick={() => textdecoration('font-bold')}
+                    className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen"
+                  />
+                  <GrItalic
+                    className=" text-lightGray fill-lightGray  hover:fill-mainGreen active:fill-mainGreen"
+                    onClick={() => textdecoration('italic')}
+                  />
+                  <BiUnderline
+                    className=" text-lightGray  fill-lightGray hover:fill-mainGreen active:fill-mainGreen"
+                    onClick={() => textdecoration('underline')}
+                  />
+                  <AiOutlineFontSize
+                    className=" text-lightGray fill-lightGray  hover:fill-mainGreen active:fill-mainGreen"
+                    onClick={() => textdecoration('uppercase')}
+                  />
                 </div>
                 <div className="flex gap-2 items-center">
-                  <BiAlignLeft className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
-                  <BiAlignMiddle className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
-                  <BiAlignRight className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
+                  <BiAlignLeft
+                    className=" text-lightGray  fill-lightGray hover:fill-mainGreen active:fill-mainGreen"
+                    onClick={() => textdecoration('text-start')}
+                  />
+                  <BiAlignMiddle
+                    className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen"
+                    onClick={() => textdecoration('text-center')}
+                  />
+                  <BiAlignRight
+                    className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen"
+                    onClick={() => textdecoration('text-end')}
+                  />
                 </div>
               </div>
               <div className="flex gap-4 items-center">
-                <ImAttachment className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
-                <HiOutlinePhoto className=" text-lightGray  stroke-lightGray  hover:stroke-mainGreen active:fill-mainGreen" />
-                <SlOptionsVertical className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
+                <div className=" ">
+                  <input
+                    type="file"
+                    id="pfileUpload"
+                    accept=".pdf"
+                    className="hidden"
+                  />
+                  <label htmlFor="pfileUpload">
+                    <ImAttachment className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
+                  </label>
+                </div>
+                <div className=" ">
+                  <input
+                    type="file"
+                    id="imageUpload"
+                    accept=".png, .jpg, .jpeg"
+                    className="hidden"
+                  />
+                  <label htmlFor="imageUpload">
+                    <HiOutlinePhoto className=" text-lightGray  stroke-lightGray  hover:stroke-mainGreen active:fill-mainGreen" />
+                  </label>
+                </div>
+                <div className=" ">
+                  <input
+                    type="file"
+                    id="Upload"
+                    accept=".png, .jpg, .jpeg"
+                    className="hidden"
+                  />
+                  <label htmlFor="Upload">
+                    <SlOptionsVertical className=" text-lightGray fill-lightGray hover:fill-mainGreen active:fill-mainGreen" />
+                  </label>
+                </div>
               </div>
               <div className="flex gap-2 items-center">
                 <div className="hover:hoverAnimat flex justify-center items-center gap-1 border border-mainGreen px-3 py-2 rounded-lg  hover:border-mainRed group">

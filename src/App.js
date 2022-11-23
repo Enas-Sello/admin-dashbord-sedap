@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 import { Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function App ()
 {
@@ -14,10 +14,14 @@ useEffect(() => {
   Aos.refresh();
 }, []);
   return (
-    <div className="flex flex-col  ">
+    <div className="flex flex-col ">
       <Routes>
-        <Route path="/*" element={<Home />} />
+        <Route
+          path="/*"
+          element={<Home  />}
+        />
       </Routes>
+      
     </div>
   );
 }

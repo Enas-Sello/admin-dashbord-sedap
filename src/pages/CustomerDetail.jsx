@@ -70,7 +70,7 @@ const CustomerDetail = () => {
 
       {/*details start */}
       <div className="grid grid-cols-1 md:grid-cols-3  w-full">
-        <div className="w-full col-span-2  bg-slate-50 flex section-padding gap-4 rounded-lg items-center p-2">
+        <div className="dark:bg-lightDark w-full col-span-2  bg-slate-50 flex section-padding gap-4 rounded-lg items-center p-2">
           <div>
             <img
               src={placeholder}
@@ -100,7 +100,7 @@ const CustomerDetail = () => {
             </div>
             <div className="flex items-start md:items-start flex-col lg:flex-row gap-5 justify-between">
               <div className=" flex gap-2 items-center">
-                <div className="lightBlue p-1 rounded-lg">
+                <div className="bg-lightBlue p-1 rounded-lg">
                   <RiMailLine className="w-4 h-4 fill-mainBlue" />
                 </div>
                 <p className="text-sm w-[130px]">eren.yeager@mail.co.id</p>
@@ -139,7 +139,7 @@ const CustomerDetail = () => {
               <p className="text-white text-sm">Name:</p>
               <p className="text-white text-xl font-medium">Eren Yearly</p>
             </div>
-            <div className=''>
+            <div className="">
               <img
                 src={visa}
                 className="w-16 block md:hidden lg:block"
@@ -154,8 +154,8 @@ const CustomerDetail = () => {
       {/*info start */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <div className="flex flex-col md:flex-row w-full ">
-          <div className="bg-white rounded-xl flex w-full flex-col p-4">
-            <div className="flex justify-between flex-col md:flex-row items-center gap-10">
+          <div className="dark:bg-lightDark bg-white rounded-xl flex w-full flex-col p-4">
+            <div className="flex justify-between flex-col md:flex-row items-center ">
               <div>
                 <h4 className=" font-medium text-xl w-[185px]">
                   Most Ordered Food
@@ -228,7 +228,7 @@ const CustomerDetail = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col h-full bg-white w-full p-5 gap-10 rounded-xl mt-3 md:mt-0 drop-shadow-main">
+        <div className="dark:bg-lightDark flex flex-col h-full bg-white w-full p-5 gap-10 rounded-xl mt-3 md:mt-0 drop-shadow-main">
           <div className="flex flex-col md:flex-row justify-between  items-center ">
             <h3 className=" font-bold text-2xl">Most Liked Food</h3>
             <YearlyFiltter />

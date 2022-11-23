@@ -14,22 +14,28 @@ const center = {
 function Maps() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'YOUR_API_KEY',
+    googleMapsApiKey: 'AIzaSyA2Zlib9uUKNf0uhGI9NhO-AgQ38fjSykk',
   });
 
   const [map, setMap] = React.useState(null);
 
-  const onLoad = React.useCallback(function callback(map) {
-    // This is just an example of getting and using the map instance!!! don't just blindly copy!
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
+  const onLoad = React.useCallback(
+    function callback(map) {
+      // This is just an example of getting and using the map instance!!! don't just blindly copy!
+      const bounds = new window.google.maps.LatLngBounds(center);
+      map.fitBounds(bounds);
 
-    setMap(map);
-  }, []);
+      setMap(map);
+    },
+    [setMap]
+  );
 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null);
-  }, []);
+  const onUnmount = React.useCallback(
+    function callback(map) {
+      setMap(null);
+    },
+    [setMap]
+  );
 
   return isLoaded ? (
     <GoogleMap

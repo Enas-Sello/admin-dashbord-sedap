@@ -60,7 +60,7 @@ const Analytics = () => {
     <div className="flex flex-col gap-8 p-4">
       <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
         <div className="flex  items-center md:items-start flex-col gap-3 justify-center">
-          <h1 className="route-title">Analytics</h1>
+          <h1 className="font-semibold text-3xl">Analytics</h1>
           <p className="text-gray-500 text-[12px] md:text-base">
             Here is your restaurant summary with graph view
           </p>
@@ -80,7 +80,7 @@ const Analytics = () => {
       {/*div card */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div className=" lg:col-span-2 col-span-1 flex flex-col md:flex-row w-full">
-          <div className="bg-white rounded-xl flex flex-col p-4 w-full ">
+          <div className="dark:bg-lightDark bg-white rounded-xl flex flex-col p-4 w-full ">
             <div className="flex justify-between items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
@@ -117,7 +117,7 @@ const Analytics = () => {
         {/*end card */}
         {/* card  */}
         <div className="  flex flex-col md:flex-row w-full  ">
-          <div className="bg-white rounded-xl flex flex-col p-4">
+          <div className="dark:bg-lightDark bg-white rounded-xl flex flex-col p-4">
             <div className="flex flex-col justify-between items-center gap-3">
               <div className="flex justify-center items-center gap-3">
                 <h4 className=" font-medium text-xl">Most Selling Items</h4>
@@ -215,7 +215,7 @@ const Analytics = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* card  */}
         <div className="lg:col-span-2 col-span-1  flex flex-col md:flex-row w-full">
-          <div className="bg-white rounded-xl flex w-full flex-col p-4">
+          <div className="dark:bg-lightDark  bg-white rounded-xl flex w-full flex-col p-4">
             <div className="flex justify-between items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl">🔥 Trending Items</h4>
@@ -306,7 +306,7 @@ const Analytics = () => {
 
         {/* card  */}
         <div className="flex flex-col md:flex-row w-full ">
-          <div className="bg-white rounded-xl flex w-full flex-col p-4">
+          <div className="dark:bg-lightDark  bg-white rounded-xl flex w-full flex-col p-4">
             <div className="flex flex-col justify-between items-center gap-3">
               <div className="flex justify-center items-center gap-3">
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
@@ -344,7 +344,7 @@ const Analytics = () => {
       </div>
       {/*end card div  */}
       {/* start customer */}
-      <div className="flex flex-col w-full bg-white rounded-lg p-5">
+      <div className="flex flex-col w-full dark:bg-lightDark   bg-white rounded-lg p-5">
         <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-5">
           <div className="flex flex-row md:flex-col gap-3 items-center sm:items-start justify-center">
             <h4 className=" font-medium text-xl">Most Favourite Items</h4>

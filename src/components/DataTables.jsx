@@ -14,7 +14,7 @@ const DataTables = ({ head, rows ,headColor }) => {
     <TableContainer component={Paper}>
       <Table sx={{ maxWidth: '100%' }} aria-label="simple table">
         <TableHead>
-          <TableRow className={`${headColor}`} >
+          <TableRow className={`${headColor}`}>
             {head.map((header) => (
               <TableCell key={header.id}>
                 <p className="text-white font-medium text-xl ml-2">
@@ -26,7 +26,7 @@ const DataTables = ({ head, rows ,headColor }) => {
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow key={row.id}>
+            <TableRow key={row.id} className="dark:bg-lightDark ">
               <TableCell component="th" scope="row">
                 <div className="flex gap-5 items-center">
                   <img
@@ -38,7 +38,7 @@ const DataTables = ({ head, rows ,headColor }) => {
                     <p className=" text-xs font-semibold text-mainBlue">
                       {row.course}
                     </p>
-                    <p className="text-xs sm:text-lg font-bold text-lightGray">
+                    <p className="dark:text-white text-xs sm:text-lg font-bold text-lightGray">
                       {row.product}
                     </p>
                     <div className="flex gap-3 items-center">

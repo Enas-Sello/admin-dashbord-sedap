@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import placeholder from '../assets/placeholder.png';
-const Profile = () => {
+import DarkMode from './DarkMode';
+const Profile = ({ handleThemeSwitch }) => {
   return (
     <div className="flex items-center gap-2 ">
-      <div className="w-[1px] h-10 bg-lightGray hidden md:block mr-1"></div>
+      <DarkMode handleThemeSwitch={handleThemeSwitch} />
+
       <div className="">
         <Link>Hello,name</Link>
       </div>

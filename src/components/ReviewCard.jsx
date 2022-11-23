@@ -4,7 +4,7 @@ import Starts from './Starts';
 const ReviewCard = () => {
   return (
     <div className="mr-2 flex items-center justify-center  ">
-      <div className=" flex bg-white p-1 rounded-xl flex-col w-full shadow-xl ">
+      <div className="dark:bg-lightDark flex bg-white p-1 rounded-xl flex-col w-full shadow-xl ">
         <div className="flex items-center gap-2 mb-4">
           <img src={placeholder} alt="" className=" object-contain w-14 h-14" />
           <div>

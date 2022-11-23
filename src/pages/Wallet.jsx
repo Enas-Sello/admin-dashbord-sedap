@@ -50,7 +50,7 @@ const Wallet = () => {
   ];
   return (
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3   gap-4 mt-10 p-4">
-      <div class="col-span-2  bg-white p-2 rounded-lg ">
+      <div class="dark:bg-lightDark col-span-2  bg-white p-2 rounded-lg ">
         <div className="flex-col gap-3 items-center justify-center">
           <div className="flex flex-col md:flex-row items-center justify-between w-full ">
             <div className="flex flex-col gap-2">
@@ -119,7 +119,7 @@ const Wallet = () => {
       </div>
       {/*end palance */}
       {/* history */}
-      <div class="col-span-2 bg-white p-5 rounded-lg  mb-5">
+      <div class="dark:bg-lightDark col-span-2 bg-white p-5 rounded-lg  mb-5">
         {/* nav */}
         <div className="flex  justify-between w-full">
           <div className="flex flex-col gap-3">
@@ -153,7 +153,7 @@ const Wallet = () => {
                 />{' '}
               </div>
               <div className="flex flex-col gap-1">
-                <h4 className="text-[#464255] font-semibold text-xs md:text-base ">
+                <h4 className=" font-semibold text-xs md:text-base ">
                   Peterdraw
                 </h4>
                 <h4 className=" text-xs md:text-sm ">Online Shop</h4>
@@ -161,7 +161,7 @@ const Wallet = () => {
             </div>
             <div className="flex gap-3 ml-2">
               <h4 className=" text-xs md:text-base ">Jun 5,2020</h4>
-              <h4 className="text-[#464255] font-normal md:font-semibold text-xs md:text-base ">
+              <h4 className=" font-normal md:font-semibold text-xs md:text-base ">
                 +$5,553
               </h4>
               <h4 className=" text-xs md:text-base lg:w-40">MasterCard</h4>
@@ -277,7 +277,7 @@ const Wallet = () => {
               </h4>
               <h4 className=" text-xs md:text-base lg:w-40">MasterCard</h4>
             </div>
-            <button className=" text-xs md:text-base text-lightGray bg-mainGray py-2 px-3 rounded-xl">
+            <button className=" text-xs md:text-base text-lightGray dark:bg-darkMode bg-mainGray py-2 px-3 rounded-xl">
               Canceled
             </button>
             <IoMdArrowDropright />{' '}
@@ -288,7 +288,7 @@ const Wallet = () => {
       {/*end history */}
 
       {/*Invoices*/}
-      <div class=" bg-white p-5 rounded-lg  mb-5 ">
+      <div class="dark:bg-lightDark bg-white p-5 rounded-lg  mb-5 ">
         <div className="flex flex-col w-full justify-between">
           <div className="flex flex-col gap-2 mb-5">
             <p className=" font-bold text-xl">Invoices Sent</p>

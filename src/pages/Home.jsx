@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router';
 import Sidebar from '../components/Sidebar';
 import Main from './Main';
@@ -9,15 +9,16 @@ import logo from '../assets/Sedap.png';
 
 const Home = () =>
 {
-    const [toggle, setToggle] = useState(false);
+ 
+  const [toggle, setToggle] = useState(false);
   return (
-    <div className="flex lg:flex-row flex-col h-screen transition-height duration-100 ease-out">
-      <div className="hidden lg:flex h-screen flex-initial shadow-xl w-1/5 2xl:w-auto">
+    <div className="flex lg:flex-row flex-col h-screen transition-height duration-100 ease-out ">
+      <div className="hidden lg:flex h-screen flex-initial shadow-xl flexgrow ">
         <Sidebar />
       </div>
 
       {/* responsive */}
-      <div className="flex lg:hidden flex-col">
+      <div className="flex lg:hidden flex-col ">
         <div className="p-2 w-full flex flex-row justify-between items-center shadow-xl">
           <HiMenu
             fontSize={30}
@@ -46,7 +47,7 @@ const Home = () =>
       </div>
       {/* responsive */}
 
-      <div className="pb-2 flex-1 h-screen overflow-y-scroll bg-[#F3F2F7]">
+      <div className="pb-2 flex-1 h-screen overflow-y-scroll bg-[#F3F2F7] dark:bg-darkMode flexgrow2 ">
         <Routes>
           <Route path="/*" element={<Main />} />
         </Routes>

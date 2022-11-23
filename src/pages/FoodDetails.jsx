@@ -65,21 +65,21 @@ const FoodDetails = () => {
           </p>
         </div>
         <div className="flex flex-row justify-center items-center gap-1 md:gap-3">
-          <div className="flex justify-start items-center  px-2 rounded-lg bg-white border-none outline-none focus-within:shadow-lg">
+          <div className="dark:bg-lightDark flex justify-start items-center  px-2 rounded-lg bg-white border-none outline-none focus-within:shadow-lg">
             <input
               type="text"
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search here"
               value={searchTerm}
-              className="p-2 lg:w-80 rounded-lg  bg-white outline-none "
+              className="p-2 lg:w-80 rounded-lg bg-transparent outline-none "
             />
             <CiSearch className="fill-mainGreen w-10 h-6" />
           </div>
           <div className="flex items-center justify-center mt-1 md:mt-0 flex-row gap-3">
-            <div className="bg-white py-2 px-3 rounded-lg shadow-lg">
+            <div className="dark:bg-lightDark bg-white py-2 px-3 rounded-lg shadow-lg">
               <TiThMenu className="text-mainGreen w-5 h-5" />
             </div>
-            <div className="bg-white py-2 px-3 rounded-lg shadow-lg">
+            <div className="dark:bg-lightDark bg-white py-2 px-3 rounded-lg shadow-lg">
               <CgMenuGridR className="w-5 h-5 text-mainGreen" />
             </div>
             <div className="hover:scale-110 duration-500  flex items-center gap-1 bg-mainGreen py-2 px-2  rounded-lg font-bold text-[15px] shadow-lg">
@@ -93,7 +93,7 @@ const FoodDetails = () => {
 
       {/* start main */}
       <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-white rounded-lg flex flex-col p-5 shadow-lg">
+        <div className="dark:bg-lightDark bg-white rounded-lg flex flex-col p-5 shadow-lg">
           <div className="flex w-full  justify-between lg:gap-10 items-center">
             <h4 className=" font-semibold text-[28px]">Detail Menus</h4>
             <h6 className="text-lightGray text-lg">
@@ -155,7 +155,7 @@ const FoodDetails = () => {
             </div>{' '}
           </div>
         </div>
-        <div className="flex  flex-col justify-between p-5 bg-white rounded-xl drop-shadow-main">
+        <div className="dark:bg-lightDark flex  flex-col justify-between p-5 bg-white rounded-xl drop-shadow-main">
           <div className="flex flex-col md:flex-row justify-between items-center ">
             <div className="flex flex-col gap-2">
               <h4 className=" text-xl font-medium">Revenue</h4>

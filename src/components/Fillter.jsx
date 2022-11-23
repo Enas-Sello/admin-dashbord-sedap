@@ -2,7 +2,7 @@ import React from 'react';
 
 const Fillter = (prop) => {
   return (
-    <div className={prop.class}>
+    <div className={`${prop.class} dark:bg-lightDark`}>
       <div className={` bg-${prop.color} rounded-xl py-2 px-2 `}>
         <prop.icon className={`fill-${prop.fill} md:w-6 md:h-6`} />
       </div>

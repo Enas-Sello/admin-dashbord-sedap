@@ -4,7 +4,7 @@ import placeholder2 from '../assets/placeholder2.png';
 
 const FoodDetailsRewiew = () => {
   return (
-    <div className=" flex bg-white p-2 rounded-xl flex-col">
+    <div className="dark:bg-lightDark flex bg-white p-2 rounded-xl flex-col">
       <div className="flex items-center gap-5 mb-4">
         <img
           src={placeholder2}

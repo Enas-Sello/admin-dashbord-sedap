@@ -63,7 +63,7 @@ const Foods = () => {
       </div>
       {/*end food */}
       {/* start PieChart */}
-      <div className="flex flex-col bg-white w-ful p-5 w-full rounded-xl shadow-xl">
+      <div className="flex flex-col dark:bg-lightDark bg-white w-ful p-5 w-full rounded-xl shadow-xl">
         <div className="flex justify-between items-center ">
           <h3 className=" font-bold text-base md:text-2xl">Pie chart</h3>
           <fieldset className="flex gap-2">

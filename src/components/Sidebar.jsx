@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from '../assets/Sedap.png';
+import Sedap from '../assets/Sedap.png';
+import SedapLight from '../assets/SedapLight.png';
 import chef from '../assets/chef.png';
 import {
   AiOutlineBarChart,
@@ -8,33 +9,47 @@ import {
 } from 'react-icons/ai';
 import { BiGroup, BiHomeAlt } from 'react-icons/bi';
 import { SlNote } from 'react-icons/sl';
-import { BsPen, BsCup, BsPerson, BsChatLeftDots, BsListNested } from 'react-icons/bs';
+import {
+  BsPen,
+  BsCup,
+  BsPerson,
+  BsChatLeftDots,
+  BsListNested,
+} from 'react-icons/bs';
 import { Link, NavLink } from 'react-router-dom';
 import { CiFileOn } from 'react-icons/ci';
-const Sidebar = () => {
+const Sidebar = ({ handleThemeSwitch }) => {
   const handelcloseToggle = () => {
     if (handelcloseToggle) handelcloseToggle(false);
   };
 
   const isNotActiveStyle =
-    'flex items-center p-1 gap-3 text-lightGray hover:font-bold text-lg transition-all w-52 duration-200 ease-in-out capitalize';
+    'dark:text-white flex items-center p-1 gap-3 text-lightGray hover:font-bold text-lg transition-all w-52 duration-200 ease-in-out capitalize';
 
   const isActiveStyle =
     'flex items-center px-5 py-2 gap-3 font-bold border-l-2 rounded-r-[8px] border-mainGreen text-lg w-52 bg-lightGreen text-mainGreen transition-all duration-200 ease-in-out capitalize';
 
   return (
-    <div className=" flex flex-col justify-between items-center bg-white h-screen overflow-y-scroll min-w-280 hide-scrollbar ">
-      <div className="flex flex-col mt-2">
+    <div className="dark:bg-lightDark dark:text-white flex flex-col justify-between items-center bg-white h-screen overflow-y-scroll  p-3 hide-scrollbar ">
+      <div className="relative flex flex-col mt-2">
+        <div className=" absolute top-0 right-0"></div>
         <Link
           to="/"
           className="hidden md:flex flex-col  gap-2 my-6 w-109 items-center"
           onClick={handelcloseToggle}
         >
-          <img src={logo} alt="logo" className="w-32" />
+          <img
+            src={SedapLight}
+            alt="SedapLight"
+            className="w-32 hidden dark:block"
+          />
+          <img src={Sedap} alt="Sedap" className="w-32  dark:hidden" />
+
           <span className=" text-xs text-lightGray">
             Modern Admin Dashboard
           </span>
         </Link>
+
         <div className="flex  flex-col gap-2">
           <NavLink
             to="/"
@@ -163,7 +178,7 @@ const Sidebar = () => {
           <h4 className="text-white font-medium text-xs">
             Please, organize your menus through button bellow!
           </h4>
-          <button className="bg-white rounded-lg py-3 px-5 mt-5 font-medium text-[15px]">
+          <button className="bg-white rounded-lg py-3 px-5 mt-5 font-medium text-[15px] text-lightGray">
             + Add Menus
           </button>
         </div>

@@ -4,7 +4,7 @@ import './Calender.css';
 
 const Calender = () => {
   return (
-    <div className="bg-white rounded-lg">
+    <div className="dark:bg-lightDarkbg-white rounded-lg">
       <Scheduler
         className="p-5"
         view="month"

@@ -1,60 +1,7 @@
-/* .MuiTypography-body2 {
-  color: black;
-  font-size: 24px;
-  font-weight: 800;
-}
 
-.MuiInputLabel-outlined {
-  border-color: red;
-  color: greenyellow;
-}
-
-.MuiPickersCalendarHeader-switchHeader,
-.MuiTypography-caption {
-  color: #f59120;
-}
-
-.MuiTypography-body1 {
-  font-family: 'Montserrat', sans-serif;
-}
-.MuiAvatar-root {
-  background-color: #f59120;
-  color: #f59120;
-}
-.MuiPickersClock-clock {
-  background-color: #f59120;
-}
-.MuiTypography-h6 {
-  color: #5e6c93;
-}
-.MuiPickersDay-daySelected,
-.MuiPickersClockPointer-pointer,
-.MuiPickersClock-pin,
-.MuiPickersClockPointer-thumb,
-.MuiPickersClockNumber-clockNumberSelected {
-  background-color: rgba(255, 91, 91, 0.15);
-  font-family: 'Montserrat', sans-serif;
-}
-.MuiPickersCalendarHeader-iconButton {
-  background-color: rgba(255, 91, 91, 0.15);
-}
-
-._2vU-KUtz5-k29OlV5m7df1 {
-  background-color: #f7c604;
-}
-.MuiTypography-noWrap,
-._2mqV6nb5wT63-eyCtNsXhI {
-  background-color: rgba(45, 156, 219, 0.15);
-  border: #2D9CDB;
-}
-
-.MuiTypography-noWrap {
-  color: #5E6C93;
-
-} */
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root,
 .css-1y942vo-MuiButtonBase-root-MuiButton-root {
-  color: #464255 !important ;
+  color: black !important ;
   font-weight: 600 !important;
   font-size: 20px !important;
   line-height: 43px !important;
@@ -87,4 +34,8 @@
 
 .css-fpqwey .rs__cell.rs__header>:first-of-type ,.css-1mdftu-MuiTypography-root  {
     font-size: 18px;
+}
+.css-sp60bg .rs__cell.rs__header>:first-of-type,.css-sp60bg .rs__cell .rs__hover__op  {
+  color: black !important ;
+
 }

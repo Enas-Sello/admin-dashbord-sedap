@@ -5,11 +5,11 @@ import placeholder from '../assets/placeholder.png';
 
 const AnalyticsCArd = () => {
   return (
-    <div className="hover:scale-110 duration-500 flex flex-col gap-10 bg-white rounded-lg mr-5 ">
-      <div className="w-52 h-52 bg-rose-200 rounded-lg">
+    <div className="dark:bg-lightDark  hover:scale-110 duration-500 flex flex-col gap-5 bg-white rounded-lg mr-5 ">
+      <div className="w-full md:w-40 h-full md:h-40 bg-rose-200 rounded-lg">
         <img src={placeholder} alt="" />
       </div>
-      <h2 className=" font-medium w-44">
+      <h2 className=" font-medium w-full md:w-44">
         Medium Spicy Pizza with Kemangi Leaf
       </h2>
       <div className="flex gap-2">
