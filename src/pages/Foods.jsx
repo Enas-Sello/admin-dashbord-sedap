@@ -57,8 +57,6 @@ const Foods = () => {
           <FoodCard />
           <FoodCard />
           <FoodCard />
-          <FoodCard />
-          <FoodCard />
         </div>
       </div>
       {/*end food */}

@@ -24,7 +24,7 @@ const Main = () => {
         //     setTheme('light');
         //   }
         // }, []);
-const [theme, setTheme] = useState(false);
+const [theme, setTheme] = useState('dark');
 useEffect(() => {
   if (theme === 'dark') {
     document.documentElement.classList.add('dark');

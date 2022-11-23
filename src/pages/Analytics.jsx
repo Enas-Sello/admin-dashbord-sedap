@@ -84,7 +84,7 @@ const Analytics = () => {
             <div className="flex justify-between items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
-                <p className="text-sm font-normal text-gray-300">
+                <p className="text-sm font-normal text-LightGray">
                   Lorem ipsum dolor
                 </p>
               </div>
@@ -93,7 +93,7 @@ const Analytics = () => {
             <div className="flex items-center gap-10">
               <div className="flex flex-col gap-2 my-5">
                 <div className="flex items-center gap-2">
-                  <CgLoadbarSound className="fill-lightGray w-6 h-6 text-2xl text-[#D0D6DE]" />
+                  <CgLoadbarSound className="fill-lightGray w-6 h-6 text-2xl" />
                   <p className="text-mainGreen text-2xl font-bold">257k</p>
                 </div>
                 <p className=" text-xs font-semibold text-gray-400">
@@ -102,7 +102,7 @@ const Analytics = () => {
               </div>
               <div className="flex flex-col gap-2 my-5">
                 <div className="flex items-center gap-2">
-                  <CgLoadbarSound className="fill-lightGray w-6 h-6 text-2xl text-[#D0D6DE]" />
+                  <CgLoadbarSound className="fill-lightGray w-6 h-6 text-2xl " />
                   <p className="text-mainGreen text-2xl font-bold">257k</p>
                 </div>
                 <p className=" text-xs font-semibold text-lightGray">
