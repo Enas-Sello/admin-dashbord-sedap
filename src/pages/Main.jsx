@@ -17,7 +17,6 @@ import OrderDetail from './OrderDetail';
 const Main = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
-
   return (
     <div className="dark:text-white px-2 md:px-5 h-full w-full  ">
       <div className="">

@@ -60,7 +60,7 @@ const Analytics = () => {
     <div className="flex flex-col gap-8 p-4">
       <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
         <div className="flex  items-center md:items-start flex-col gap-3 justify-center">
-          <h1 className="font-semibold text-3xl">Analytics</h1>
+          <h1 className="font-semibold text-3xl capitalize">Analytics</h1>
           <p className="text-gray-500 text-[12px] md:text-base">
             Here is your restaurant summary with graph view
           </p>
@@ -223,7 +223,7 @@ const Analytics = () => {
                   Lorem ipsum dolor sit amet
                 </p>
               </div>
-              <div className=" bg-gray-50 rounded-full flex gap-2 justify-center items-center py-2 px-4">
+              <div className=" bg-mainGray rounded-full flex gap-2 justify-center items-center py-2 px-4">
                 <p className="text-lightGray ">Weekly</p>
                 <MdKeyboardArrowDown className="w-6 h-6" />
               </div>{' '}

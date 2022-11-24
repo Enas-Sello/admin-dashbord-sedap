@@ -100,7 +100,7 @@ const OrderList = () => {
     <div className="flex flex-col gap-8 p-4">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col gap-3 justify-center">
-          <h1 className="font-semibold text-3xl">Your Orders</h1>
+          <h1 className="font-semibold text-3xl capitalize">Your Orders</h1>
           <p className="text-lightGray text-base md:text-lg">
             This is your order list data
           </p>

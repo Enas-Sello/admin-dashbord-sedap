@@ -1,22 +1,43 @@
-const [theme, setTheme] = useState(false);
+// import React, { useState } from 'react';
 
-// useEffect(() => {
-// if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-// setTheme('dark');
-// } else {
-// setTheme('light');
-// }
-// }, []);
+// const YearlyFiltter = () => {
+//   const [active, setActive] = useState(false);
 
-useEffect(() => {
-if (theme === 'dark') {
-document.documentElement.classList.add('dark');
-} else {
-document.documentElement.classList.remove('dark');
-}
-}, [theme]);
+//   const handelActiveToggle = (prop) => {
+//     if (prop === 'Monthly') {
+//       setActive(!active);
+//     }
+//   };
+//   return (
+//     <div className="dark:bg-darkMode bg-gray-200 rounded-full">
+//       <div className="flex justify-between gap-5  py-2 px-4">
+//         <p
+//           className={
+//             active ? 'rounded-full dark:bg-lightDark  bg-white py-1 px-6 cursor-pointer ' : ' cursor-pointer'
+//           }
+//           onClick={() => handelActiveToggle('Monthly')}
+//         >
+//           Monthly
+//         </p>
+//         <p
+//           className={
+//             active ? 'rounded-full dark:bg-lightDark  bg-white py-1 px-6 cursor-pointer ' : ' cursor-pointer'
+//           }
+//           onClick={() => handelActiveToggle('Weekly')}
+//         >
+//           Weekly
+//         </p>
+//         <p
+//           className={
+//             active ? 'rounded-full dark:bg-lightDark  bg-white py-1 px-6 cursor-pointer ' : ' cursor-pointer'
+//           }
+//           onClick={() => handelActiveToggle('Daily')}
+//         >
+//           Daily
+//         </p>
+//       </div>
+//     </div>
+//   );
+// };
 
-const handleThemeSwitch = () => {
-setTheme( theme === 'dark' ? 'light' : 'dark' );
-console.log('dark')
-};
+// export default YearlyFiltter;

@@ -9,7 +9,7 @@ const Review = () => {
     <div className="section-padding  h-screen capitalize p-4">
       <div className=" flex flex-col lg:flex-row  justify-between items-center">
         <div>
-          <h1 className="font-semibold text-3xl">Reviews</h1>
+          <h1 className="font-semibold text-3xl capitalize">Reviews</h1>
           <p className="text-lightGray text-lg">
             <span className="text-mainGreen">Dashboard</span> / Customer Reviews{' '}
           </p>

@@ -61,7 +61,7 @@ const Dashbord = () => {
       {/* nav */}
       <div className="dark:text-white flex flex-col md:flex-row justify-between gap-2 items-center">
         <div className="flex flex-col md:flex-row items-center m:items-start gap-3 justify-center">
-          <h1 className="font-semibold text-3xl">dashbord</h1>
+          <h1 className="font-semibold text-3xl capitalize">dashbord</h1>
           <p className="text-lightGray text-base md:text-lg dark:text-white">
             Hi, Samantha. Welcome back to Sedap Admin!
           </p>

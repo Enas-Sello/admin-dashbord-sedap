@@ -60,7 +60,7 @@ const CustomerDetail = () => {
       {/*nav start */}
       <div className="flex flex-col md:flex-row justify-between gap- items-center">
         <div className="flex items-center md:items-start flex-col gap-3 justify-center">
-          <h1 className="font-semibold text-3xl">Customer Detail</h1>
+          <h1 className="font-semibold text-3xl capitalize">Customer Detail</h1>
           <p className="text-lightGray text-lg">
             Here your Customer Detail Profile
           </p>

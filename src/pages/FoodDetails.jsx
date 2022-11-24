@@ -59,7 +59,7 @@ const FoodDetails = () => {
       {/* start nav */}
       <div className="flex flex-col md:flex-row justify-between  items-center">
         <div className="flex items-center md:items-start flex-col gap- justify-center">
-          <h1 className="font-semibold text-3xl">Foods</h1>
+          <h1 className="font-semibold text-3xl capitalize">Foods</h1>
           <p className="text-lightGray text-lg">
             Here is your menus summary with graph view
           </p>

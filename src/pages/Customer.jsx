@@ -101,7 +101,9 @@ const Customer = () =>
       {' '}
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col gap-3 justify-center">
-          <h1 className="font-semibold text-3xl">General Customer</h1>
+          <h1 className="font-semibold text-3xl capitalize">
+            General Customer
+          </h1>
           <p className="text-lightGray">
             Here is your general customers list data
           </p>

@@ -74,7 +74,9 @@ const OrderDetail = () => {
       {/* nav */}
       <div className="flex flex-col md:flex-row justify-between gap-2 items-center">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-3 justify-center">
-          <h1 className="font-semibold text-3xl">Order ID #5552351</h1>
+          <h1 className="font-semibold text-3xl capitalize">
+            Order ID #5552351
+          </h1>
           <p className="text-lightGray text-base md:text-lg">
             <span className="text-mainGreen">Orders /</span> Order Detaills{' '}
           </p>
