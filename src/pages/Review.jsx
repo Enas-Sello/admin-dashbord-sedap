@@ -15,7 +15,7 @@ const Review = () => {
           </p>
         </div>
         <Fillter
-          class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
+          classList={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
           icon={AiOutlineCalendar}
           arrow={MdKeyboardArrowDown}
           main={'Filter Periode'}
@@ -63,9 +63,9 @@ const Review = () => {
                 <MdKeyboardArrowDown className="fill-mainBlue w-6 h-6" />
               </div>
             </div>
-           <OtherReviewCArd/>
-           <OtherReviewCArd/>
-           <OtherReviewCArd/>
+            <OtherReviewCArd />
+            <OtherReviewCArd />
+            <OtherReviewCArd />
           </div>
         </div>
         {/* end table */}

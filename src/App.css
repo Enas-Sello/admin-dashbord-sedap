@@ -1,6 +1,3 @@
-
-
-
 .route-title {
   font-weight: 600;
   font-size: 32px;
@@ -27,4 +24,15 @@
 
 .flexgrow2{
   flex: 4;
+}
+
+@media (min-width: 1400px) {
+    .flexgrow{
+  flex:auto
+}
+
+.flexgrow2{
+  flex: auto;
+}
+
 }

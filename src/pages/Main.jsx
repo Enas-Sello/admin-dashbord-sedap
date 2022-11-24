@@ -16,34 +16,14 @@ import OrderDetail from './OrderDetail';
 
 const Main = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  
-  // useEffect(() => {
-    //   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      //     setTheme('dark');
-      //   } else {
-        //     setTheme('light');
-        //   }
-        // }, []);
-const [theme, setTheme] = useState('dark');
-useEffect(() => {
-  if (theme === 'dark') {
-    document.documentElement.classList.add('dark');
-  } else {
-    document.documentElement.classList.remove('dark');
-  }
-}, [theme]);
 
-const handleThemeSwitch = () => {
-  setTheme(theme === 'dark' ? 'light' : 'dark');
-  console.log('dark');
-};
+
   return (
-    <div className="dark:text-white px-2 md:px-5 h-screen w-full  ">
+    <div className="dark:text-white px-2 md:px-5 h-full w-full  ">
       <div className="">
         <Navebar
           searchTerm={searchTerm}
           setSearchTerm={setSearchTerm}
-          handleThemeSwitch={handleThemeSwitch}
         />
       </div>
       <div className="h-full  mt-5 md:mt-10">

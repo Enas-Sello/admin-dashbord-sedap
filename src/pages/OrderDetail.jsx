@@ -81,7 +81,7 @@ const OrderDetail = () => {
         </div>
         <div className="flex gap-3 flex-col md:flex-row">
           <Fillter
-            class={
+            classList={
               ' bg-transparent border-2 text-mainRed border-mainRed flex items-center rounded-lg px-2 py-1 cursor-pointer'
             }
             icon={'k'}
@@ -92,7 +92,7 @@ const OrderDetail = () => {
             color={''}
           />
           <Fillter
-            class={
+            classList={
               'bg-mainGreen flex gap-2 items-center text-white  rounded-lg px-2 py-1  cursor-pointer'
             }
             icon={CiDeliveryTruck}

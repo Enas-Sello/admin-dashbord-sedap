@@ -94,6 +94,8 @@ const OrderList = () => {
       Status: 'New Order',
     },
   ];
+  const orderOptions = { accept: 'Accept Order', reject: 'Reject Order' };
+
   return (
     <div className="flex flex-col gap-8 p-4">
       <div className="flex flex-col md:flex-row justify-between items-center">
@@ -105,7 +107,7 @@ const OrderList = () => {
         </div>
         <div className="flex items-center justify-center gap-3">
           <Fillter
-            class={
+            classList={
               'bg-white flex gap-3 items-center rounded-lg px-2 py-1 md:px-4 md:py-2'
             }
             icon={SlNote}
@@ -116,7 +118,7 @@ const OrderList = () => {
             color={'lightGreen'}
           />
           <Fillter
-            class={
+            classList={
               'bg-white flex gap-3 items-center rounded-lg px-2 py-1 md:px-4 md:py-2'
             }
             icon={AiOutlineCalendar}
@@ -128,7 +130,12 @@ const OrderList = () => {
           />
         </div>
       </div>
-      <Tables head={head} rows={rows} headColor={'bg-mainGreen'} />
+      <Tables
+        head={head}
+        rows={rows}
+        orderOptions={orderOptions}
+        headColor={'bg-mainGreen'}
+      />
     </div>
   );
 };

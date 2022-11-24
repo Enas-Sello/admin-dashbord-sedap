@@ -67,7 +67,7 @@ const Dashbord = () => {
           </p>
         </div>
         <Fillter
-          class={
+          classList={
             'bg-white  flex gap-3 items-center rounded-lg px-2 py-1 md:px-4 md:py-2'
           }
           icon={AiOutlineCalendar}
@@ -95,27 +95,27 @@ const Dashbord = () => {
             <fieldset className="flex gap-2">
               <input
                 id="Chart"
-                class="peer/Chart"
+                className="peer/Chart"
                 type="checkbox"
                 name="status"
-                checked
+                // checked
               />
               <label
-                for="Chart"
-                class="peer-checked/Chart:text-mainRed text-base md:text-lg font-semibold"
+                htmlFor="Chart"
+                className="peer-checked/Chart:text-mainRed text-base md:text-lg font-semibold"
               >
                 Chart
               </label>
 
               <input
-                id="Value"
-                class="peer/Value border-none"
+                htmlFor="Value"
+                className="peer/Value border-none"
                 type="checkbox"
                 name="status"
               />
               <label
-                for="Value"
-                class="peer-checked/Value:text-mainRed text-base md:text-lg font-semibold"
+                htmlFor="Value"
+                className="peer-checked/Value:text-mainRed text-base md:text-lg font-semibold"
               >
                 Show Value
               </label>

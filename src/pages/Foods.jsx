@@ -19,21 +19,21 @@ const Foods = () => {
           </p>
         </div>
         <div className="flex flex-row justify-center items-center gap-1 md:gap-3">
-          <div className="flex justify-start items-center  px-2 rounded-lg bg-white border-none outline-none focus-within:shadow-lg">
+          <div className=" dark:bg-lightDark flex justify-start items-center  px-2 rounded-lg bg-white border-none outline-none focus-within:shadow-lg">
             <input
               type="text"
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search here"
               value={searchTerm}
-              className="p-2 lg:w-80 rounded-lg  bg-white outline-none "
+              className="p-2 lg:w-80 rounded-lg bg-transparent outline-none "
             />
             <CiSearch className="fill-mainGreen w-10 h-6" />
           </div>
           <div className="flex items-center justify-center flex-row gap-1 md:gap-3">
-            <div className="bg-white py-2 px-3 rounded-lg shadow-lg">
+            <div className="dark:bg-lightDark bg-white py-2 px-3 rounded-lg shadow-lg">
               <TiThMenu className="text-mainGreen w-5 h-5" />
             </div>
-            <div className="bg-white py-2 px-3 rounded-lg shadow-lg">
+            <div className="dark:bg-lightDark bg-white py-2 px-3 rounded-lg shadow-lg">
               <CgMenuGridR className="w-5 h-5 text-mainGreen" />
             </div>
             <div className="hover:scale-110 duration-500  flex items-center gap-1 bg-mainGreen py-2 px-2  rounded-lg font-bold text-[15px] shadow-lg">
@@ -46,7 +46,7 @@ const Foods = () => {
       {/*end nav */}
       {/*start food  */}
       <div className=" p-4 flex  justify-center w-full h-full">
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  2xl:grid-cols-8 gap-4 text-center py-8 ">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  2xl:grid-cols-6 gap-4 text-center py-8 ">
           <FoodCard />
           <FoodCard />
           <FoodCard />
@@ -67,27 +67,27 @@ const Foods = () => {
           <fieldset className="flex gap-2">
             <input
               id="Chart"
-              class="peer/Chart"
+              className="peer/Chart"
               type="checkbox"
               name="status"
-              checked
+              // checked
             />
             <label
-              for="Chart"
-              class="peer-checked/Chart:text-mainGreen text-base md:text-lg font-semibold"
+              htmlFor="Chart"
+              className="peer-checked/Chart:text-mainGreen text-base md:text-lg font-semibold"
             >
               Chart
             </label>
 
             <input
               id="Value"
-              class="peer/Value border-none"
+              className="peer/Value border-none"
               type="checkbox"
               name="status"
             />
             <label
-              for="Value"
-              class="peer-checked/Value:text-mainGreen text-base md:text-lg font-semibold"
+              htmlFor="Value"
+              className="peer-checked/Value:text-mainGreen text-base md:text-lg font-semibold"
             >
               Show Value
             </label>

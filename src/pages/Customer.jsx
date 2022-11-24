@@ -4,7 +4,10 @@ import { RiSoundModuleLine } from 'react-icons/ri';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import Tables from '../components/Tables';
 
-const Customer = () => {
+const Customer = () =>
+{
+ const CustomerOptions ={ detail: 'View Detail', edit: 'Edit', delete: 'Delete' }
+ 
   const head = [
     {
       id: 1,
@@ -40,6 +43,7 @@ const Customer = () => {
       Location: 'Corner Street 5th, London',
       Amount: '$78.92',
       Status: '$35.35',
+      Options: [{ detail: 'View Detail', edit: 'Edit', delete: 'Delete' }],
     },
     {
       id: 2,
@@ -49,6 +53,7 @@ const Customer = () => {
       Location: 'Corner Street 5th London',
       Amount: '$164.52',
       Status: '$35.35',
+      Options: [{ detail: 'View Detail', edit: 'Edit', delete: 'Delete' }],
     },
     {
       id: 3,
@@ -58,6 +63,7 @@ const Customer = () => {
       Location: 'Corner Street 5th London',
       Amount: '$164.52',
       Status: '$35.35',
+      Options: [{ detail: 'View Detail', edit: 'Edit', delete: 'Delete' }],
     },
     {
       id: 4,
@@ -67,6 +73,7 @@ const Customer = () => {
       Location: 'Corner Street 5th London',
       Amount: '$164.52',
       Status: '$35.35',
+      Options: [{ detail: 'View Detail', edit: 'Edit', delete: 'Delete' }],
     },
     {
       id: 5,
@@ -76,6 +83,7 @@ const Customer = () => {
       Location: 'Corner Street 5th London',
       Amount: '$164.52',
       Status: '$35.35',
+      Options: [{ detail: 'View Detail', edit: 'Edit', delete: 'Delete' }],
     },
     {
       id: 6,
@@ -85,6 +93,7 @@ const Customer = () => {
       Location: 'Corner Street 5th London',
       Amount: '$164.52',
       Status: '$35.35',
+      Options: [{ detail: 'View Detail', edit: 'Edit', delete: 'Delete' }],
     },
   ];
   return (
@@ -99,7 +108,7 @@ const Customer = () => {
         </div>
         <div className="flex items-center justify-center gap-3">
           <Fillter
-            class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
+            classList={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
             icon={RiSoundModuleLine}
             arrow={MdKeyboardArrowDown}
             main={'Filter'}
@@ -109,7 +118,12 @@ const Customer = () => {
           />
         </div>
       </div>
-      <Tables head={head} rows={rows} headColor={'bg-mainBlue'} />
+      <Tables
+        head={head}
+        rows={rows}
+        CustomerOptions={CustomerOptions}
+        headColor={'bg-mainBlue'}
+      />
     </div>
   );
 };

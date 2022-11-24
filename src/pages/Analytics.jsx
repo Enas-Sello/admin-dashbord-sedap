@@ -67,7 +67,7 @@ const Analytics = () => {
         </div>
         <div className="flex items-center justify-center gap-3">
           <Fillter
-            class={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
+            classList={'bg-white flex gap-3 items-center rounded-lg px-4 py-2'}
             icon={AiOutlineCalendar}
             arrow={MdKeyboardArrowDown}
             main={'Filter Periode'}
@@ -84,7 +84,7 @@ const Analytics = () => {
             <div className="flex justify-between items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
-                <p className="text-sm font-normal text-LightGray">
+                <p className="text-sm font-normal text-lightGray">
                   Lorem ipsum dolor
                 </p>
               </div>
@@ -219,7 +219,7 @@ const Analytics = () => {
             <div className="flex justify-between items-center gap-10">
               <div>
                 <h4 className=" font-medium text-xl">🔥 Trending Items</h4>
-                <p className="text-sm font-normal text-gray-300">
+                <p className="text-sm font-normal text-lightGray">
                   Lorem ipsum dolor sit amet
                 </p>
               </div>
@@ -310,7 +310,7 @@ const Analytics = () => {
             <div className="flex flex-col justify-between items-center gap-3">
               <div className="flex justify-center items-center gap-3">
                 <h4 className=" font-medium text-xl">Chart Orders</h4>
-                <p className="text-sm font-normal text-gray-300">
+                <p className="text-sm font-normal text-lightGray">
                   Lorem ipsum dolor sit amet
                 </p>
               </div>
@@ -348,7 +348,7 @@ const Analytics = () => {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-5">
           <div className="flex flex-row md:flex-col gap-3 items-center sm:items-start justify-center">
             <h4 className=" font-medium text-xl">Most Favourite Items</h4>
-            <p className="text-sm font-normal text-gray-300">
+            <p className="text-sm font-normal text-lightGray">
               Lorem ipsum dolor sit amet, consectetur
             </p>
           </div>
